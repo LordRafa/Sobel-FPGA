@@ -1,0 +1,819 @@
+\documentclass[a4paper,12pt,titlepage,final]{book}
+
+\usepackage[utf8]{inputenc} \usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage[round,sort,comma]{natbib}
+
+\definecolor{dkgreen}{rgb}{0,0.39063,0}
+\definecolor{dkgrey}{rgb}{0.2,0.2,0.2}
+\definecolor{grey}{rgb}{0.99,0.99,0.99}
+\definecolor{DarkOrchid}{rgb}{0.80,0.0,0.80}
+
+\renewcommand{\appendixname}{Apéndices}
+\renewcommand{\appendixtocname}{Apéndices}
+\renewcommand{\appendixpagename}{Apéndices}
+
+\renewcommand{\lstlistingname}{Listado}
+\lstset{
+language=Verilog,
+frame=shadowbox,
+numbers=left,
+captionpos=b,
+basicstyle=\footnotesize,
+backgroundcolor=\color{grey},
+rulesepcolor=\color{dkgrey},
+keywordstyle=\color{blue},
+commentstyle=\color{dkgreen},
+stringstyle=\color{DarkOrchid},
+tabsize=3,
+breaklines=true,
+breakautoindent=true
+xleftmargin=2em,xrightmargin=2em, aboveskip=1em,
+}
+   
+\title{\Huge ACELERACIÓN DEL ALGORITMO SOBEL MEDIANTE UNA FPGA}
+
+\author{Rafael Waldo Delgado Doblas}
+
+\date{Curso 2012 - 2013}
+
+\begin{document}
+
+\frontmatter
+
+\begin{titlepage}
+\begin{center}
+\vspace*{-1in}
+\begin{figure}[htb]
+\begin{center}
+\includegraphics[width=8cm]{./figuras/Logo_ULL.png}
+\end{center}
+\end{figure}
+UNIVERSIDAD DE LA LAGUNA\\
+\vspace*{0.15in}
+ESCUELA TÉNICA DE INGENIERÍA INFORMÁTICA\\
+\vspace*{0.6in}
+\begin{large}
+PROYECTO FINAL DE CARRERA:\\
+\end{large}
+\vspace*{0.2in}
+\begin{Large}
+\textbf{ACELERACIÓN DEL ALGORITMO SOBEL MEDIANTE UNA FPGA} \\
+\end{Large}
+\vspace*{0.3in}
+\begin{large}
+Por Rafael Waldo Delgado Doblas\\
+\end{large}
+\vspace*{0.3in}
+\rule{80mm}{0.1mm}\\
+\vspace*{0.1in}
+\begin{large}
+Dirigido por: \\
+Jonay Tomás Toledo Carrillo \\
+\end{large}
+\end{center}
+\end{titlepage}
+
+\maketitle
+
+\tableofcontents
+
+\mainmatter
+\chapter{''Descripción del documento.''}
+\section*{}
+\subsection*{}
+\subsubsection*{}
+
+\paragraph{}
+Este documento contiene la memoria del proyecto de fin de carrera de Rafael
+Waldo Delgado Doblas. Este documento está estructurado de la siguiente manera:
+
+\begin{itemize}
+  \item En el primer capítulo se habla sobre las motivaciones que han llevado a
+  realizar el proyecto.
+  \item A continuación se definirán los requisitos del proyecto.
+  \item Después se detallan la metodología empleada y las herramientas
+  utilizadas.
+  \item En el siguiente apartado se expondrán los pasos seguidos en el
+  desarrollo del proyecto.
+  \item Seguidamente se explica el funcionamiento del dispositivo desarrollado.
+  \item Para finalizar se presentan los resultados obtenidos.
+\end{itemize}
+
+\chapter{''Introducción.''}
+
+\section{Descripción del problema.}
+\subsection*{}
+\subsubsection*{}
+
+\paragraph{}
+Si la primera revolución industrial se estudia en los libros como un hito en la
+historia de la humanidad, por los cambios sociales y de organización del trabajo
+que supuso. En la actualidad se esta viviendo lo que se puede considerar como
+otra gran revolución tecnológica, en este caso la revolución viene marcada por
+la informática que está dando lugar a un cambio importantísimo en todas las
+áreas del conocimiento humano. El desarrollo de las tecnologías de la
+información y la comunicación han cambiado para siempre la forma en la que
+interactuamos con las máquinas y la forma en la que éstas desarrollan sus
+funciones, así como la manera de relacionarse las personas entre si.
+
+\paragraph{}
+Esta revolución es además algo vivo y en continua evolución hablar de aquellos
+primeros ordenadores y compararlos con los actuales es como retroceder a una
+época arcaica. Los avances que para nosotros ahora son un logro importantísimo
+dentro de unos años solamente habrán sido un paso hacia delante en este continuo
+evolucionar de un área del conocimiento en permanente desarrollo. En el día a
+día podemos ver como surgen nuevos dispositivos, cada vez más pequeños, con más
+capacidad computacional, un menor consumo energético y una decidida y clara
+orientación a facilitar nuestro que hacer diario.
+
+\paragraph{}
+Uno de esos grandes logros en principio inalcanzable sería el de conseguir que
+las futuras máquinas pudieran adquirir los sentidos humanos y entre ellos el
+sentido de la vista fundamental para nosotros. Para los seres humanos la vista
+es el sentido más importante a la hora de obtener información del entorno físico
+que le rodea. Con ella nos movemos con precisión, siendonos necesaria para casi
+cualquier acción que realizamos; desde algo tan simple como seleccionar la ropa
+que vamos a vestir hasta inspeccionar, haciendo uso de un microscopio, como se
+ha desarrollado un determinado cultivo de una investigación, requieren de
+nuestra habilidad para ver. Por eso no es de extrañar que una de las áreas de la
+inteligencia artificial que más importancia y desarrollo está teniendo a día de
+hoy sea la visión por computador.
+
+\paragraph{}
+Se ha estudiado que el ser humano captura la luz a través de los ojos, y que
+esta información circula a través del nervio óptico hasta el cerebro donde se
+procesa. Existen razones para creer que el primer paso de este procesado
+consiste en encontrar elementos más simples en los que descomponer la imagen.
+Después el cerebro interpreta la escena y por último actúa en consecuencia.
+
+\paragraph{}
+La visión por computador es un campo que incluye métodos para adquirir,
+procesar, analizar y entender imágenes, por lo general obtenidas del mundo real,
+para producir información numérica o simbólica computable por un ordenador. La
+visión por computador se utiliza a día de hoy en múltiples aplicaciones; algunos
+ejemplos podrían ser:
+
+\begin{itemize}
+  \item Inspección automatizada en procesos industriales como por ejemplo:
+  comprobación del llenado de ampollas, comprobación de circuitos impresos
+  \item Sistemas de guiado en sistemas autónomos inteligentes.
+  \item Realidad aumentada.
+  \item Control por gestos en interfaces hombre máquina.
+  \item Extracción de información en imágenes complejas como por ejemplo: El
+  análisis de imágenes médicas, aéreas o submarinas.
+  \item Video vigilancia.
+\end{itemize}
+
+\paragraph{}
+Los componentes de un sistema de visión por computador dependen mucho del tipo
+de aplicación. Algunos sistemas pueden ser independientes y orientados a
+resolver algunos problemas de detección o de medición, mientras que otros pueden
+constituir un subsistema de un sistema mayor que a su vez puede tener otros
+subsistemas como por ejemplo actuadores mecánicos, bases de datos, interfaces
+hombre máquina, etc. Como podemos ver muchas de las funciones del sistema serán
+únicos según que aplicación. Sin embargo, existen algunas funciones típicas que
+pueden ser encontradas en la mayoría de los sistemas de visión por computador.
+Estas funciones son:
+\begin{itemize}
+  
+  \item  \textbf{Adquisición de Imágenes:} Una imagen digital puede
+  estar producida por uno o más sensores de imagen, los cuales pueden ser de varios tipos tales como: cámaras
+  sensibles a diferentes tipos de luz, radars, rangefinders, aparatos de
+  tomografía, cámaras de ultrasonidos, etc. Dependiendo del tipo de sensor, la
+  imagen resultante podrá ser en 2D, 3D o una secuencia de imágenes. La imagen
+  estará formada por pixels que podrán representar la intensidad de luz en ese
+  punto o otras medidas tales como la profundidad la absorción de sonido o ondas
+  electromagnéticas.
+  
+  \item \textbf{Preprocesado:} Normalmente antes de que se pueda aplicar un
+  algoritmo de visión por computador a una imagen para extraer información de esta, suele ser
+  necesario procesar los datos de la imagen para asegurar que satisface los
+  requisitos previos impuestos por el algoritmo. Algunos ejemplos de preprocesado
+  son:
+  \begin{itemize}
+    \item Escalado de la imagen.
+    \item Reducción de ruido.
+    \item Aumento del contraste.
+  \end{itemize}
+  
+  
+  \item \textbf{Extracción de características:} Se extraen características de la
+  imagen a varios niveles de complejidad. Algunos ejemplos son:
+  \begin{itemize}
+    \item Detección de bordes.
+    \item Localización de puntos de interés.
+  \end{itemize}
+  
+  Otras características más complejas estarían relacionadas con la textura la
+  forma o el movimiento.
+  
+  \item \textbf{Detección/Segmentación:} Normalmente en algún momento del
+  procesado se deciden qué áreas de la imagen son interesantes para ser
+  procesadas en profundidad. Un ejemplo sería:
+  
+  \begin{itemize}
+    \item Selección de un subconjunto de puntos de interés.
+    \item Segmentación de una o varias regiones de la imagen que contienen objetos
+    de interés.
+  \end{itemize}
+  
+  \item \textbf{Procesado de alto nivel:} En este paso la entrada suele ser
+  normalmente un conjunto pequeño de datos, por ejemplo un conjunto de puntos o una región que
+  debería contener un objeto específico. Aquí se realiza el resto de los trabajos de
+  la etapa de procesado, tales como:
+  
+  \begin{itemize}
+    \item Comprobar si los datos verifican el modelo especificado por la aplicación.
+    \item Estimación de parámetros.
+    \item Clasificación de un objeto detectado.
+    \item Comparar y combinar diferentes vistas del mismo objeto.
+  \end{itemize}
+  
+  \textbf{Realizar decisiones:} En este paso se realizan las decisiones finales
+  requeridas por la aplicación. Por ejemplo:
+  
+  \begin{itemize}
+    \item Pasar o Invalidar en inspecciones automáticas
+    \item Encontrado o no Encontrado en aplicaciones de reconocimiento.
+  \end{itemize}
+  
+\end{itemize}
+
+\paragraph{}
+Si bien en la adquisición de información visual se ha conseguido superar con
+creces las capacidades humanas, existiendo cámaras que pueden captar hasta
+quinientas mil imágenes por segundo con resoluciones que van más allá de lo
+percibible por el ojo humano; en el procesado de estas imágenes es donde todavía
+las capacidades de visión de los computadores distan mucho de las capacidades
+humanas.
+
+\paragraph{}
+Varios son los problemas que influyen en que las capacidades de los sistemas de
+visión por computador:
+\begin{itemize}
+  \item Necesidad de computo elevada: Los algoritmos de visión por ordenador
+  requieren de sistemas potentes para ser ejecutados, esto supone un handicap a la hora de
+  decidir.
+  \item No abundancia de hardware específico: En la actualidad la mayoría de los
+  ordenadores no disponen de un hardware específico para realizar funciones de
+  visión por ordenador.
+  \item Propiedades físicas del sistema: En ocasiones las propiedades físicas, el
+  método de refrigeración del sistema o el propio sistema, puede suponer un problema para
+  la aplicación a implementar. Ej: Quadcopter.
+  \item Alto consumo energético: El consumo energético influye tanto en el costo
+  como en la viabilidad de implementar una aplicación en la que la energía está limitada.
+  Ej: Un sistema autónomo inteligente cuya energía está limitada a la
+  proporcionada por sus baterías.
+  \item Alto costo: Todos los anteriores problemas descritos influyen
+  negativamente en el costo generando sistemas caros
+\end{itemize}
+
+\paragraph{}
+En este proyecto se comparan las ventajas de tener un hardware dedicado a la
+visión por computador frente al uso de un hardware de propósito general. Al
+mismo tiempo se ha buscado una sistema que permita dar solución a todos los
+problemas anteriores.
+
+\section{Soluciones.}
+\subsection*{}
+\subsubsection*{}
+
+\paragraph{}
+Este proyecto se ha desarrollado para comprobar cómo afectaría a la eficiencia
+de un sistema de visión por computador, si sus algoritmos en vez de ser
+implementados por software fuesen implementados por hardware. Para tal efecto se
+ha construido un sistema básico de visión por computador y se han efectuado una
+serie de pruebas de rendimiento.
+
+\paragraph{}
+Este sistema cuenta con una CPU Nios2 desarrollada por Altera para sus FPGAs. El
+Nios2 es una CPU orientada a sistemas embebidos de 32bits y tiene la ventaja de
+que su juego de instrucciones puede ser ampliado fácilmente. Por otra parte el
+sistema cuenta con una entrada de vídeo compuesto para obtener las imágenes a
+procesar y un LCD para mostrar los resultados.
+
+\paragraph{}
+Aprovechando la facilidad de esta CPU para ampliar su juego de instrucciones, se
+ha añadido una implementación hardware del algoritmo Sobel a su juego de
+instrucciones. Este algoritmo se ha usado para hacer las pruebas de rendimiento
+comparándolo con una versión escrita en C compilada para la misma CPU.
+
+\paragraph{}
+Como se puede ver en los resultados de las pruebas realizadas, anotados en este
+mismo documento, la implementación hardware permite procesar mucho mas rápido
+las imágenes para la misma frecuencia de reloj.
+
+\chapter{''Definición de requisitos.''}
+
+\section*{}
+\subsection*{}
+
+\subsubsection{Desarrollo de los subsistemas que conformarán el sistema base}
+
+\paragraph{}
+El primer subsistema desarrollado implementa el procesador, la memoria los relojes, así como las comunicaciones con los periféricos.
+
+\paragraph{}
+El segundos subsistema implementa el procesado desde la entrada de video hasta obtener un frame en formato RGB con una resolución de 800x600.
+
+\subsubsection{Modificación del juego de instrucciones del procesador NIOS 2.}
+\paragraph{}
+Se ha de añadir un conjunto de instrucciones que faciliten el calculo del algoritmo Sobel.
+
+\subsubsection{Implementar las funciones por software.}
+\paragraph{}
+Desarrollar dos métodos en C que implementen las instrucciones desarrolladas en el anterior requisito.
+
+\subsubsection{Implementar el firmware del sistema.}
+\paragraph{}
+El firmware es el software responsable de controlar las funciones del sistema. Se encargara de activar o desactivar el procesamiento por hardware de los algoritmos, así como el control de las interrupciones generadas por la pulsación de los botones y se encargará de mostrar la información pertinente por la pantalla. Por otra parte se encarga de configurar los diferentes circuitos integrados usados en el sistema.
+
+\subsubsection{Anotar resultados.}
+\paragraph{}
+Realizar varias pruebas ejecutando las versiones hardware y software; y anotar sus resultados para comparar su eficiencia.
+
+
+\chapter{''Herramientas y metodología.''}
+
+\section{Herramientas.}
+\subsection{Elementos Hardware}
+\subsubsection*{}
+
+\paragraph{}
+Como ya se comentó en apartados anteriores este proyecto se construirá a partir de diferentes soluciones proporcionadas por Altera.
+
+\paragraph{}
+La piedra angular será el Nios II Embedded Evaluation Kit, Cyclone III Edition.
+Este kit se compone de una placa principal que contiene la fpga y otros
+elementos básicos y una daughter board que contiene diversos circuitos integrados
+de apoyo junto con un LCD.
+
+\paragraph{}
+Entre los elementos que alberga la placa principal los destacables para este
+proyecto serían:
+
+\begin{itemize}
+\item Una FPGA Cyclone III EP3C25F324. Esta FPGA tiene aproximadamente unos 25000 elementos lógicos, 0.6Mb repartidos en 66 elementos de memoria de 9k, 16 multiplicadores de 18x18 bits, 4 PLLs y 214 I/Os.
+
+\item Un USB-Blaster II embebido en la placa para descargar la configuración de la FPGA desde el PC.
+
+\item Un chip de memoria DDR SDRAM de 32MB con un bus de 16 bits.
+
+\item 4 switches y 4 LEDs. Por restricciones de la FPGA solo se puede usar uno de los LEDs cuando se usa la memoria RAM.
+\end{itemize}
+
+\paragraph{}
+Por otra parte la daughter board proporciona varios tipos de entradas y salidas, aunque para este proyecto la única interesante es la entrada de vídeo compuesto. El vídeo procedente de esta entrada es decodificado por un ADV7180, que soporta entre otros formatos PAL, PAL60 y NTSC. Este decodificador convierte  la señal analógica al formato ITU-R BT.656 digital con una precisión de 10 bits.
+
+\paragraph{}
+El LCD está fabricado por Toppoly cuyo modelo es TD043MTEA1. Tiene un tamaño de
+4.3”, una resolución de 800x480 y proporciona una interfaz SPI 3 WIRE para
+configurar los distintos registros que controlan el LCD.
+
+\subsection{Elementos Software}
+\subsubsection*{}
+
+\paragraph{}
+Por otra parte se ha empleado la suite de desarrollo proporcionada por Altera,
+Quartus II. Esta suite proporciona distintas herramientas para facilitar las
+diferentes etapas que intervienen a la hora de desarrollar con FPGAs. Las
+herramientas usadas en este proyecto fueron:
+
+\begin{itemize}
+\item \textbf{QSys:} Esta herramienta genera de forma automática la lógica de interconexión
+entre los distintos módulos del sistema.
+
+\item \textbf{ModelSim Altera Edition:} Esta herramienta permite simular el comportamiento de
+un módulo, permitiendo ver el estado de los diferentes elementos del módulo en
+los diferentes períodos.
+
+\item \textbf{SignalTap:} Esta herramienta es un analizador lógico que permite analizar el
+estado del los diversos elementos del sistema en tiempo de ejecución.
+
+\item \textbf{Programmer:} Permite descargar un archivo de configuración ya compilado a la FPGA.
+
+\item \textbf{PinPlanner:} Permite asociar los pines de la FPGA a las entradas/salidas del sistema.
+\end{itemize}
+
+\subsection{Otras herramientas Altera }
+
+\paragraph{}
+Una de las ventajas de haber desarrollado el sistema con soluciones Altera, es el gran número de herramientas que Altera proporciona para facilitar la construcción de sistemas a medida. Entre las herramientas que proporciona se encuentra una gran base IPs. Una IP es un módulo que realiza una función determinada.
+
+\subsubsection{IPs de Altera Utilizadas}
+
+\paragraph{CPU NIOS II/f:}
+Es la version mas rápida de la CPU NIOS II entre cuyas características las mas destacables son:
+
+\begin{itemize}
+\item Tiene una cache para instrucciones y otra para datos.
+
+\item Pipeline de seis estados.
+
+\item Multiplicación en un solo ciclo.
+
+\item Predicción de saltos.
+
+\item Permite añadir hasta 256 instrucciones personalizadas al juego de instrucciones
+original.
+
+\end{itemize}
+
+\paragraph{}
+Por otra parte Altera también proporciona un IDE para desarrollar aplicaciones en C para el NIOS II. El IDE esta basado en Eclipse e integra varias herramientas que permiten realizar la mayoría de las acciones típicas del desarrollo de software.
+
+\paragraph{Nios II Floating-Point Custom Instructions:}
+Añade soporte al NIOS II para realizar operaciones en coma flotante.
+
+\paragraph{DDR SDRAM Controller:}
+Permite conectar un módulo de memoria DDR a un bus Avalon MM.
+
+\paragraph{Altera Video IP:}
+Es una suite de IPs que permiten realizar diversas tareas para el procesado digital de un flujo de vídeo.
+
+\subsubsection{Buses de conexión}
+
+\paragraph{}
+Para facilitar todavía más el uso de los diferentes módulos Altera proporciona una serie de buses que permiten la interconexión entre las diferentes IPs.
+
+\paragraph{Avalon-MM:}
+Permite el mapeo de varios elementos sobre un espacio de memoria. Este espacio es de lectura y escritura, donde pueden coexistir varios elementos maestros que accedan a varios elementos esclavos. Para evitar posibles problemas derivados por el acceso concurrente de dos o más elementos maestros a un mismo elemento esclavo, el bus proporciona un sistema de planificación Round-Robin.
+
+\paragraph{}
+Los Buses Avalon MM permiten un modo de acceso llamado modo ráfaga. En este modo el maestro enviará/recibirá al/del esclavo un dato proveniente de un conjunto de direcciones contiguas, durante un número determinado de ciclos. La forma mas fácil de garantizar que el maestro dispondrá de los datos necesarios para realizar la ráfaga es acumulándolos en un FIFO y comenzar el envío cuando el nivel de éste haya alcanzado un tamaño igual al de la ráfaga. Por otra parte como se vio anteriormente los Buses Avalon MM presentan un sistema de planificación Round Robin, esto nos garantiza que mientras que un maestro este accediendo al bus en el modo ráfaga, ningún otro maestro podrá interrumpirlo por lo que la transferencia se hará más rápido cuanto mayor sea el tamaño de la ráfaga, a costa de sacrificar velocidad de otros maestros. 
+
+\paragraph{Avalon-ST:}
+Este bus permite el envío de flujos de información de forma unidireccional entre dos elementos. Al ser un flujo unidireccional y solo entre dos elementos, la comunicación se simplifica mucho, reduciéndose el protocolo de handshake a una señal proveniente del emisor para indicar el deseo de iniciar la comunicación y otra señal proveniente del receptor para responder que la comunicación puede ser iniciada.
+
+\paragraph{}
+Este tipo de bus permite el envío de información empaquetada. Esta cualidad es utilizada en la suite Altera Video IP, concretamente en los flujos de vídeo utilizados en la comunicación de las diferentes IPs. En esta suite cada frame es enviado en dos paquetes, un primer paquete que proporciona la resolución del frame y si este se encuentra en modo entrelazado o progresivo; y un segundo paquete que contiene la información del color de cada uno de los píxeles que componen dicho frame. 
+
+\paragraph{Custom Instruction:}
+Una de las capacidades más interesantes del procesador Nios II es su capacidad para añadir instrucciones propias, lo que permite que pueda ser adaptado a un sin fin de situaciones. Para tal efecto Altera proporciona en su CPU el bus Custom Instruction. Dicho bus permite el paso de operadores a la lógica de la instrucción, el acceso a los registros internos de la CPU y al bus de opcode de las instrucciones personalizadas.  
+
+\paragraph{Avalon Interrupt:}
+Este tipo de bus permite el envío de una señal de interrupción al Nios II.
+ 
+\paragraph{Avalon Conduit:}
+Este bus permite agrupar un conjunto de señales arbitrarias, a las cuales el usuario puede dar el rol que más le convenga. Este bus se usa para interconectar IPs que cuyas necesidades no queden satisfechas con los anteriores buses o conectar IPs con el mundo exterior a la FPGA.
+
+\section{Metodología.}
+\subsection{Consideraciones}
+\subsubsection*{}
+
+\paragraph{}
+Al tratarse de un proyecto hardware se presentaran diversas peculiaridades propias de este tipo de proyectos. Una de las más notadas sin duda será el hecho de que la mayor parte de las operaciones se realizarán en paralelo necesitándose por tanto diversos métodos de sincronización. Se utilizarán señales de reloj y flags para sincronizar la ejecución de los diferentes módulos.
+
+\paragraph{}
+Otra particularidad será tener en cuenta los tiempos que tarda cada módulo en terminar, porque es posible que un trigger que inicia un módulo, se dispare antes de que este modulo haya finalizado la anterior tarea.
+
+\paragraph{}
+También es importante establecer métodos para controlar el acceso concurrente a diferentes medios. Esto se realiza gracias a las interfaces Avalon comentadas anteriormente que disponen de señales para indicar si un determinado elemento esta en uso o no. Por otra parte como Verilog no permite la asignación desde diferentes módulos a un registro y estas se producen al final de la ejecución del módulo, la concurrencia entre módulos es prácticamente nula.
+
+\paragraph{}
+Por otra parte también se presentan problemas de tipo electrónico tales como: frecuencia máxima, capacitancias e inductancias entre pistas, corriente máxima que puede dar una fuente, etc. Afortunadamente el NEEK es un hardware que ya ha sido diseñado teniendo en cuenta estos problemas con lo que a la hora de trabajar con él, lo único que habrá que tener en cuenta será el de no contrariar ninguna de las especificaciones de uso.
+
+\subsection{Pasos para el desarrollo}
+\subsubsection*{}
+\paragraph{}
+Para comenzar el desarrollo con el NEEK lo primero que hay que hacer es crear un nuevo proyecto en Quartus 2, definirle el tipo de FPGA y el archivo que servirá de modulo cabecera. Este modulo sera el que conecte sus entradas y salidas con los pines de la FPGA.
+
+\paragraph{}
+Una vez definido el proyecto dependiendo de la amplitud del mismo habrán varios caminos, como trabajar directamente con un lenguaje HDL o arrastrando módulos de forma gráfica; sin embargo el camino normal para un proyecto de mediana o gran envergadura será utilizar QSys como herramienta para construir el sistema.
+
+\paragraph{}
+QSys permite de una forma gráfica acceder a una extensa librería de IPs proporcionada por Altera e incrementar dicha librería con IPs realzados por nosotros mismos. Estos módulos deben utilizar como entrada y salida los buses comentados con anterioridad.
+
+\paragraph{}
+Una vez construido y generado el sistema, hay que agregarlo al proyecto, instanciarlo desde el modulo cabecera y conectar las entradas y salidas del modulo cabecera a las entradas y salidas del sistema generado por QSys.
+
+\paragraph{}
+A continuación hay que definir la asignación de los pines de la FPGA sobre el módulo cabecera, esto se realiza con el PinPlanner.
+
+\paragraph{}
+Para terminar se genera el sistema y se programa sobre la FPGA.
+
+\paragraph{}
+Estos pasos describen la construcción de un sistema ideal que no tiene ningún fallo, sin embargo a la hora de la verdad es conveniente saber que Altera proporciona dos herramientas muy útiles para la depuración de errores. 
+
+\paragraph{}
+La primera sería el ModelSim Altera Edition que permite simular de forma independiente las IPs desarrollados sin necesidad de generar el sistema.
+
+\paragraph{}
+Por otra parte también disponemos del SignalTap un analizador lógico que puede ser añadido una vez el sistema haya sido generado. Para ello tenemos que definir las señales que queremos analizar y la señal de reloj que utilizan y luego volver a generar el sistema con el analizador lógico integrado. Esto tiene el problema de que el analizador lógico consume tanto elementos lógicos como elementos de memoria y es necesaria dos compilaciones con el tiempo que ello conlleva.
+
+\paragraph{}
+Como ya se comento antes para sistemas que utilicen el NIOS II Altera proporciona un IDE para desarrollar aplicaciones en C/C++. Para comenzar a desarrollar aplicaciones lo primero sera buscar el BSP de nuestro sistema generado por QSys. Este archivo proporciona una descripción del sistema construido necesaria para generar el sistema operativo HAL. HAL es un SO que proporciona el conjunto de librerías básico de C/C++. además de algunos drivers para manejar las IPs que así lo requieran. Una vez seleccionado el BSP ya podemos empezar a desarrollar aplicaciones en C como si de cualquier otra plataforma se tratase.
+
+\chapter{''Los Subsistemas.''}
+\subsection*{}
+\subsubsection*{}
+
+\paragraph{}
+En este capítulo se hablara de como se han implementado los subsistemas de los se compone el sistema a implementar, concretamente: el principal y el de vídeo. 
+
+\section{Subsistema Principal}
+\subsection*{}
+\subsubsection*{}
+
+\paragraph{}
+En las Figuras~\ref{fig:Subsistema Principal 1-3},~\ref{fig:Subsistema Principal 2-3}~y~\ref{fig:Subsistema Principal 3-3} se puede observar como esta compuesto el sistema principal.
+
+\begin{figure}[p]
+\centering
+\includegraphics[height=0.95\textheight,
+width=0.95\textwidth]{./figuras/SistemaPrincipal/sistemaprincipalpagina1.png}
+\caption{Subsistema Principal 1-3}
+\label{fig:Subsistema Principal 1-3}
+\end{figure}
+
+\begin{figure}[p]
+\centering
+\includegraphics[height=0.95\textheight,
+width=0.95\textwidth]{./figuras/SistemaPrincipal/sistemaprincipalpagina2.png}
+\caption{Subsistema Principal 2-3}
+\label{fig:Subsistema Principal 2-3}
+\end{figure}
+
+\begin{figure}[p]
+\centering
+\includegraphics[height=0.5\textheight,
+width=0.95\textwidth]{./figuras/SistemaPrincipal/sistemaprincipalpagina3.png}
+\caption{Subsistema Principal 3-3}
+\label{fig:Subsistema Principal 3-3}
+\end{figure}
+
+\paragraph{}
+Como se puede apreciar los buses de datos y de instrucciones de la CPU están conectados a un bridge que adapta la velocidad de reloj de los dispositivos más lentos a la del bus del sistema. A su vez tenemos conectado al bus del sistema: la memoria RAM, diversos periféricos que permiten medir el tiempo y el subsistema de vídeo.
+
+\paragraph{}
+También hay un PLL para generar la señal de reloj del flujo de salida de vídeo que va al LCD.
+
+\paragraph{}
+Como se puede observar se ha definido una conexión de tipo SPI. Esta conexión permite configurar el LCD, para ello hay un conjunto de librerías que facilitan la tarea de configurarlo desde C. 
+
+\paragraph{}
+Por otra parte se tiene otra conexión tipo I2C. Esta conexión permite configurar el  decodificador de vídeo. También tenemos dos buses de 4 bits para el control de los LED y de los pulsadores.
+
+\paragraph{}
+El sistema de vídeo tiene acceso directo al bus del sistema permitiéndole leer y escribir directamente sobre la memoria RAM.
+
+\section{Subsistema de Vídeo}
+\subsection*{}
+\subsubsection*{}
+
+\paragraph{}
+Por otra parte en la Figura~\ref{fig:Sistema Video} se puede apreciar como está construido el subsistema de vídeo.
+\begin{figure}[p]
+\centering
+\includegraphics[height=0.95\textheight,
+width=0.95\textwidth]{./figuras/SistemadeVideo/sistemadevideopagina1.png}
+\caption{Subsistema Vídeo}
+\label{fig:Sistema Video}
+\end{figure}
+
+\paragraph{}
+Este sistema realiza varias acciones que se analizaran en las siguientes secciones.
+
+\subsection{Obtención del flujo de vídeo}
+\subsubsection*{}
+
+\paragraph{}
+La primera es transformar un flujo de vídeo en formato ITU-R BT.656 a el formato RGB 4:4:4. Se eligió trabajar en este formato por ser el más fácil de manipular a la hora de trabajar. Para realizar esta acción se han utilizado varios módulos de Altera:
+
+\paragraph{}
+El primero es el \textit{''Clocked Video Input:''} Este modulo se encarga de convertir las señales provenientes del decodificador de vídeo a un flujo Vídeo Avalon.
+
+\paragraph{}
+Una vez que tenemos un flujo de vídeo Avalon podemos utilizar el resto de IPs de la suite Altera Video IP.
+
+\paragraph{}
+La siguiente IP que nos encontramos es el \textit{''Color Plane Sequencer''}, este módulo hace que los planos ''Y'' ''C'' del flujo pasen de estar en secuencia a estar en paralelo. Esto facilita el manejo de la información porque se puede disponer de toda la información de un píxel de forma simultanea.
+
+\paragraph{}
+Después utilizamos un \textit{''Deinterlacer} para desentrelazar la señal de vídeo. Esto es importante porque el Sobel trabaja mirando los píxeles de las líneas inferior y superior.
+
+\paragraph{}
+A continuación utilizamos la IP \textit{''Chroma Resampler''} para convertir el flujo de muestreo con formato 4:2:2 a formato 4:4:4, con esto conseguimos que todas las componentes tengan la misma longitud en bits por lo que facilita su manejo.
+
+\paragraph{}
+Seguidamente escalamos los frames con un \textit{''Scaller''} para que sus dimensiones coincidan con las del LCD.
+
+\paragraph{}
+Para finalizar con el modulo \textit{''CSC''} se cambia el espacio de color YCbCr a RGB, que como ya hemos dicho resulta mas fácil de manejar.
+
+\paragraph{}
+De esta forma hemos conseguido un flujo de video RGB Avalon en paralelo de 24 bits de ancho con 8 bits por canal de color cuyos frames tienen las dimensiones adecuadas para ser adecuadas para ser mostrados en un LCD. Este flujo es inyectado en el modulo de Sobel Instuction Set para ser tratado.
+
+\subsection{Mostrar el frame}
+\subsubsection*{}
+
+\paragraph{}
+Otra de las acciones que realiza este sistema es la de leer de memoria un frame y mostrarlo por pantalla. Para ello volvemos hacer uso de la suite Altera Video IP.
+
+\paragraph{}
+La primera IP usada en esta tarea es el \textit{''FrameReader''}, esta IP lee un frame en formato RGB paralelo de 24 bits y lo transforma a un flujo de vídeo Avalon. A continuación con un \textit{''Clocked Video Output''} se genera el conjunto de señales necesarias para mostrar el frame en el LCD.
+
+\subsection{Procesado de la información}
+\subsubsection*{}
+\paragraph{}
+La última de las acciones del subsistema de vídeo consiste en aplicar varios procesados a los frames y almacenar los resultados en memoria. Esta acción sera el núcleo de este proyecto, donde se ha usado una IP desarrollada por mi, \textit{''Sobel Instruction Set''}, que contiene las instrucciones necesarias para aplicar el Sobel en un flujo de vídeo. Para su comunicación con el exterior, presenta cuatro buses: dos de tipo Avalon MM para la lectura y escritura de datos en la memoria, uno de tipo Avalon ST para la entrada del flujo de vídeo y otro de tipo Custom Instruction para comunicar la IP con el procesador Nios II. 
+
+\paragraph{}
+Al contener varias instrucciones ha sido necesario añadir una lógica de control para decodificar los distintos Opcodes que vienen del procesador. Por otra parte se ha utilizado FIFOs para aumentar las tasas de escritura y lectura de los Buses Avalon MM mediante el uso del modo ráfaga; y caches para disminuir accesos innecesarios por parte de los mismos.
+
+\paragraph{}
+En el capitulo~\ref{sec:SIS} se estudiará más en profundidad las diferentes instrucciones que componen el \textit{''Sobel Instruction Set''}.
+
+\chapter{''El Sobel Instruction Set.''} \label{sec:SIS}
+\section*{}
+\subsection*{}
+\subsubsection*{}
+
+\paragraph{}
+Como ya se comentó el Sobel Instruction Set es el alma central del proyecto. Esta compuesto por tres instrucciones, básicas para el correcto cálculo del Sobel: FrameWrite, AGrises y Sobel. Estas serán estudiadas en las siguientes secciones de este capítulo. Por otra parte estas funciones hacen uso de varios módulos de apoyo que serán comentados en la secciones que corresponda. Por último En el anexo~\ref{fig:Sistema Video} se puede ver los códigos de cada uno de los módulos que conforman el Sobel Instruction Set.
+
+\section{FrameWriter}
+\subsection*{}
+\subsubsection*{}
+
+\paragraph{}
+La primera instrucción que se debe ejecutar para poder calcular el Sobel es FrameWriter. Esta instrucción es fundamental porque es la encargada de grabar un frame completo en memoria. Para ello una vez activada queda a la escucha en bus Avalon ST, a la espera de detectar el comienzo de un paquete de datos con la información de los píxeles de un frame. Una vez detectado el comienzo del paquete se empieza a grabar la información píxel a píxel al modulo ram\_w que se encargara de gestionar la escritura a ráfagas de la información.
+
+\paragraph{}
+En los listados~\ref{lst:DeteccionFW}~y~\ref{lst:EscrituraFW} se puede ver en detalle el sistema de detección de comienzo de frame y la escritura respectivamente. 
+
+\lstinputlisting[caption=Detección de Frame,label=lst:DeteccionFW,linerange={68-69},firstnumber=68]{./SISSources/FrameWriter.v}
+
+\paragraph{}
+Como se puede ver cuando se detecta el inicio de un paquete \textit{din\_sop}, el dato de entrada es 0 \textit{din\_data}, el ciclo es válido \textit{din\_valid} y la instrucción esta en ejecución \textit{run}; se activa el flag \textit{video\_reg}.
+
+\paragraph{}
+Por otra parte \textit{video\_reg} se desactiva cuando se detecta el fin de un paquete \textit{din\_eop}, el ciclo es válido \textit{din\_valid} y éste estaba activado.
+
+\lstinputlisting[caption=Escritura FrameWriter,label=lst:EscrituraFW,linerange=71-74,firstnumber=73]{./SISSources/FrameWriter.v}
+
+\paragraph{}
+La escritura en el modulo ram\_w se produce cuando el módulo ha sido activado, el flag \textit{video\_reg} se encuentra activo y el emisor esta enviando datos validos \textit{din\_valid}. Si el módulo ram\_w indica que sólo queda un hueco en su FIFO, la instrucción puede ordenar al emisor que pare haciendo uso de la señal \textit{din\_ready}. 
+
+\section{AGrises}
+\subsubsection*{}
+\paragraph{}
+Una vez que se tiene un frame en memoria, el siguiente paso necesario sera convertirlo a grises. Para ello tenemos la función \textit{Agrises}. Esta función hace uso del ya conocido modulo ram\_w y del modulo ram\_r para gestionar las escrituras y lecturas en ráfaga a/desde la memoria RAM.
+
+\paragraph{}
+Esta función hace la conversión de un píxel en dos etapas. El motivo de hacerlo en dos etapas en vez de una se debe a un problema a la hora de calcular la ecuación~\ref{eq:fgrismala}.
+
+\begin{equation}\label{eq:fgrismala}
+gris = \frac{30*rojo + 59*verde + 11*azul}{100}
+\end{equation}
+
+\paragraph{}
+Si tenemos en cuenta que cada componente de color es un numero de 8 bits, el resultado del dividendo será un número de 15 bits. Por lo tanto tendremos tres multiplicaciones de 8 bits, tres sumas de 14 bits y una división de 15 bits, que no se pueden realizar en el tiempo que da un solo ciclo, incluso si se hacen las 3 multiplicaciones en paralelo porque de por sí la división de 15 bits no puede ser ejecutada en un solo ciclo. 
+
+\paragraph{}
+Para evitar este problema se optó por realizar la división en dos partes, quedando la ecuación anterior como se muestra en la ecuación~\ref{eq:fgrisbuena}.
+
+\begin{subequations}\label{eq:fgrisbuena}
+\begin{align}
+        g\_aux_{[14..0]}&=30*rojo + 59*verde + 11*azul\\
+        gris &= \frac{g\_aux_{[14..8]}}{0.5}+\frac{g\_aux_{[14..8]}}{2}+\frac{g\_aux_{[14..8]}}{19}+\frac{g\_aux_{[7..0]}}{64}
+\end{align}
+\end{subequations}
+
+\paragraph{}
+Ahora todas las divisiones son de 8 bits, por lo que se pueden ejecutar más rápido y separar las que haga falta.
+
+\paragraph{}
+Para que se inicie la primera etapa tienen que darse una serie de condiciones que se pueden observar en el listado~\ref{lst:LecturaAG}.
+
+\lstinputlisting[caption=Lectura AGrises,label=lst:LecturaAG,linerange=92-92,firstnumber=92]{./SISSources/AGrises.v}
+
+\paragraph{}
+Una de las condiciones es que en el FIFO de ram\_r haya suficientes elementos para completar una ráfaga. Otra que haya espacio en el FIFO de ram\_w. También es necesario que la función este en ejecución. Por último el registro stages debe de estar a cero, lo que indica que no se esta procesando algún otro píxel.
+
+\paragraph{}
+En el listado~\ref{lst:EtapasAG} se puede ver el código correspondiente a las dos etapas. En la primera etapa calculamos g\_aux y la primera y segunda fracción de gris; y en la segunda etapa terminamos de calcular gris.
+
+\lstinputlisting[caption=Etapas AGrises,label=lst:EtapasAG,linerange=69-90,firstnumber=69]{./SISSources/AGrises.v}
+
+\paragraph{}
+Una vez calculado el valor de gris en la segunda etapa, éste se pasa al módulo ram\_w que se encargará de escribirlo en la memoria RAM. Este proceso se puede observar en el listado~\ref{lst:EscrituraAG}
+
+\lstinputlisting[caption=Etapas AGrises,label=lst:EscrituraAG,linerange=96-97,firstnumber=96]{./SISSources/AGrises.v}
+
+\section{Sobel}
+\subsubsection*{}
+\paragraph{}
+Una vez que tenemos un frame en escala de grises en memoria, podremos calcular el Sobel propiamente dicho. Para esta tarea se dispone de la función Sobel. Esta función utilizará nuevamente el módulo ram\_w para escribir los resultados en memoria, sin embargo para las lecturas se ha optado por utilizar una memoria cache, implementada en el módulo cache\_sobel.
+
+\paragraph{}
+El algoritmo Sobel recorre píxel a píxel el frame, analizando los píxeles adyacentes del píxel para el cual se está calculando el valor de Sobel. Esto quiere decir que el uso de la memoria cache beneficia enormemente al Sobel porque ahorra tener que estar constantemente accediendo a memoria para obtener datos de las líneas actual, superior e inferior. Por otra parte esta memoria puede ir obteniendo los datos de líneas siguientes mientras se calculan las diferentes etapas en el calculo del Sobel, este paralelismo permite reducir significativamente las latencias de lectura.
+
+\paragraph{}
+La memoria cache implementada puede almacenar hasta un total de 10 líneas de 800 píxeles, realizar una lectura y una escritura de forma simultanea; y utiliza una política de remplazo FIFO. La mejora obtenida con respecto a la version preliminar que usaba el módulo ram\_r fue de alrededor de un cien por cien.
+
+\paragraph{}
+En la ecuación~\ref{eq:sobel} podemos ver la expresión matemática del algoritmo para calcular el gradiente Sobel.
+
+\begin{subequations}\label{eq:sobel}
+\begin{align}
+\begin{bmatrix}
+G_x
+\end{bmatrix}=
+\begin{bmatrix}
+-1 & 0 & 1\\
+-2 & 0 & 2\\
+-1 & 0 & 1
+\end{bmatrix}*
+\begin{bmatrix}
+g_{nw} & g_n & g_{ne}\\
+g_w & g_c & g_e\\
+g_{sw} & g_s & g_{se}
+\end{bmatrix}\label{eq:sobelgx}\\
+\begin{bmatrix}
+G_y
+\end{bmatrix}=
+\begin{bmatrix}
+-1 & -2 & -1\\
+0 & 0 & 0\\
+1 & 2 & 1
+\end{bmatrix}*
+\begin{bmatrix}
+g_{nw} & g_n & g_{ne}\\
+g_w & g_c & g_e\\
+g_{sw} & g_s & g_{se}
+\end{bmatrix}\label{eq:sobelgy}\\
+G=\sqrt{G_x^2 + G_y^2}\label{eq:sobelg}
+\end{align}
+\end{subequations}
+
+\paragraph{}
+Como se puede observar la ecuación~\ref{eq:sobelgx} calcula la componente x del gradiente, para ello calcula la diferencia de brillo entre los píxeles que están a la derecha, con los que están a la izquierda, ponderando el valor de los que son adyacentes el doble de los que están en las diagonales. La ecuación~\ref{eq:sobelgy} hace lo propio pero para la componente y del gradiente que es la vertical.
+
+La ecuación~\ref{eq:sobelg} calcula la magnitud gradiente resultante de las componentes x e y. Sin embargo esta presenta un problema a la hora de implementarlo en una FPGA. La raíz cuadrada consume demasiados elementos lógicos y tiempo, sin embargo según podemos leer en [p. 218] \citet{Myler} en este caso la magnitud del gradiente puede ser aproximada de forma aceptable mediante la ecuación~\ref{eq:sobelgaprox}.
+
+\begin{equation}\label{eq:sobelgaprox}
+G_{aprox}=|G_x| + |G_y|
+\end{equation}
+
+\paragraph{}
+El Sobel a sido implementado en 8 etapas. Como se puede ver en el listado~\ref{lst:EtapaIaS}, la primera etapa comenzara siempre que:
+
+\begin{itemize}
+ \item No se este procesando otro píxel \textit{stage}.
+ \item Queden píxeles por procesar \textit{pixel\_counter}.
+ \item Haya espacio en el FIFO de ram\_w \textit{usedw\_fifo\_out}.
+ \item Se dispongan de al menos tres líneas en la cache \textit{cache\_valid\_lines}.
+\end{itemize}
+
+\lstinputlisting[caption=Etapas Sobel,label=lst:EtapaIaS,linerange=87-87,firstnumber=87]{./SISSources/Sobel.v}
+
+\paragraph{}
+Cuando se activa el flag go\_sobel, se comprobará si el píxel a analizar se encuentra en la columna 0. Esto se hace porque en función de que sea esa columna o no, se podrán reutilizar los elementos de la matriz g o no y la columna 0 de g valdrá 0 o no este valor de 0 se da porque al estar en la primera columna se asume que el valor de fuera de la imagen es 0. En el listado~\ref{lst:EtapaIbS} se puede ver el código que realiza esta acción.
+
+\lstinputlisting[caption=Etapas Sobel,label=lst:EtapaIbS,linerange=227-240,firstnumber=227]{./SISSources/Sobel.v}
+
+\paragraph{}
+Por otra parte cuando esté flag este activo, se configuran las dirección en cache del píxel superior izquierdo con respecto al píxel a analizar y se configurará el número de píxeles a leer. 6 en el caso de que sea la columna 0 y 3 en caso contrario.
+
+\paragraph{}
+Al mismo tiempo se iniciará la primera etapa lo que desactivará el flag go\_sobel.
+
+\paragraph{}
+Durante la primera etapa se leerá de la cache los píxeles necesarios y se almacenarán en la casilla correspondiente de g. En caso de que el píxel esté fuera de la imagen se asignará un valor de 0 tal y como se puede observar en el listado~\ref{lst:Etapa1S}.
+
+\lstinputlisting[caption=Etapa 1 Sobel,label=lst:Etapa1S,linerange=241-247,firstnumber=241]{./SISSources/Sobel.v}
+
+\paragraph{}
+En la segunda etapa se calcularán las componentes izquierda, derecha, superior e inferior. Como se puede ver en el listado~\ref{lst:Etapa2S}
+
+\lstinputlisting[caption=Etapa 2 Sobel,label=lst:Etapa2S,linerange=248-253,firstnumber=241]{./SISSources/Sobel.v}
+
+\paragraph{}
+En la tercera etapa se calcularán los valores absolutos de las compentes horizontal y vertical. Como se puede ver en el listado~\ref{lst:Etapa3S}
+
+\lstinputlisting[caption=Etapa 3 Sobel,label=lst:Etapa3S,linerange=254-257,firstnumber=241]{./SISSources/Sobel.v}
+
+\paragraph{}
+En la cuarta etapa se calculará la magnitud del gradiente tal y como se explicó anteriormente. Como se puede ver en el listado~\ref{lst:Etapa4S}
+
+\lstinputlisting[caption=Etapa 4 Sobel,label=lst:Etapa4S,linerange=258-260,firstnumber=241]{./SISSources/Sobel.v}
+
+\paragraph{}
+Las etapas 5 y 6 hacen que el color de los bordes sea negro y el de las llanuras blanco. Por último la etapa 7 se pasa el valor resultante a ram\_w para que lo escriba en memoria. Esto se puede observar en los listados~\ref{lst:Etapa56S}~y~\ref{lst:Etapa7S} respectivamente.
+
+\lstinputlisting[caption=Etapas 5 y 6 Sobel,label=lst:Etapa56S,linerange=261-266,firstnumber=261]{./SISSources/Sobel.v}
+
+\lstinputlisting[caption=Etapa 7 Sobel,label=lst:Etapa7S,linerange=271-272,firstnumber=271]{./SISSources/Sobel.v}
+
+\backmatter
+
+\bibliographystyle{abbrvnat}
+\bibliography{biblio}
+
+\end{document}

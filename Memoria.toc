@@ -1,0 +1,175 @@
+\select@language {spanish}
+\contentsline {chapter}{\numberline {1}''Descripci\IeC {\'o}n del documento.''}{1}
+\contentsline {paragraph}{}{1}
+\contentsline {chapter}{\numberline {2}''Introducci\IeC {\'o}n.''}{3}
+\contentsline {section}{\numberline {2.1}Descripci\IeC {\'o}n del problema.}{3}
+\contentsline {paragraph}{}{3}
+\contentsline {paragraph}{}{3}
+\contentsline {paragraph}{}{4}
+\contentsline {paragraph}{}{4}
+\contentsline {paragraph}{}{4}
+\contentsline {paragraph}{}{5}
+\contentsline {paragraph}{}{6}
+\contentsline {paragraph}{}{6}
+\contentsline {paragraph}{}{7}
+\contentsline {section}{\numberline {2.2}Soluciones.}{7}
+\contentsline {paragraph}{}{7}
+\contentsline {paragraph}{}{7}
+\contentsline {paragraph}{}{7}
+\contentsline {paragraph}{}{8}
+\contentsline {chapter}{\numberline {3}''Definici\IeC {\'o}n de requisitos.''}{9}
+\contentsline {subsubsection}{Desarrollo de los subsistemas que conformar\IeC {\'a}n el sistema base}{9}
+\contentsline {paragraph}{}{9}
+\contentsline {paragraph}{}{9}
+\contentsline {subsubsection}{Modificaci\IeC {\'o}n del juego de instrucciones del procesador NIOS 2.}{9}
+\contentsline {paragraph}{}{9}
+\contentsline {subsubsection}{Implementar las funciones por software.}{9}
+\contentsline {paragraph}{}{9}
+\contentsline {subsubsection}{Implementar el firmware del sistema.}{9}
+\contentsline {paragraph}{}{9}
+\contentsline {subsubsection}{Anotar resultados.}{10}
+\contentsline {paragraph}{}{10}
+\contentsline {chapter}{\numberline {4}''Herramientas y metodolog\IeC {\'\i }a.''}{11}
+\contentsline {section}{\numberline {4.1}Herramientas.}{11}
+\contentsline {subsection}{\numberline {4.1.1}Elementos Hardware}{11}
+\contentsline {paragraph}{}{11}
+\contentsline {paragraph}{}{11}
+\contentsline {paragraph}{}{11}
+\contentsline {paragraph}{}{12}
+\contentsline {paragraph}{}{12}
+\contentsline {subsection}{\numberline {4.1.2}Elementos Software}{12}
+\contentsline {paragraph}{}{12}
+\contentsline {subsection}{\numberline {4.1.3}Otras herramientas Altera }{12}
+\contentsline {paragraph}{}{12}
+\contentsline {subsubsection}{IPs de Altera Utilizadas}{13}
+\contentsline {paragraph}{CPU NIOS II/f:}{13}
+\contentsline {paragraph}{}{13}
+\contentsline {paragraph}{Nios II Floating-Point Custom Instructions:}{13}
+\contentsline {paragraph}{DDR SDRAM Controller:}{13}
+\contentsline {paragraph}{Altera Video IP:}{13}
+\contentsline {subsubsection}{Buses de conexi\IeC {\'o}n}{13}
+\contentsline {paragraph}{}{13}
+\contentsline {paragraph}{Avalon-MM:}{13}
+\contentsline {paragraph}{}{14}
+\contentsline {paragraph}{Avalon-ST:}{14}
+\contentsline {paragraph}{}{14}
+\contentsline {paragraph}{Custom Instruction:}{14}
+\contentsline {paragraph}{Avalon Interrupt:}{14}
+\contentsline {paragraph}{Avalon Conduit:}{14}
+\contentsline {section}{\numberline {4.2}Metodolog\IeC {\'\i }a.}{15}
+\contentsline {subsection}{\numberline {4.2.1}Consideraciones}{15}
+\contentsline {paragraph}{}{15}
+\contentsline {paragraph}{}{15}
+\contentsline {paragraph}{}{15}
+\contentsline {paragraph}{}{15}
+\contentsline {subsection}{\numberline {4.2.2}Pasos para el desarrollo}{15}
+\contentsline {paragraph}{}{15}
+\contentsline {paragraph}{}{16}
+\contentsline {paragraph}{}{16}
+\contentsline {paragraph}{}{16}
+\contentsline {paragraph}{}{16}
+\contentsline {paragraph}{}{16}
+\contentsline {paragraph}{}{16}
+\contentsline {paragraph}{}{16}
+\contentsline {paragraph}{}{16}
+\contentsline {paragraph}{}{17}
+\contentsline {chapter}{\numberline {5}''Los Subsistemas.''}{19}
+\contentsline {paragraph}{}{19}
+\contentsline {section}{\numberline {5.1}Subsistema Principal}{19}
+\contentsline {paragraph}{}{19}
+\contentsline {paragraph}{}{19}
+\contentsline {paragraph}{}{19}
+\contentsline {paragraph}{}{19}
+\contentsline {paragraph}{}{23}
+\contentsline {paragraph}{}{23}
+\contentsline {section}{\numberline {5.2}Subsistema de V\IeC {\'\i }deo}{23}
+\contentsline {paragraph}{}{23}
+\contentsline {paragraph}{}{23}
+\contentsline {subsection}{\numberline {5.2.1}Obtenci\IeC {\'o}n del flujo de v\IeC {\'\i }deo}{23}
+\contentsline {paragraph}{}{23}
+\contentsline {paragraph}{}{23}
+\contentsline {paragraph}{}{23}
+\contentsline {paragraph}{}{23}
+\contentsline {paragraph}{}{25}
+\contentsline {paragraph}{}{25}
+\contentsline {paragraph}{}{25}
+\contentsline {paragraph}{}{25}
+\contentsline {paragraph}{}{25}
+\contentsline {subsection}{\numberline {5.2.2}Mostrar el frame}{25}
+\contentsline {paragraph}{}{25}
+\contentsline {paragraph}{}{25}
+\contentsline {subsection}{\numberline {5.2.3}Procesado de la informaci\IeC {\'o}n}{25}
+\contentsline {paragraph}{}{25}
+\contentsline {paragraph}{}{26}
+\contentsline {paragraph}{}{26}
+\contentsline {chapter}{\numberline {6}''El Sobel Instruction Set.''}{27}
+\contentsline {paragraph}{}{27}
+\contentsline {section}{\numberline {6.1}FrameWriter}{27}
+\contentsline {paragraph}{}{27}
+\contentsline {paragraph}{}{28}
+\contentsline {paragraph}{}{28}
+\contentsline {paragraph}{}{28}
+\contentsline {paragraph}{}{28}
+\contentsline {section}{\numberline {6.2}AGrises}{28}
+\contentsline {paragraph}{}{28}
+\contentsline {paragraph}{}{29}
+\contentsline {paragraph}{}{29}
+\contentsline {paragraph}{}{29}
+\contentsline {paragraph}{}{29}
+\contentsline {paragraph}{}{29}
+\contentsline {paragraph}{}{29}
+\contentsline {paragraph}{}{30}
+\contentsline {paragraph}{}{30}
+\contentsline {section}{\numberline {6.3}Sobel}{31}
+\contentsline {paragraph}{}{31}
+\contentsline {paragraph}{}{31}
+\contentsline {paragraph}{}{31}
+\contentsline {paragraph}{}{31}
+\contentsline {paragraph}{}{31}
+\contentsline {paragraph}{}{32}
+\contentsline {paragraph}{}{32}
+\contentsline {paragraph}{}{33}
+\contentsline {paragraph}{}{33}
+\contentsline {paragraph}{}{33}
+\contentsline {paragraph}{}{33}
+\contentsline {paragraph}{}{34}
+\contentsline {paragraph}{}{34}
+\contentsline {paragraph}{}{34}
+\contentsline {chapter}{\numberline {7}''El Firmware''}{35}
+\contentsline {paragraph}{}{35}
+\contentsline {section}{\numberline {7.1}Hardware Abstraction Layer}{35}
+\contentsline {section}{\numberline {7.2}Librer\IeC {\'\i }as Proporcionadas por Altera}{35}
+\contentsline {paragraph}{}{35}
+\contentsline {subsection}{\numberline {7.2.1}alt\_tpo\_lcd}{36}
+\contentsline {paragraph}{}{36}
+\contentsline {subsection}{\numberline {7.2.2}audio\_tvdecoder}{36}
+\contentsline {paragraph}{}{36}
+\contentsline {subsection}{\numberline {7.2.3}framereader}{37}
+\contentsline {paragraph}{}{37}
+\contentsline {subsection}{\numberline {7.2.4}alt\_video\_display, fonts, graphics\_lib}{37}
+\contentsline {paragraph}{}{37}
+\contentsline {subsubsection}{alt\_video\_display}{37}
+\contentsline {subsubsection}{fonts}{37}
+\contentsline {subsubsection}{graphics\_lib}{37}
+\contentsline {section}{\numberline {7.3}Librer\IeC {\'\i }as Desarrolladas por Mi}{37}
+\contentsline {subsection}{\numberline {7.3.1}keyhandler}{37}
+\contentsline {paragraph}{}{37}
+\contentsline {subsection}{\numberline {7.3.2}Sobel Function Set}{38}
+\contentsline {paragraph}{}{38}
+\contentsline {paragraph}{}{38}
+\contentsline {section}{\numberline {7.4}Programa Principal}{38}
+\contentsline {paragraph}{}{38}
+\contentsline {chapter}{\numberline {8}''El Sistema en Acci\IeC {\'o}n''}{39}
+\contentsline {section}{\numberline {8.1}Funcionamiento}{39}
+\contentsline {section}{\numberline {8.2}Resultados}{39}
+\contentsline {chapter}{Ap\IeC {\'e}ndices}{}
+\contentsline {chapter}{\numberline {A}''C\IeC {\'o}digo Fuente Verilog''}{43}
+\contentsline {subsubsection}{Sobel Instruction Set}{43}
+\contentsline {subsubsection}{RAM W}{48}
+\contentsline {subsubsection}{RAM R}{51}
+\contentsline {subsubsection}{FrameWriter}{55}
+\contentsline {subsubsection}{AGrises}{57}
+\contentsline {subsubsection}{Sobel}{59}
+\contentsline {subsubsection}{Sobel Cache}{65}
+\contentsline {chapter}{\numberline {B}''C\IeC {\'o}digo Fuente C''}{71}
+\contentsline {subsubsection}{Programa Principal}{71}
