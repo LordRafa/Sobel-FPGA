@@ -89,17 +89,13 @@ Jonay Tomás Toledo Carrillo \\
 \subsubsection*{}
 
 \paragraph{}
-Este documento contiene la memoria del proyecto de fin de carrera de Rafael
-Waldo Delgado Doblas. Este documento está estructurado de la siguiente manera:
+Este documento contiene la memoria del proyecto de fin de carrera de Rafael Waldo Delgado Doblas. Este documento está estructurado de la siguiente manera:
 
 \begin{itemize}
-  \item En el primer capítulo se habla sobre las motivaciones que han llevado a
-  realizar el proyecto.
+  \item En el primer capítulo se habla sobre las motivaciones que han llevado a realizar el proyecto.
   \item A continuación se definirán los requisitos del proyecto.
-  \item Después se detallan la metodología empleada y las herramientas
-  utilizadas.
-  \item En el siguiente apartado se expondrán los pasos seguidos en el
-  desarrollo del proyecto.
+  \item Después se detallan la metodología empleada y las herramientas utilizadas.
+  \item En el siguiente apartado se expondrán los pasos seguidos en el desarrollo del proyecto.
   \item Seguidamente se explica el funcionamiento del dispositivo desarrollado.
   \item Para finalizar se presentan los resultados obtenidos.
 \end{itemize}
@@ -234,7 +230,7 @@ Estas funciones son:
     \item Comparar y combinar diferentes vistas del mismo objeto.
   \end{itemize}
   
-  \textbf{Realizar decisiones:} En este paso se realizan las decisiones finales
+  \textbf{Toma de decisiones:} En este paso se realizan las decisiones finales
   requeridas por la aplicación. Por ejemplo:
   
   \begin{itemize}
@@ -253,24 +249,13 @@ las capacidades de visión de los computadores distan mucho de las capacidades
 humanas.
 
 \paragraph{}
-Varios son los problemas que influyen en que las capacidades de los sistemas de
-visión por computador:
+Varios son los problemas que influyen en que las capacidades de los sistemas de visión por computador:
 \begin{itemize}
-  \item Necesidad de computo elevada: Los algoritmos de visión por ordenador
-  requieren de sistemas potentes para ser ejecutados, esto supone un handicap a la hora de
-  decidir.
-  \item No abundancia de hardware específico: En la actualidad la mayoría de los
-  ordenadores no disponen de un hardware específico para realizar funciones de
-  visión por ordenador.
-  \item Propiedades físicas del sistema: En ocasiones las propiedades físicas, el
-  método de refrigeración del sistema o el propio sistema, puede suponer un problema para
-  la aplicación a implementar. Ej: Quadcopter.
-  \item Alto consumo energético: El consumo energético influye tanto en el costo
-  como en la viabilidad de implementar una aplicación en la que la energía está limitada.
-  Ej: Un sistema autónomo inteligente cuya energía está limitada a la
-  proporcionada por sus baterías.
-  \item Alto costo: Todos los anteriores problemas descritos influyen
-  negativamente en el costo generando sistemas caros
+  \item Necesidad de computo elevada: Los algoritmos de visión por ordenador requieren de sistemas potentes para ser ejecutados.
+  \item No abundancia de hardware específico: En la actualidad la mayoría de los ordenadores no disponen de un hardware específico para realizar funciones de visión por ordenador.
+  \item Limitaciones del sistema: En ocasiones las propiedades físicas, el método de refrigeración del sistema o el propio sistema, puede suponer un problema para la aplicación a implementar. Ej: Quadcopter.
+  \item Alto consumo energético: El consumo energético influye tanto en el costo como en la viabilidad de implementar una aplicación en la que la energía está limitada. Ej: Un sistema autónomo inteligente cuya energía está limitada a la proporcionada por sus baterías.
+  \item Alto costo: Todos los anteriores problemas descritos influyen negativamente en el costo generando sistemas caros
 \end{itemize}
 
 \paragraph{}
@@ -284,29 +269,16 @@ problemas anteriores.
 \subsubsection*{}
 
 \paragraph{}
-Este proyecto se ha desarrollado para comprobar cómo afectaría a la eficiencia
-de un sistema de visión por computador, si sus algoritmos en vez de ser
-implementados por software fuesen implementados por hardware. Para tal efecto se
-ha construido un sistema básico de visión por computador y se han efectuado una
-serie de pruebas de rendimiento.
+Este proyecto se ha desarrollado para comprobar cómo afectaría a la eficiencia de un sistema de visión por computador, si sus algoritmos en vez de ser implementados por software fuesen implementados por hardware. Para tal efecto se ha construido un sistema básico de visión por computador y se han efectuado una serie de pruebas de rendimiento.
 
 \paragraph{}
-Este sistema cuenta con una CPU Nios2 desarrollada por Altera para sus FPGAs. El
-Nios2 es una CPU orientada a sistemas embebidos de 32bits y tiene la ventaja de
-que su juego de instrucciones puede ser ampliado fácilmente. Por otra parte el
-sistema cuenta con una entrada de vídeo compuesto para obtener las imágenes a
-procesar y un LCD para mostrar los resultados.
+El sistema construido cuenta con una CPU Nios2 desarrollada por Altera para sus FPGAs. El Nios2 es una CPU orientada a sistemas embebidos de 32bits y tiene la ventaja de que su juego de instrucciones puede ser ampliado fácilmente. Por otra parte el sistema cuenta con una entrada de vídeo compuesto para obtener las imágenes a procesar y un LCD para mostrar los resultados.
 
 \paragraph{}
-Aprovechando la facilidad de esta CPU para ampliar su juego de instrucciones, se
-ha añadido una implementación hardware del algoritmo Sobel a su juego de
-instrucciones. Este algoritmo se ha usado para hacer las pruebas de rendimiento
-comparándolo con una versión escrita en C compilada para la misma CPU.
+Aprovechando la facilidad de esta CPU para ampliar su juego de instrucciones, se ha añadido una implementación hardware del algoritmo Sobel a su juego de instrucciones. Este algoritmo se ha usado para hacer las pruebas de rendimiento comparándolo con una versión escrita en C compilada para la misma CPU.
 
 \paragraph{}
-Como se puede ver en los resultados de las pruebas realizadas, anotados en este
-mismo documento, la implementación hardware permite procesar mucho mas rápido
-las imágenes para la misma frecuencia de reloj.
+Como se puede ver en los resultados de las pruebas realizadas, anotados en este mismo documento, la implementación hardware permite procesar mucho mas rápido las imágenes para la misma frecuencia de reloj.
 
 \chapter{''Definición de requisitos.''}
 
@@ -467,7 +439,7 @@ Este bus permite agrupar un conjunto de señales arbitrarias, a las cuales el us
 \subsubsection*{}
 
 \paragraph{}
-Al tratarse de un proyecto hardware se presentaran diversas peculiaridades propias de este tipo de proyectos. Una de las más notadas sin duda será el hecho de que la mayor parte de las operaciones se realizarán en paralelo necesitándose por tanto diversos métodos de sincronización. Se utilizarán señales de reloj y flags para sincronizar la ejecución de los diferentes módulos.
+Al tratarse de un proyecto hardware se presentaran diversas peculiaridades propias de este tipo de proyectos. Una de las más destacadas sin duda será el hecho de que la mayor parte de las operaciones se realizarán en paralelo necesitándose por tanto diversos métodos de sincronización. Se utilizarán señales de reloj y flags para sincronizar la ejecución de los diferentes módulos.
 
 \paragraph{}
 Otra particularidad será tener en cuenta los tiempos que tarda cada módulo en terminar, porque es posible que un trigger que inicia un módulo, se dispare antes de que este modulo haya finalizado la anterior tarea.
@@ -484,7 +456,7 @@ Por otra parte también se presentan problemas de tipo electrónico tales como: 
 Para comenzar el desarrollo con el NEEK lo primero que hay que hacer es crear un nuevo proyecto en Quartus 2, definirle el tipo de FPGA y el archivo que servirá de modulo cabecera. Este modulo sera el que conecte sus entradas y salidas con los pines de la FPGA.
 
 \paragraph{}
-Una vez definido el proyecto dependiendo de la amplitud del mismo habrán varios caminos, como trabajar directamente con un lenguaje HDL o arrastrando módulos de forma gráfica; sin embargo el camino normal para un proyecto de mediana o gran envergadura será utilizar QSys como herramienta para construir el sistema.
+Una vez definido el proyecto dependiendo de la amplitud del mismo se pueden realizar varias técnicas, como trabajar directamente con un lenguaje HDL o arrastrando módulos de forma gráfica; sin embargo el camino normal para un proyecto de mediana o gran envergadura será utilizar QSys como herramienta para construir el sistema.
 
 \paragraph{}
 QSys permite de una forma gráfica acceder a una extensa librería de IPs proporcionada por Altera e incrementar dicha librería con IPs realzados por nosotros mismos. Estos módulos deben utilizar como entrada y salida los buses comentados con anterioridad.
@@ -502,7 +474,7 @@ Para terminar se genera el sistema y se programa sobre la FPGA.
 Estos pasos describen la construcción de un sistema ideal que no tiene ningún fallo, sin embargo a la hora de la verdad es conveniente saber que Altera proporciona dos herramientas muy útiles para la depuración de errores. 
 
 \paragraph{}
-La primera sería el ModelSim Altera Edition que permite simular de forma independiente las IPs desarrollados sin necesidad de generar el sistema.
+La primera es el ModelSim Altera Edition que permite simular de forma independiente las IPs desarrollados sin necesidad de generar el sistema.
 
 \paragraph{}
 Por otra parte también disponemos del SignalTap un analizador lógico que puede ser añadido una vez el sistema haya sido generado. Para ello tenemos que definir las señales que queremos analizar y la señal de reloj que utilizan y luego volver a generar el sistema con el analizador lógico integrado. Esto tiene el problema de que el analizador lógico consume tanto elementos lógicos como elementos de memoria y es necesaria dos compilaciones con el tiempo que ello conlleva.
@@ -775,7 +747,7 @@ El Sobel a sido implementado en 8 etapas. Como se puede ver en el listado~\ref{l
 \lstinputlisting[caption=Etapas Sobel,label=lst:EtapaIaS,linerange=87-87,firstnumber=87]{./SISSources/Sobel.v}
 
 \paragraph{}
-Cuando se activa el flag go\_sobel, se comprobará si el píxel a analizar se encuentra en la columna 0. Esto se hace porque en función de que sea esa columna o no, se podrán reutilizar los elementos de la matriz g o no y la columna 0 de g valdrá 0 o no este valor de 0 se da porque al estar en la primera columna se asume que el valor de fuera de la imagen es 0. En el listado~\ref{lst:EtapaIbS} se puede ver el código que realiza esta acción.
+Cuando se activa el flag go\_sobel, se comprobará si el píxel a analizar se encuentra en la primera columna del frame. Esto se hace porque en si no esta en esa columna, se podrán reutilizar los elementos de la matriz g, desplazando los elementos de la segunda columna a la primera y de la tercera a la segunda, solo siendo necesario obtener de la cache los elementos de la tercera columna. Por otra parte si el píxel esta en la primera columna, la columna 0 de g sera inicializada con 0s por caer fuera del frame y asumirse que el valor de fuera de la imagen es 0. En el listado~\ref{lst:EtapaIbS} se puede ver el código que realiza esta acción.
 
 \lstinputlisting[caption=Etapas Sobel,label=lst:EtapaIbS,linerange=227-240,firstnumber=227]{./SISSources/Sobel.v}
 
@@ -820,36 +792,25 @@ Las etapas 5 y 6 hacen que el color de los bordes sea negro y el de las llanuras
 \paragraph{}
 Hasta ahora se ha hablado de la implementación del sistema Sobel desde el punto de vista del hardware, sin embargo todo sistema que involucre una CPU necesita de un pequeño software que se encargue de controlar el funcionamiento del mismo. Este pequeño software es llamado Firmware y como ya se dijo en capítulos anteriores en el caso del procesador NIOS II Altera proporciona un IDE para desarrollar aplicaciones en C. En las subsiguientes secciones se irá destripando las diferentes funcionalidades del firmware.
 
-HABLAR TODO TA MAPEADO EN MEMORIA.
-
 \section{Hardware Abstraction Layer}
-El Hardware Abstraction Layer es la pieza de software mas importante del firmware. Se encarga de facilitar la tarea de desarrollar aplicaciones proporcionando una serie de drivers y funciones para manejar las distintas IPs. La librería estándar de c, funciones para el control del temporizador, funciones para la lectura y escritura a memoria
+El Hardware Abstraction Layer es la pieza de software mas importante del firmware. Se encarga de facilitar la tarea de desarrollar aplicaciones proporcionando una serie de drivers para controlar las diferentes IPs mapeadas en memoria del sistema. También proporciona la librería estándar de c, funciones para el control del temporizador y funciones para la lectura y escritura a memoria.
 
 \section{Librerías Proporcionadas por Altera}
 \paragraph{}
-Para facilitar el desarrollo de aplicaciones usando direrentes dispositivos Altea propocriona varias librerias, en este proyecto se usaron:
-\subsection{alt\_tpo\_lcd}
+Para facilitar el desarrollo de aplicaciones usando diferentes IPs Altea proporciona varias librerías. En las siguientes subsecciones se detallarán las mas interesantes.
+\subsection{Alt\_TPO\_LCD}
 \paragraph{}
-Esta libreria permite inicializar el lcd del Altera neek. Para ello utiliza la conexion SPI 3 wire del lcd para escribir en los direntes registros del control del LCD. En el listado~\ref{lst:alttpolcd} se puede ver las funciones que presenta esta libreria.
+Esta librería permite inicializar el LCD del Altera Nios II Embedded Evaluation Kit. La librería utiliza la conexión 3-Wire SPI del controlador LCD para inicializar los diferentes registros del control. En el listado~\ref{lst:alttpolcd} se puede ver las funciones que presenta esta librería.
 
-\lstinputlisting[caption=Alt_tpo_lcd,label=lst:alttpolcd,linerange=42-58,firstnumber=42,language=c]{./SISSources/alt_tpo_lcd.h}
+\lstinputlisting[caption=Alt\_tpo\_lcd,label=lst:alttpolcd,linerange=42-58,firstnumber=42,language=c]{./SISSources/alt_tpo_lcd.h}
 
-typedef struct alt_tpo_lcd
-{
-  alt_u32 scen_pio;
-  alt_u32 scl_pio;
-  alt_u32 sda_pio;
-} alt_tpo_lcd;
+La estructura alt\_tpo\_lcd alberga las direcciones de memoria de las señales que conforman el bus 3-wire SPI.
 
-void alt_tpo_lcd_write_config_register(alt_tpo_lcd *lcd, alt_u8 addr, alt_u8 data);
-                                       
-alt_u8 alt_tpo_lcd_read_config_register(alt_tpo_lcd *lcd, alt_u8 addr);
-
-int alt_tpo_lcd_init(alt_tpo_lcd *lcd, alt_u32 width, alt_u32 height);
+Por otra parte la función alt\_tpo\_lcd\_init inicializa el controlador LCD con la resolución que se le indique mediante los parámetros width y height.
 
 \subsection{audio\_tvdecoder}
 \paragraph{}
-Esta libreria permite inicializar el DAC de video compuesto del Altera neek. Para ello utiliza la conexion I2C de circuito integrado para escribir en sus diferentes registros de control. Esta libreria contiene dos ficheros cabecera, El primero presentado en el listado~\ref{lst:audiotvdecoderfunciones} se puede ver las funciones relacionadas con el control propiamente dicho del decodificador de video; por otra parte en el segundo que se puede observar en el listado~\ref{lst:i2cfunciones} contiene las funciones para establecer una funcion i2c.
+Esta librería permite inicializar el DAC de video compuesto del Altera Nios II Embedded Evaluation Kit. Para ello utiliza la conexión I2C del circuito integrado para escribir en sus diferentes registros de control. Esta librería contiene dos ficheros cabecera, El primero presentado en el listado~\ref{lst:audiotvdecoderfunciones} se puede ver las funciones relacionadas con el control propiamente dicho del decodificador de vídeo; por otra parte en el segundo que se puede observar en el listado~\ref{lst:i2cfunciones} contiene las funciones para establecer una conexión I2C.
 
 \lstinputlisting[caption=Audio TV Decoder,label=lst:audiotvdecoderfunciones,linerange=42-58,firstnumber=42,language=c]{./SISSources/tvdecoder_ctrl.h}
 
@@ -859,28 +820,33 @@ Esta libreria permite inicializar el DAC de video compuesto del Altera neek. Par
 
 \subsection{framereader}
 \paragraph{}
-Esta libreria no esta proporcionada como tal por Altera si no que es un subconjunto de API de la suite Altera Video IP que contiene solamente las funciones necesarias para manejar el frame reader. En el listado~\ref{lst:vipfunciones}
+Esta librería no esta proporcionada como tal por Altera si no que es un subconjunto del API de la suite Altera Video IP que contiene solamente las funciones necesarias para manejar la IP Frame Reader. En el listado~\ref{lst:vipfunciones} se puede observer las funciones que proporciona.
 
 \lstinputlisting[caption=Frame Reader,label=lst:vipfunciones,linerange=42-58,firstnumber=42,language=c]{./SISSources/vip_wrapper_for_c_func.h}
 
 \subsection{alt\_video\_display, fonts, graphics\_lib}
 \paragraph{}
-Estas librerias permiten escribir caracteres en el lcd. 
+Estas librerías permiten escribir caracteres en el LCD. 
 
-\subsubsection{alt\_video\_display}
+\subsubsection{Alt\_Video\_Display}
+\paragraph{}
 Proporciona una estructura adecuada para almacenar la información de un frame en memoria.
 
-\subsubsection{fonts}
+\subsubsection{Fonts}
+\paragraph{}
 Como su nombre indica proporciona un conjunto de fuentes para poder escribir.
 
-\subsubsection{graphics\_lib}
-Este librería seria la principal encargada de propocrionar un conjunto de funciones que permita la escritrura de caracteres en el LCD.
+\subsubsection{Graphics\_lib}
+\paragraph{}
+Este librería seria la principal encargada de proporcionar un conjunto de funciones que permita la escritura de caracteres en el LCD.
 
 \section{Librerías Desarrolladas por Mi}
-En esta sección veremos dos librerías desarrolladas por mi.
+\paragraph{}
+En esta sección veremos dos librerías desarrolladas que se he desarrollado para la implementación del firmware.
+
 \subsection{keyhandler}
 \paragraph{}
-Como su nombre indica la librería keyhandler se encarga de manejar las pulsaciones de los botones. Concretamente se encarga gestionar la interrupciones generadas por los botones. La librería proporciona una única función que se encarga de registrar el manejador en el sistema de interrupciones proporcionado por el Hardware Abtraction Layer. Este manejador se encargara de modificar una mascara de bits que sera leido por el programa principal para detectar que opciones estan activas y cuales no. En el listado~\ref{lst:keyhandlerfunciones} se puede ver la cabecera de esta función.
+Como su nombre indica la librería keyhandler se encarga de manejar las pulsaciones de los botones. Concretamente se encarga gestionar la interrupciones generadas por los botones. La librería proporciona una única función que se encarga de registrar el manejador de interrupción en el sistema de interrupciones proporcionado por el Hardware Abtraction Layer. Este manejador se encargara de modificar una mascara de bits que es leída por el programa principal para detectar que opciones están activas y cuales no. En el listado~\ref{lst:keyhandlerfunciones} se puede ver la cabecera de esta función.
 
 \lstinputlisting[caption=Keyhandler,label=lst:keyhandlerfunciones,linerange=19-19,firstnumber=19,language=c]{./SISSources/keyhandler.h}
 
@@ -896,21 +862,40 @@ La función AGrises convierte un frame almacenado en la matriz P a escala de gri
 
 \section{Programa Principal}
 \paragraph{}
-El programa principal se encarga de llamar a las diferentes funciones que componen el sistema. Lo primero que realiza es una inicialización de las diferentes IPs que van a ser utilizadas, a su vez también inicializa el sistema de interrupciones que va a permitir detectar la pulsación de los diferentes botones y activar las opciones correspondientes. Una vez realizada la inicialización del sistema, comienza el bucle del sistema, este bucle realiza tareas cíclicas como dibujar los frames o verificar que opciones han sido activadas mediante los botones. En el apartado de apéndices se puede observar el código fuente.
+El programa principal se encarga de llamar a las diferentes funciones que componen el sistema. Lo primero que realiza es una inicialización de las diferentes IPs que van a ser utilizadas, a su vez también inicializa el sistema de interrupciones que va a permitir detectar la pulsación de los diferentes botones y activar las opciones correspondientes. Una vez realizada la inicialización del sistema, comienza el bucle del sistema, este bucle realiza tareas cíclicas como dibujar los frames o verificar que opciones han sido activadas mediante los botones. En el apartado de apéndices se puede observar el código fuente. Como ya se menciono en el apartado de apéndices se puede observar un listado con el código del programa principal así como el de otros códigos del firmware.
 
 
 \chapter{''El Sistema en Acción''}
-En este capítulo veremos el sistema en funcionamiento.
+\section*{}
+\subsection*{}
+\subsubsection*{}
+
+\paragraph{}
+Como se estableció en el capitulo , parte de este proyecto consiste en la realización de varias pruebas para comparar las implementaciones hardware y software del Sobel, por ello en este capítulo de describirán las diferentes funcionalidades del sistema implementado y se terminara haciendo una comparación entre los diferentes modos.
 
 \section{Funcionamiento}
 \subsection*{}
 \subsubsection*{}
-La interfaz para controlar el dispositivo consiste en 4 botones que activan y desactivan el dispositivo así como un LCD y un led que mostrara el estado del sistema.
+Echando un vistazo a la figura~\ref{fig:intefaz}, se puede observar que la interfaz para controlar el sistema consiste en 4 botones que activan y desactivan las funciones del sistema así como un LCD y un led que mostrara el estado del mismo. Adicionalmente se disponene de 3 botones extra que permiten reiniciar el sistema, reiniciar la configuración de la FPGA y apagar el sistema, así como una conexión USB necesaria para descargar la configuración. Por el tipo de licencia con el que se ha desarrollado el sistema el único camino posible para cargar la configuración es mediante USB teniendo esta que permanecer conectada, no siendo posible su carga desde la SD o cualquier tipo de memoria permanente.
 
 \section{Resultados}
 \subsection*{}
 \subsubsection*{}
-En la siguiente tabla se puede observar las mejoras obtenidas con el uso de aceleracion por hardware con respecto a las versiones software. Como se puede observar la version hardware es unas 300 veces mas rapido que la version sofware manteniendo un framerate que permite ver con cierta comodidad un video.
+En tabla~\ref{tab:resutadosc} se puede observar las mejoras obtenidas con el uso de aceleración por hardware con respecto a las versiones software. Como se puede observar la version hardware del Sobel es unas 300 veces mas rápido que la version software manteniendo un framerate que permite ver con bastante fluidez un vídeo. Para la realización de la tabla se tomaron varias medidas y se realizo la media aritmética mediante el uso de la función congelar frame la unidad utilizada es el numero de ciclos necesarios, sabiendo que la frecuencia del sistema es de unos 150Mhz se puede determinar el numero de frames por segundo que se generan, este valor puede ser comprobado en la tabla~\ref{tab:resutadosf}
+
+\begin{tabular}{l c c}
+Función               & Hardware & Sofware \\
+\hline
+Reproducción de Vídeo & 6        & 12      \\
+Calculo del Sobel     & 6        & 3       \\
+\end{tabular}
+
+\begin{tabular}{l c c}
+Función               & Hardware & Sofware \\
+\hline
+Reproducción de Vídeo & 6        & 12      \\
+Calculo del Sobel     & 6        & 3       \\
+\end{tabular}
 
 \appendix
 % \clearpage \cleardoublepage

@@ -1,15 +1,14 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.6.12)  12 JUN 2013 17:01
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.6.3)  18 JUN 2013 17:08
 entering extended mode
- restricted \write18 enabled.
  %&-line parsing enabled.
 **Memoria.tex
 (./Memoria.tex
-LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, lo
-aded.
-(/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, spanish, galician, catalan, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/book.cls
 Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo
+(/usr/share/texmf-texlive/tex/latex/base/bk12.clo
 File: bk12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -25,19 +24,19 @@ File: bk12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
 Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
+(/usr/share/texmf-texlive/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
+(/usr/share/texmf-texlive/tex/latex/base/t1enc.dfu
 File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -187,7 +186,7 @@ File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
+(/usr/share/texmf-texlive/tex/latex/base/ot1enc.dfu
 File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -218,7 +217,7 @@ File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
+(/usr/share/texmf-texlive/tex/latex/base/omsenc.dfu
 File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
@@ -242,63 +241,51 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2008/07/08 v3.8m The Babel package
+(/usr/share/texmf-texlive/tex/generic/babel/babel.sty
+Package: babel 2008/07/06 v3.8l The Babel package
 
-(/usr/share/texlive/texmf-dist/tex/generic/babel/spanish.ldf
-Language: spanish.ldf 2011/10/06 v5.0k Spanish support from the babel system
+(/usr/share/texmf-texlive/tex/generic/babel/spanish.ldf
+Language: spanish.ldf 2009/01/02 v5.0h Spanish support from the babel system
 
-(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2008/07/08 v3.8m Babel common definitions
+(/usr/share/texmf-texlive/tex/generic/babel/babel.def
+File: babel.def 2008/07/06 v3.8l Babel common definitions
 \babel@savecnt=\count88
 \U@D=\dimen103
 )
-
-Package babel Warning: No hyphenation patterns were loaded for
-(babel)                the language `Spanish'
-(babel)                I will use the patterns loaded for \language=0 instead.
-
-\l@spanish = a dialect from \language0
 \es@datefmt=\count89
 \es@quottoks=\toks16
 \es@quotdepth=\count90
-Package babel Info: Making " an active character on input line 496.
-Package babel Info: Making . an active character on input line 599.
-Package babel Info: Making < an active character on input line 644.
-Package babel Info: Making > an active character on input line 644.
-)) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package babel Info: Making " an active character on input line 492.
+Package babel Info: Making . an active character on input line 585.
+Package babel Info: Making < an active character on input line 630.
+Package babel Info: Making > an active character on input line 630.
+))
+(/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks17
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
-File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+(/etc/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
-File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
-)
+(/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2010/03/12 v0.04p Graphics/color for pdfTeX
 \Gread@gobject=\count91
 ))
 \Gin@req@height=\dimen104
 \Gin@req@width=\dimen105
 )
-(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+(/usr/share/texmf-texlive/tex/latex/listings/listings.sty
 \lst@mode=\count92
 \lst@gtempboxa=\box26
 \lst@token=\toks18
@@ -312,43 +299,43 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \lst@lineno=\count97
 \lst@maxwidth=\dimen109
 
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+(/usr/share/texmf-texlive/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
 \c@lstnumber=\count98
 \lst@skipnumbers=\count99
 \lst@framebox=\box27
 )
-(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+(/usr/share/texmf-texlive/tex/latex/listings/listings.cfg
 File: listings.cfg 2007/02/22 1.4 listings configuration
 ))
 Package: listings 2007/02/22 1.4 (Carsten Heinz)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+(/usr/share/texmf-texlive/tex/latex/graphics/color.sty
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+(/etc/texmf/tex/latex/config/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 130.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2000/07/18 v2.13 AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texmf-texlive/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks19
 \ex@=\dimen110
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen111
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count100
@@ -389,31 +376,28 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 LaTeX Info: Redefining \[ on input line 2666.
 LaTeX Info: Redefining \] on input line 2667.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
-Package: natbib 2010/09/13 8.31b (PWD, AO)
+(/usr/share/texmf-texlive/tex/latex/natbib/natbib.sty
+Package: natbib 2009/07/16 8.31 (PWD, AO)
 \bibhang=\skip46
 \bibsep=\skip47
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count112
 )
-(/usr/share/texlive/texmf-dist/tex/latex/appendix/appendix.sty
+(/usr/share/texmf-texlive/tex/latex/appendix/appendix.sty
 Package: appendix 2009/09/02 v1.2b extra appendix facilities
 \c@@pps=\count113
 \c@@ppsavesec=\count114
 \c@@ppsaveapp=\count115
 )
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+(/usr/share/texmf-texlive/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2004/09/05 1.3 listings language file
 )
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang2.sty
+(/usr/share/texmf-texlive/tex/latex/listings/lstlang2.sty
 File: lstlang2.sty 2004/09/05 1.3 listings language file
 )
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang3.sty
+(/usr/share/texmf-texlive/tex/latex/listings/lstlang3.sty
 File: lstlang3.sty 2004/09/05 1.3 listings language file
-) (./Memoria.aux
-LaTeX Info: Redefining \. on input line 6.
-LaTeX Info: Redefining \% on input line 6.
-)
+) (./Memoria.aux)
 \openout1 = `Memoria.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
@@ -428,9 +412,8 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
 LaTeX Font Info:    ... okay on input line 44.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
 LaTeX Font Info:    ... okay on input line 44.
-LaTeX Info: Redefining \. on input line 44.
-LaTeX Info: Redefining \% on input line 44.
-(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+
+(/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count116
 \scratchdimen=\dimen119
@@ -441,65 +424,13 @@ LaTeX Info: Redefining \% on input line 44.
 \MPscratchCnt=\count119
 \MPscratchDim=\dimen120
 \MPnumerator=\count120
-\makeMPintoPDFobject=\count121
 \everyMPtoPDFconversion=\toks25
-) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
-
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
-Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
-))
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
-Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 452.
-
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
-\c@lstlisting=\count122
-
-<./figuras/Logo_ULL.png, id=1, 302.63063pt x 305.64188pt>
+\c@lstlisting=\count121
+ <./figuras/Logo_ULL.png, id=1, 1462.46375pt x 1505.625pt>
 File: ./figuras/Logo_ULL.png Graphic file (type png)
 
-<use ./figuras/Logo_ULL.png>
-Package pdftex.def Info: ./figuras/Logo_ULL.png used on input line 53.
-(pdftex.def)             Requested size: 227.62204pt x 229.88841pt.
- [1
+<use ./figuras/Logo_ULL.png> [1
 
 
 
@@ -508,24 +439,16 @@ Package pdftex.def Info: ./figuras/Logo_ULL.png used on input line 53.
 
 ] [1] [2
 
-] (./Memoria.toc
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
- [3])
+] (./Memoria.toc [3])
 \tf@toc=\write3
 \openout3 = `Memoria.toc'.
 
-LaTeX Info: Redefining \. on input line 85.
-LaTeX Info: Redefining \% on input line 85.
  [4]
 Cap\'{\i }tulo 1.
 [1
 
 
-]
-LaTeX Info: Redefining \. on input line 107.
-LaTeX Info: Redefining \% on input line 107.
- [2
+] [2
 
 ]
 Cap\'{\i }tulo 2.
@@ -533,133 +456,51 @@ Cap\'{\i }tulo 2.
 Underfull \vbox (badness 1286) has occurred while \output is active []
 
  [3]
-LaTeX Info: Redefining \. on input line 182.
-LaTeX Info: Redefining \% on input line 182.
-
 [4]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 199.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 195.
 
- (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+ (/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 199.
-
-Overfull \hbox (7.2263pt too wide) in paragraph at lines 215--218
-[]\OT1/cmr/bx/n/12 Detecci^^Son/Seg-mentaci^^Son: \OT1/cmr/m/n/12 Nor-mal-mente
- en alg^^Sun mo-men-to del proce-
- []
-
-LaTeX Info: Redefining \. on input line 223.
-LaTeX Info: Redefining \% on input line 223.
-[5]
-LaTeX Info: Redefining \. on input line 272.
-LaTeX Info: Redefining \% on input line 272.
- [6]
-LaTeX Info: Redefining \. on input line 310.
-LaTeX Info: Redefining \% on input line 310.
- [7]
-LaTeX Info: Redefining \. on input line 311.
-LaTeX Info: Redefining \% on input line 311.
- [8]
-Cap\'{\i }tulo 3.
-[9
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 195.
+ [5] [6] [7] [8
 
 ]
-LaTeX Info: Redefining \. on input line 341.
-LaTeX Info: Redefining \% on input line 341.
- [10]
+Cap\'{\i }tulo 3.
+[9] [10]
 Cap\'{\i }tulo 4.
 [11
 
-]
-Overfull \hbox (12.60452pt too wide) in paragraph at lines 395--397
-[]\OT1/cmr/bx/n/12 SignalTap: \OT1/cmr/m/n/12 Es-ta her-ramien-ta es un anal-iz
-ador l^^Sogi-co que per-mite analizar
- []
-
-LaTeX Info: Redefining \. on input line 414.
-LaTeX Info: Redefining \% on input line 414.
-[12]
-LaTeX Info: Redefining \. on input line 449.
-LaTeX Info: Redefining \% on input line 449.
- [13]
-LaTeX Info: Redefining \. on input line 464.
-LaTeX Info: Redefining \% on input line 464.
- [14]
-LaTeX Info: Redefining \. on input line 486.
-LaTeX Info: Redefining \% on input line 486.
- [15]
-LaTeX Info: Redefining \. on input line 512.
-LaTeX Info: Redefining \% on input line 512.
- [16]
-LaTeX Info: Redefining \. on input line 513.
-LaTeX Info: Redefining \% on input line 513.
- [17]
-LaTeX Info: Redefining \. on input line 513.
-LaTeX Info: Redefining \% on input line 513.
- [18
+] [12] [13] [14] [15] [16] [17] [18
 
 ]
 Cap\'{\i }tulo 5.
 
-<./figuras/SistemaPrincipal/sistemaprincipalpagina1.png, id=87, 625.33624pt x 6
+<./figuras/SistemaPrincipal/sistemaprincipalpagina1.png, id=86, 625.33624pt x 6
 57.45625pt>
 File: ./figuras/SistemaPrincipal/sistemaprincipalpagina1.png Graphic file (type
  png)
  <use ./figuras/SistemaPrincipal/sistemaprincipalpagina1.png>
-Package pdftex.def Info: ./figuras/SistemaPrincipal/sistemaprincipalpagina1.png
- used on input line 530.
-(pdftex.def)             Requested size: 370.51006pt x 562.41183pt.
-
-<./figuras/SistemaPrincipal/sistemaprincipalpagina2.png, id=88, 625.33624pt x 7
+<./figuras/SistemaPrincipal/sistemaprincipalpagina2.png, id=87, 625.33624pt x 7
 86.94pt>
 File: ./figuras/SistemaPrincipal/sistemaprincipalpagina2.png Graphic file (type
  png)
  <use ./figuras/SistemaPrincipal/sistemaprincipalpagina2.png>
-Package pdftex.def Info: ./figuras/SistemaPrincipal/sistemaprincipalpagina2.png
- used on input line 538.
-(pdftex.def)             Requested size: 370.51006pt x 562.39366pt.
-
-<./figuras/SistemaPrincipal/sistemaprincipalpagina3.png, id=89, 625.33624pt x 3
+<./figuras/SistemaPrincipal/sistemaprincipalpagina3.png, id=88, 625.33624pt x 3
 06.14375pt>
 File: ./figuras/SistemaPrincipal/sistemaprincipalpagina3.png Graphic file (type
  png)
  <use ./figuras/SistemaPrincipal/sistemaprincipalpagina3.png>
-Package pdftex.def Info: ./figuras/SistemaPrincipal/sistemaprincipalpagina3.png
- used on input line 546.
-(pdftex.def)             Requested size: 370.51006pt x 296.01544pt.
-
-[19]
-LaTeX Info: Redefining \. on input line 560.
-LaTeX Info: Redefining \% on input line 560.
- [20 <./figuras/SistemaPrincipal/sistemaprincipalpagina1.png>]
-LaTeX Info: Redefining \. on input line 560.
-LaTeX Info: Redefining \% on input line 560.
- [21 <./figuras/SistemaPrincipal/sistemaprincipalpagina2.png>]
-LaTeX Info: Redefining \. on input line 560.
-LaTeX Info: Redefining \% on input line 560.
- [22 <./figuras/SistemaPrincipal/sistemaprincipalpagina3.png>]
-<./figuras/SistemadeVideo/sistemadevideopagina1.png, id=106, 533.995pt x 913.41
+[19] [20 <./figuras/SistemaPrincipal/sistemaprincipalpagina1.png>] [21 <./figur
+as/SistemaPrincipal/sistemaprincipalpagina2.png>] [22 <./figuras/SistemaPrincip
+al/sistemaprincipalpagina3.png>]
+<./figuras/SistemadeVideo/sistemadevideopagina1.png, id=105, 533.995pt x 913.41
 25pt>
 File: ./figuras/SistemadeVideo/sistemadevideopagina1.png Graphic file (type png
 )
- <use ./figuras/SistemadeVideo/sistemadevideopagina1.png>
-Package pdftex.def Info: ./figuras/SistemadeVideo/sistemadevideopagina1.png use
-d on input line 575.
-(pdftex.def)             Requested size: 370.51027pt x 562.4074pt.
-LaTeX Info: Redefining \. on input line 600.
-LaTeX Info: Redefining \% on input line 600.
- [23]
-LaTeX Info: Redefining \. on input line 600.
-LaTeX Info: Redefining \% on input line 600.
- [24 <./figuras/SistemadeVideo/sistemadevideopagina1.png>]
-LaTeX Info: Redefining \. on input line 626.
-LaTeX Info: Redefining \% on input line 626.
- [25]
-LaTeX Info: Redefining \. on input line 633.
-LaTeX Info: Redefining \% on input line 633.
- [26]
+ <use ./figuras/SistemadeVideo/sistemadevideopagina1.png> [23] [24 <./figuras/S
+istemadeVideo/sistemadevideopagina1.png>] [25] [26]
 Cap\'{\i }tulo 6.
 [27
 
@@ -668,214 +509,91 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 71.
 LaTeX Font Info:    Try loading font information for OML+cmr on input line 74.
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
+(/usr/share/texmf-texlive/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 74.
-)
-LaTeX Info: Redefining \. on input line 672.
-LaTeX Info: Redefining \% on input line 672.
- [28]
-(./SISSources/AGrises.v)
-LaTeX Info: Redefining \. on input line 703.
-LaTeX Info: Redefining \% on input line 703.
- [29] (./SISSources/AGrises.v) (./SISSources/AGrises.v)
+) [28]
+(./SISSources/AGrises.v) [29] (./SISSources/AGrises.v) (./SISSources/AGrises.v)
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 714.
-LaTeX Info: Redefining \% on input line 714.
  [30]
-LaTeX Info: Redefining \. on input line 759.
-LaTeX Info: Redefining \% on input line 759.
-
-[31] (./SISSources/Sobel.v) (./SISSources/Sobel.v
-LaTeX Info: Redefining \. on input line 238.
-LaTeX Info: Redefining \% on input line 238.
- [32]) (./SISSources/Sobel.v)
-(./SISSources/Sobel.v)
-LaTeX Info: Redefining \. on input line 801.
-LaTeX Info: Redefining \% on input line 801.
- [33] (./SISSources/Sobel.v) (./SISSources/Sobel.v)
-(./SISSources/Sobel.v) (./SISSources/Sobel.v)
-LaTeX Info: Redefining \. on input line 815.
-LaTeX Info: Redefining \% on input line 815.
- [34]
+[31] (./SISSources/Sobel.v) (./SISSources/Sobel.v [32]) (./SISSources/Sobel.v)
+(./SISSources/Sobel.v) [33] (./SISSources/Sobel.v) (./SISSources/Sobel.v)
+(./SISSources/Sobel.v) (./SISSources/Sobel.v) [34]
 Cap\'{\i }tulo 7.
-
-LaTeX Warning: Reference `lst:alttpolcd' on page 35 undefined on input line 833
-.
-
 [35
 
-] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+] (/usr/share/texmf-texlive/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2004/09/05 1.3 listings language file
 )
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+(/usr/share/texmf-texlive/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
 )
-(./SISSources/alt_tpo_lcd.h)
-! Missing $ inserted.
-<inserted text> 
-                $
-l.835 ...2,language=c]{./SISSources/alt_tpo_lcd.h}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.835 ...2,language=c]{./SISSources/alt_tpo_lcd.h}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.837 typedef struct alt_
-                         tpo_lcd
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.843 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.844 void alt_
-               tpo_lcd_write_config_register(alt_tpo_lcd *lcd, alt_u8 addr, ...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.845 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.846 alt_
-          u8 alt_tpo_lcd_read_config_register(alt_tpo_lcd *lcd, alt_u8 addr);
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.847 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.848 int alt_
-              tpo_lcd_init(alt_tpo_lcd *lcd, alt_u32 width, alt_u32 height);
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.849 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-LaTeX Warning: Reference `lst:audiotvdecoderfunciones' on page 36 undefined on 
-input line 852.
-
-
-LaTeX Warning: Reference `lst:i2cfunciones' on page 36 undefined on input line 
-852.
-
-(./SISSources/tvdecoder_ctrl.h) (./SISSources/i2c.h)
-LaTeX Info: Redefining \. on input line 857.
-LaTeX Info: Redefining \% on input line 857.
- [36]
-
-LaTeX Warning: Reference `lst:vipfunciones' on page 37 undefined on input line 
-862.
-
-(./SISSources/vip_wrapper_for_c_func.h)
-
-LaTeX Warning: Reference `lst:keyhandlerfunciones' on page 37 undefined on inpu
-t line 883.
-
-LaTeX Info: Redefining \. on input line 884.
-LaTeX Info: Redefining \% on input line 884.
-[37] (./SISSources/keyhandler.h) (./SISSources/sfs.h)
-LaTeX Info: Redefining \. on input line 902.
-LaTeX Info: Redefining \% on input line 902.
- [38]
-Cap\'{\i }tulo 8.
-[39
-
-] [40
-
-] [41] [42]
-Ap\'{e}ndice A.
-(./SISSources/SIS.v [43
+(./SISSources/alt_tpo_lcd.h) (./SISSources/tvdecoder_ctrl.h) [36]
+(./SISSources/i2c.h) (./SISSources/vip_wrapper_for_c_func.h) [37]
+(./SISSources/keyhandler.h) (./SISSources/sfs.h) [38] [39] [40
 
 ]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Cap\'{\i }tulo 8.
 
- [44]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+LaTeX Warning: Reference `fig:intefaz' on page 41 undefined on input line 903.
 
- [45]
+
+LaTeX Warning: Reference `tab:resutadosc' on page 41 undefined on input line 90
+8.
+
+
+LaTeX Warning: Reference `tab:resutadosf' on page 41 undefined on input line 90
+8.
+
+[41] [42] [43
+
+] [44]
+Ap\'{e}ndice A.
+(./SISSources/SIS.v [45
+
+]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [46]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [47])
-(./SISSources/ram_w.v [48]
+ [47]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [49]
+ [48]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [50])
-(./SISSources/ram_r.v [51]
+ [49])
+(./SISSources/ram_w.v [50]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [52]
+ [51]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [53]
+ [52])
+(./SISSources/ram_r.v [53]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [54])
-(./SISSources/FrameWriter.v [55]
+ [54]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [55]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [56])
-(./SISSources/AGrises.v [57]
+(./SISSources/FrameWriter.v [57]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [58])
-(./SISSources/Sobel.v [59]
+(./SISSources/AGrises.v [59]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [60]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [61]
+ [60])
+(./SISSources/Sobel.v [61]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [62]
@@ -884,18 +602,24 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [63]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [64])
-(./SISSources/Sobel_cache.v [65]
+ [64]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [66]
+ [65]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [67]
+ [66])
+(./SISSources/Sobel_cache.v [67]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [68])
-[69] [70
+ [68]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [69]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [70])
+[71] [72
 
 ]
 Ap\'{e}ndice B.
@@ -909,7 +633,7 @@ Overfull \hbox (86.00467pt too wide) in paragraph at lines 6--8
 [][][][][][] 
  []
 
-[71]
+[73]
 Overfull \hbox (22.00381pt too wide) in paragraph at lines 41--42
 [][][][] 
  []
@@ -922,48 +646,41 @@ Overfull \hbox (22.00381pt too wide) in paragraph at lines 43--45
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [72]
+ [74]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [73])
-[74] (./Memoria.bbl) [75
+ [75])
+[76] (./Memoria.bbl) [77
 
 
-] (./Memoria.aux
-LaTeX Info: Redefining \. on input line 6.
-LaTeX Info: Redefining \% on input line 6.
-)
+] (./Memoria.aux)
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 6217 strings out of 495059
- 83916 string characters out of 3182030
- 304010 words of memory out of 3000000
- 9236 multiletter control sequences out of 15000+200000
+ 5630 strings out of 494999
+ 73650 string characters out of 1180817
+ 292052 words of memory out of 3000000
+ 8689 multiletter control sequences out of 15000+50000
  11766 words of font info for 42 fonts, out of 3000000 for 9000
- 14 hyphenation exceptions out of 8191
- 38i,14n,52p,882b,1836s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-msl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Memoria.pdf (81 pages, 713870 bytes).
+ 54 hyphenation exceptions out of 8191
+ 30i,14n,52p,882b,1808s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sha
+re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-t
+exlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-texlive/font
+s/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/pub
+lic/amsfonts/cm/cmmi12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfont
+s/cm/cmmi8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.p
+fb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/sha
+re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-tex
+live/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/ty
+pe1/public/amsfonts/cm/cmsl12.pfb></usr/share/texmf-texlive/fonts/type1/public/
+amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm
+/cmti12.pfb>
+Output written on Memoria.pdf (83 pages, 575047 bytes).
 PDF statistics:
- 330 PDF objects out of 1000 (max. 8388607)
- 221 compressed objects within 3 object streams
+ 332 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
