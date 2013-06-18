@@ -21,7 +21,7 @@
 \contentsline {subsubsection}{Desarrollo de los subsistemas que conformar\IeC {\'a}n el sistema base}{9}
 \contentsline {paragraph}{}{9}
 \contentsline {paragraph}{}{9}
-\contentsline {subsubsection}{Modificaci\IeC {\'o}n del juego de instrucciones del procesador NIOS 2.}{9}
+\contentsline {subsubsection}{Modificaci\IeC {\'o}n del juego de instrucciones del procesador NIOS II.}{9}
 \contentsline {paragraph}{}{9}
 \contentsline {subsubsection}{Implementar las funciones por software.}{9}
 \contentsline {paragraph}{}{9}
@@ -44,7 +44,7 @@
 \contentsline {subsubsection}{IPs de Altera Utilizadas}{13}
 \contentsline {paragraph}{CPU NIOS II/f:}{13}
 \contentsline {paragraph}{}{13}
-\contentsline {paragraph}{Nios II Floating-Point Custom Instructions:}{13}
+\contentsline {paragraph}{NIOS II Floating-Point Custom Instructions:}{13}
 \contentsline {paragraph}{DDR SDRAM Controller:}{13}
 \contentsline {paragraph}{Altera Video IP:}{13}
 \contentsline {subsubsection}{Buses de conexi\IeC {\'o}n}{13}
@@ -79,7 +79,7 @@
 \contentsline {paragraph}{}{19}
 \contentsline {paragraph}{}{19}
 \contentsline {paragraph}{}{19}
-\contentsline {paragraph}{}{19}
+\contentsline {paragraph}{}{23}
 \contentsline {paragraph}{}{23}
 \contentsline {paragraph}{}{23}
 \contentsline {section}{\numberline {5.2}Subsistema de V\IeC {\'\i }deo}{23}
@@ -89,7 +89,7 @@
 \contentsline {paragraph}{}{23}
 \contentsline {paragraph}{}{23}
 \contentsline {paragraph}{}{23}
-\contentsline {paragraph}{}{23}
+\contentsline {paragraph}{}{25}
 \contentsline {paragraph}{}{25}
 \contentsline {paragraph}{}{25}
 \contentsline {paragraph}{}{25}
@@ -98,8 +98,8 @@
 \contentsline {subsection}{\numberline {5.2.2}Mostrar el frame}{25}
 \contentsline {paragraph}{}{25}
 \contentsline {paragraph}{}{25}
-\contentsline {subsection}{\numberline {5.2.3}Procesado de la informaci\IeC {\'o}n}{25}
-\contentsline {paragraph}{}{25}
+\contentsline {subsection}{\numberline {5.2.3}Procesado de la informaci\IeC {\'o}n}{26}
+\contentsline {paragraph}{}{26}
 \contentsline {paragraph}{}{26}
 \contentsline {paragraph}{}{26}
 \contentsline {chapter}{\numberline {6}''El Sobel Instruction Set.''}{27}
@@ -138,31 +138,33 @@
 \contentsline {chapter}{\numberline {7}''El Firmware''}{35}
 \contentsline {paragraph}{}{35}
 \contentsline {section}{\numberline {7.1}Hardware Abstraction Layer}{35}
-\contentsline {section}{\numberline {7.2}Librer\IeC {\'\i }as Proporcionadas por Altera}{35}
-\contentsline {paragraph}{}{35}
+\contentsline {section}{\numberline {7.2}Librer\IeC {\'\i }as Proporcionadas por Altera}{36}
+\contentsline {paragraph}{}{36}
 \contentsline {subsection}{\numberline {7.2.1}Alt\_TPO\_LCD}{36}
 \contentsline {paragraph}{}{36}
-\contentsline {subsection}{\numberline {7.2.2}audio\_tvdecoder}{36}
 \contentsline {paragraph}{}{36}
-\contentsline {subsection}{\numberline {7.2.3}framereader}{37}
+\contentsline {paragraph}{}{36}
+\contentsline {subsection}{\numberline {7.2.2}Audio\_TVDecoder}{36}
+\contentsline {paragraph}{}{36}
+\contentsline {subsection}{\numberline {7.2.3}Framereader}{37}
 \contentsline {paragraph}{}{37}
-\contentsline {subsection}{\numberline {7.2.4}alt\_video\_display, fonts, graphics\_lib}{37}
-\contentsline {paragraph}{}{37}
-\contentsline {subsubsection}{Alt\_Video\_Display}{37}
-\contentsline {paragraph}{}{37}
-\contentsline {subsubsection}{Fonts}{37}
-\contentsline {paragraph}{}{37}
-\contentsline {subsubsection}{Graphics\_lib}{37}
-\contentsline {paragraph}{}{37}
-\contentsline {section}{\numberline {7.3}Librer\IeC {\'\i }as Desarrolladas por Mi}{37}
-\contentsline {paragraph}{}{37}
-\contentsline {subsection}{\numberline {7.3.1}keyhandler}{38}
+\contentsline {subsection}{\numberline {7.2.4}Alt\_Video\_Display, Fonts, Graphics\_Lib}{38}
 \contentsline {paragraph}{}{38}
-\contentsline {subsection}{\numberline {7.3.2}Sobel Function Set}{38}
+\contentsline {subsubsection}{Alt\_Video\_Display}{38}
 \contentsline {paragraph}{}{38}
+\contentsline {subsubsection}{Fonts}{38}
 \contentsline {paragraph}{}{38}
-\contentsline {section}{\numberline {7.4}Programa Principal}{38}
+\contentsline {subsubsection}{Graphics\_Lib}{38}
 \contentsline {paragraph}{}{38}
+\contentsline {section}{\numberline {7.3}Librer\IeC {\'\i }as Desarrolladas por Mi}{38}
+\contentsline {paragraph}{}{38}
+\contentsline {subsection}{\numberline {7.3.1}Keyhandler}{38}
+\contentsline {paragraph}{}{38}
+\contentsline {subsection}{\numberline {7.3.2}Sobel Function Set}{39}
+\contentsline {paragraph}{}{39}
+\contentsline {paragraph}{}{39}
+\contentsline {section}{\numberline {7.4}Programa Principal}{39}
+\contentsline {paragraph}{}{39}
 \contentsline {chapter}{\numberline {8}''El Sistema en Acci\IeC {\'o}n''}{41}
 \contentsline {paragraph}{}{41}
 \contentsline {section}{\numberline {8.1}Funcionamiento}{41}
