@@ -168,7 +168,9 @@
 \contentsline {chapter}{\numberline {8}''El Sistema en Acci\IeC {\'o}n''}{41}
 \contentsline {paragraph}{}{41}
 \contentsline {section}{\numberline {8.1}Funcionamiento}{41}
+\contentsline {paragraph}{}{41}
 \contentsline {section}{\numberline {8.2}Resultados}{42}
+\contentsline {paragraph}{}{42}
 \contentsline {chapter}{Ap\IeC {\'e}ndices}{}
 \contentsline {chapter}{\numberline {A}''C\IeC {\'o}digo Fuente Verilog''}{45}
 \contentsline {subsubsection}{Sobel Instruction Set}{45}

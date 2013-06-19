@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.6.12)  18 JUN 2013 23:17
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.6.12)  19 JUN 2013 00:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -506,25 +506,25 @@ Package pdftex.def Info: ./figuras/Logo_ULL.png used on input line 53.
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./figuras/Logo_ULL.png>] [
 2
 
-] [1] [2
-
-] (./Memoria.toc
+] [1] [2] (./Memoria.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [3])
+ [3
+
+])
 \tf@toc=\write3
 \openout3 = `Memoria.toc'.
 
-LaTeX Info: Redefining \. on input line 85.
-LaTeX Info: Redefining \% on input line 85.
+LaTeX Info: Redefining \. on input line 90.
+LaTeX Info: Redefining \% on input line 90.
  [4]
 Cap\'{\i }tulo 1.
 [1
 
 
 ]
-LaTeX Info: Redefining \. on input line 103.
-LaTeX Info: Redefining \% on input line 103.
+LaTeX Info: Redefining \. on input line 108.
+LaTeX Info: Redefining \% on input line 108.
  [2
 
 ]
@@ -533,71 +533,71 @@ Cap\'{\i }tulo 2.
 Underfull \vbox (badness 1286) has occurred while \output is active []
 
  [3]
-LaTeX Info: Redefining \. on input line 135.
-LaTeX Info: Redefining \% on input line 135.
+LaTeX Info: Redefining \. on input line 140.
+LaTeX Info: Redefining \% on input line 140.
 
 [4]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 141.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 146.
 
  (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 141.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 146.
 
-Overfull \hbox (7.2263pt too wide) in paragraph at lines 155--156
+Overfull \hbox (7.2263pt too wide) in paragraph at lines 160--161
 []\OT1/cmr/bx/n/12 Detecci^^Son/Seg-mentaci^^Son: \OT1/cmr/m/n/12 Nor-mal-mente
  en alg^^Sun mo-men-to del proce-
  []
 
-LaTeX Info: Redefining \. on input line 160.
-LaTeX Info: Redefining \% on input line 160.
+LaTeX Info: Redefining \. on input line 165.
+LaTeX Info: Redefining \% on input line 165.
 [5]
-LaTeX Info: Redefining \. on input line 190.
-LaTeX Info: Redefining \% on input line 190.
+LaTeX Info: Redefining \. on input line 195.
+LaTeX Info: Redefining \% on input line 195.
  [6]
-LaTeX Info: Redefining \. on input line 212.
-LaTeX Info: Redefining \% on input line 212.
+LaTeX Info: Redefining \. on input line 217.
+LaTeX Info: Redefining \% on input line 217.
  [7]
-LaTeX Info: Redefining \. on input line 212.
-LaTeX Info: Redefining \% on input line 212.
+LaTeX Info: Redefining \. on input line 217.
+LaTeX Info: Redefining \% on input line 217.
  [8
 
 ]
 Cap\'{\i }tulo 3.
 [9]
-LaTeX Info: Redefining \. on input line 242.
-LaTeX Info: Redefining \% on input line 242.
+LaTeX Info: Redefining \. on input line 247.
+LaTeX Info: Redefining \% on input line 247.
  [10]
 Cap\'{\i }tulo 4.
 [11
 
 ]
-Overfull \hbox (12.60452pt too wide) in paragraph at lines 288--289
+Overfull \hbox (12.60452pt too wide) in paragraph at lines 293--294
 []\OT1/cmr/bx/n/12 SignalTap: \OT1/cmr/m/n/12 Es-ta her-ramien-ta es un anal-iz
 ador l^^Sogi-co que per-mite analizar
  []
 
-LaTeX Info: Redefining \. on input line 306.
-LaTeX Info: Redefining \% on input line 306.
+LaTeX Info: Redefining \. on input line 311.
+LaTeX Info: Redefining \% on input line 311.
 [12]
-LaTeX Info: Redefining \. on input line 340.
-LaTeX Info: Redefining \% on input line 340.
+LaTeX Info: Redefining \. on input line 345.
+LaTeX Info: Redefining \% on input line 345.
  [13]
-LaTeX Info: Redefining \. on input line 355.
-LaTeX Info: Redefining \% on input line 355.
+LaTeX Info: Redefining \. on input line 360.
+LaTeX Info: Redefining \% on input line 360.
  [14]
-LaTeX Info: Redefining \. on input line 377.
-LaTeX Info: Redefining \% on input line 377.
+LaTeX Info: Redefining \. on input line 382.
+LaTeX Info: Redefining \% on input line 382.
  [15]
-LaTeX Info: Redefining \. on input line 403.
-LaTeX Info: Redefining \% on input line 403.
+LaTeX Info: Redefining \. on input line 408.
+LaTeX Info: Redefining \% on input line 408.
  [16]
-LaTeX Info: Redefining \. on input line 404.
-LaTeX Info: Redefining \% on input line 404.
+LaTeX Info: Redefining \. on input line 409.
+LaTeX Info: Redefining \% on input line 409.
  [17]
-LaTeX Info: Redefining \. on input line 404.
-LaTeX Info: Redefining \% on input line 404.
+LaTeX Info: Redefining \. on input line 409.
+LaTeX Info: Redefining \% on input line 409.
  [18
 
 ]
@@ -609,7 +609,7 @@ File: ./figuras/SistemaPrincipal/sistemaprincipalpagina1.png Graphic file (type
  png)
  <use ./figuras/SistemaPrincipal/sistemaprincipalpagina1.png>
 Package pdftex.def Info: ./figuras/SistemaPrincipal/sistemaprincipalpagina1.png
- used on input line 421.
+ used on input line 426.
 (pdftex.def)             Requested size: 370.51006pt x 562.41183pt.
 
 <./figuras/SistemaPrincipal/sistemaprincipalpagina2.png, id=89, 625.33624pt x 7
@@ -618,7 +618,7 @@ File: ./figuras/SistemaPrincipal/sistemaprincipalpagina2.png Graphic file (type
  png)
  <use ./figuras/SistemaPrincipal/sistemaprincipalpagina2.png>
 Package pdftex.def Info: ./figuras/SistemaPrincipal/sistemaprincipalpagina2.png
- used on input line 429.
+ used on input line 434.
 (pdftex.def)             Requested size: 370.51006pt x 562.39366pt.
 
 <./figuras/SistemaPrincipal/sistemaprincipalpagina3.png, id=90, 625.33624pt x 3
@@ -627,18 +627,18 @@ File: ./figuras/SistemaPrincipal/sistemaprincipalpagina3.png Graphic file (type
  png)
  <use ./figuras/SistemaPrincipal/sistemaprincipalpagina3.png>
 Package pdftex.def Info: ./figuras/SistemaPrincipal/sistemaprincipalpagina3.png
- used on input line 437.
+ used on input line 442.
 (pdftex.def)             Requested size: 370.51006pt x 296.01544pt.
 
 [19]
-LaTeX Info: Redefining \. on input line 451.
-LaTeX Info: Redefining \% on input line 451.
+LaTeX Info: Redefining \. on input line 456.
+LaTeX Info: Redefining \% on input line 456.
  [20 <./figuras/SistemaPrincipal/sistemaprincipalpagina1.png>]
-LaTeX Info: Redefining \. on input line 451.
-LaTeX Info: Redefining \% on input line 451.
+LaTeX Info: Redefining \. on input line 456.
+LaTeX Info: Redefining \% on input line 456.
  [21 <./figuras/SistemaPrincipal/sistemaprincipalpagina2.png>]
-LaTeX Info: Redefining \. on input line 451.
-LaTeX Info: Redefining \% on input line 451.
+LaTeX Info: Redefining \. on input line 456.
+LaTeX Info: Redefining \% on input line 456.
  [22 <./figuras/SistemaPrincipal/sistemaprincipalpagina3.png>]
 <./figuras/SistemadeVideo/sistemadevideopagina1.png, id=107, 533.995pt x 913.41
 25pt>
@@ -646,19 +646,19 @@ File: ./figuras/SistemadeVideo/sistemadevideopagina1.png Graphic file (type png
 )
  <use ./figuras/SistemadeVideo/sistemadevideopagina1.png>
 Package pdftex.def Info: ./figuras/SistemadeVideo/sistemadevideopagina1.png use
-d on input line 466.
+d on input line 471.
 (pdftex.def)             Requested size: 370.51027pt x 562.4074pt.
-LaTeX Info: Redefining \. on input line 489.
-LaTeX Info: Redefining \% on input line 489.
+LaTeX Info: Redefining \. on input line 494.
+LaTeX Info: Redefining \% on input line 494.
  [23]
-LaTeX Info: Redefining \. on input line 489.
-LaTeX Info: Redefining \% on input line 489.
+LaTeX Info: Redefining \. on input line 494.
+LaTeX Info: Redefining \% on input line 494.
  [24 <./figuras/SistemadeVideo/sistemadevideopagina1.png>]
-LaTeX Info: Redefining \. on input line 517.
-LaTeX Info: Redefining \% on input line 517.
+LaTeX Info: Redefining \. on input line 522.
+LaTeX Info: Redefining \% on input line 522.
  [25]
-LaTeX Info: Redefining \. on input line 524.
-LaTeX Info: Redefining \% on input line 524.
+LaTeX Info: Redefining \. on input line 529.
+LaTeX Info: Redefining \% on input line 529.
  [26]
 Cap\'{\i }tulo 6.
 [27
@@ -674,32 +674,32 @@ File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 74.
 )
-LaTeX Info: Redefining \. on input line 563.
-LaTeX Info: Redefining \% on input line 563.
+LaTeX Info: Redefining \. on input line 568.
+LaTeX Info: Redefining \% on input line 568.
  [28]
 (./SISSources/AGrises.v)
-LaTeX Info: Redefining \. on input line 594.
-LaTeX Info: Redefining \% on input line 594.
+LaTeX Info: Redefining \. on input line 599.
+LaTeX Info: Redefining \% on input line 599.
  [29] (./SISSources/AGrises.v) (./SISSources/AGrises.v)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 605.
-LaTeX Info: Redefining \% on input line 605.
+LaTeX Info: Redefining \. on input line 610.
+LaTeX Info: Redefining \% on input line 610.
  [30]
-LaTeX Info: Redefining \. on input line 650.
-LaTeX Info: Redefining \% on input line 650.
+LaTeX Info: Redefining \. on input line 655.
+LaTeX Info: Redefining \% on input line 655.
 
 [31] (./SISSources/Sobel.v) (./SISSources/Sobel.v
 LaTeX Info: Redefining \. on input line 234.
 LaTeX Info: Redefining \% on input line 234.
  [32]) (./SISSources/Sobel.v)
 (./SISSources/Sobel.v)
-LaTeX Info: Redefining \. on input line 687.
-LaTeX Info: Redefining \% on input line 687.
+LaTeX Info: Redefining \. on input line 692.
+LaTeX Info: Redefining \% on input line 692.
  [33] (./SISSources/Sobel.v) (./SISSources/Sobel.v)
 (./SISSources/Sobel.v) (./SISSources/Sobel.v)
-LaTeX Info: Redefining \. on input line 706.
-LaTeX Info: Redefining \% on input line 706.
+LaTeX Info: Redefining \. on input line 711.
+LaTeX Info: Redefining \% on input line 711.
  [34]
 Cap\'{\i }tulo 7.
 
@@ -715,36 +715,36 @@ File: lstlang1.sty 2004/09/05 1.3 listings language file
 File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
 )
 (./SISSources/alt_tpo_lcd.h)
-LaTeX Info: Redefining \. on input line 736.
-LaTeX Info: Redefining \% on input line 736.
+LaTeX Info: Redefining \. on input line 741.
+LaTeX Info: Redefining \% on input line 741.
  [36] (./SISSources/tvdecoder_ctrl.h)
 (./SISSources/i2c.h) (./SISSources/vip_wrapper_for_c_func.h)
-LaTeX Info: Redefining \. on input line 747.
-LaTeX Info: Redefining \% on input line 747.
+LaTeX Info: Redefining \. on input line 752.
+LaTeX Info: Redefining \% on input line 752.
  [37]
 (./SISSources/keyhandler.h)
-LaTeX Info: Redefining \. on input line 778.
-LaTeX Info: Redefining \% on input line 778.
+LaTeX Info: Redefining \. on input line 783.
+LaTeX Info: Redefining \% on input line 783.
  [38] (./SISSources/sfs.h)
-LaTeX Info: Redefining \. on input line 790.
-LaTeX Info: Redefining \% on input line 790.
+LaTeX Info: Redefining \. on input line 795.
+LaTeX Info: Redefining \% on input line 795.
  [39]
-LaTeX Info: Redefining \. on input line 790.
-LaTeX Info: Redefining \% on input line 790.
+LaTeX Info: Redefining \. on input line 795.
+LaTeX Info: Redefining \% on input line 795.
  [40
 
 ]
 Cap\'{\i }tulo 8.
 
-LaTeX Warning: Reference `fig:intefaz' on page 41 undefined on input line 801.
+LaTeX Warning: Reference `fig:intefaz' on page 41 undefined on input line 807.
 
 
-LaTeX Warning: Reference `tab:resutadosc' on page 41 undefined on input line 80
-6.
+LaTeX Warning: Reference `tab:resutadosc' on page 41 undefined on input line 81
+3.
 
 
-LaTeX Warning: Reference `tab:resutadosf' on page 41 undefined on input line 80
-6.
+LaTeX Warning: Reference `tab:resutadosf' on page 41 undefined on input line 81
+3.
 
 [41] [42] [43
 
@@ -859,10 +859,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 6262 strings out of 495059
- 84702 string characters out of 3182030
- 304534 words of memory out of 3000000
- 9281 multiletter control sequences out of 15000+200000
+ 6264 strings out of 495059
+ 84728 string characters out of 3182030
+ 304569 words of memory out of 3000000
+ 9283 multiletter control sequences out of 15000+200000
  11766 words of font info for 42 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  38i,14n,52p,909b,1836s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -878,7 +878,7 @@ c/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 msl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Memoria.pdf (83 pages, 556239 bytes).
+Output written on Memoria.pdf (83 pages, 556636 bytes).
 PDF statistics:
  336 PDF objects out of 1000 (max. 8388607)
  225 compressed objects within 3 object streams
