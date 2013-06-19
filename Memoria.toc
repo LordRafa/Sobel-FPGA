@@ -167,18 +167,29 @@
 \contentsline {paragraph}{}{39}
 \contentsline {chapter}{\numberline {8}''El Sistema en Acci\IeC {\'o}n''}{41}
 \contentsline {paragraph}{}{41}
-\contentsline {section}{\numberline {8.1}Funcionamiento}{41}
-\contentsline {paragraph}{}{41}
-\contentsline {section}{\numberline {8.2}Resultados}{45}
+\contentsline {section}{\numberline {8.1}Funcionamiento}{42}
+\contentsline {paragraph}{}{42}
+\contentsline {paragraph}{}{42}
 \contentsline {paragraph}{}{45}
+\contentsline {paragraph}{}{45}
+\contentsline {paragraph}{}{45}
+\contentsline {paragraph}{}{45}
+\contentsline {paragraph}{}{45}
+\contentsline {section}{\numberline {8.2}Resultados}{47}
+\contentsline {paragraph}{}{47}
+\contentsline {paragraph}{}{47}
+\contentsline {paragraph}{}{47}
+\contentsline {paragraph}{}{47}
+\contentsline {paragraph}{}{48}
+\contentsline {paragraph}{}{48}
 \contentsline {chapter}{Ap\IeC {\'e}ndices}{}
-\contentsline {chapter}{\numberline {A}''C\IeC {\'o}digo Fuente Verilog''}{49}
-\contentsline {subsubsection}{Sobel Instruction Set}{49}
-\contentsline {subsubsection}{RAM W}{54}
-\contentsline {subsubsection}{RAM R}{57}
-\contentsline {subsubsection}{FrameWriter}{61}
-\contentsline {subsubsection}{AGrises}{63}
-\contentsline {subsubsection}{Sobel}{65}
-\contentsline {subsubsection}{Sobel Cache}{71}
-\contentsline {chapter}{\numberline {B}''C\IeC {\'o}digo Fuente C''}{77}
-\contentsline {subsubsection}{Programa Principal}{77}
+\contentsline {chapter}{\numberline {A}''C\IeC {\'o}digo Fuente Verilog''}{51}
+\contentsline {subsubsection}{Sobel Instruction Set}{51}
+\contentsline {subsubsection}{RAM W}{56}
+\contentsline {subsubsection}{RAM R}{59}
+\contentsline {subsubsection}{FrameWriter}{63}
+\contentsline {subsubsection}{AGrises}{65}
+\contentsline {subsubsection}{Sobel}{67}
+\contentsline {subsubsection}{Sobel Cache}{73}
+\contentsline {chapter}{\numberline {B}''C\IeC {\'o}digo Fuente C''}{79}
+\contentsline {subsubsection}{Programa Principal}{79}

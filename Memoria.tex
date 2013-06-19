@@ -800,11 +800,12 @@ El programa principal se encarga de llamar a las diferentes funciones que compon
 \paragraph{}
 Como se estableció en el Capítulo~\ref{chap:defreq}, parte de este proyecto consiste en la realización de varias pruebas para comparar las implementaciones hardware y software del Sobel, por ello en este capítulo de describirán las diferentes funcionalidades del sistema implementado y se terminara haciendo una comparación entre los diferentes modos.
 
+\clearpage
 \section{Funcionamiento}
 \subsection*{}
 \subsubsection*{}
 \paragraph{}
-Echando un vistazo a la figura~\ref{fig:traseraneek}, se puede observar que la interfaz para controlar el sistema consiste en 4 botones que activan y desactivan las funciones del sistema así como un LCD y un led que mostrara el estado del mismo. Adicionalmente se disponene de 3 botones extra que permiten reiniciar el sistema, reiniciar la configuración de la FPGA y apagar el sistema, así como una conexión USB necesaria para descargar la configuración. Por el tipo de licencia con el que se ha desarrollado el sistema el único camino posible para cargar la configuración es mediante USB teniendo esta que permanecer conectada, no siendo posible su carga desde la SD o cualquier tipo de memoria permanente.
+En esta sección se explicara como utilizar el sistema. En las figuras~\ref{fig:traseraneek}~y~\ref{fig:delanteraneek} se pueden observar una vista general del \textit{NIOS II Embedded Evaluation Kit}.
 
 \begin{figure}[p]
 \centering
@@ -815,10 +816,45 @@ Echando un vistazo a la figura~\ref{fig:traseraneek}, se puede observar que la i
 
 \begin{figure}[p]
 \centering
+\includegraphics[width=\textwidth]{./figuras/NEEK/Delantera.png}
+\caption{Vista Delantera NEEK}
+\label{fig:delanteraneek}
+\end{figure}
+
+\paragraph{}
+Si nos fijamos en la esquina inferior derecha de la parte trasera (figura~\ref{fig:traseraneek}), se puede ver un conjunto de botones y LEDs que se pueden ver con mas detalle en la figura~\ref{fig:botonescontrol}. Los botones etiquetados como \textit{Button n} controlaran las siguientes funciones del sistema:
+
+\begin{figure}[p]
+\centering
 \includegraphics[width=0.95\textwidth]{./figuras/NEEK/BotonesSetup.png}
 \caption{Botones de Control}
 \label{fig:botonescontrol}
 \end{figure}
+
+\clearpage
+
+\begin{itemize}
+\item \textbf{Button 1:} Activar/desactivar contador de ciclos por frame.
+\item \textbf{Button 2:} Selecciona entre los modos de \textit{Solo Vídeo} y \textit{Calculo del Sobel}.
+\item \textbf{Button 3:} Activar/desactivar congelar un frame.
+\item \textbf{Button 4:} Selecciona entre los modos \textit{Hardware} y \textit{Software} para calcular el Sobel. 
+\end{itemize}
+
+\paragraph{}
+Además los botones etiquetados como:
+\begin{itemize}
+\item \textbf{Reconfigure:} Fuerza a que se descargue el archivo de configuración por defecto en la FPGA. 
+\item \textbf{CPU\_Reset:} Reinicia el firmware.
+\end{itemize}
+
+\paragraph{}
+Por otra parte LED etiquetado como \textit{LED 4} se iluminara para indicar si el modo hardware esta activado. 
+
+\paragraph{}
+Si ahora nos fijamos en el lateral izquierdo de la figura~\ref{fig:traseraneek} podemos observar que hay un botón rojo y un conector USB. El botón rojo sirve para encender el \textit{NEEK}, él cual arrancará con una configuración FPGA por defecto. Para cargar la configuración del sistema de visión se utilizará la conexión USB. En la figura~\ref{fig:botonusb} se puede observar con mas detalle este área.
+
+\paragraph{}
+Por el tipo de licencia con el que se ha desarrollado el sistema, el único camino posible para cargar la configuración es mediante USB, teniendo que permanecer conectado y no siendo posible su carga desde la SD o cualquier tipo de memoria permanente.
 
 \begin{figure}[p]
 \centering
@@ -827,12 +863,8 @@ Echando un vistazo a la figura~\ref{fig:traseraneek}, se puede observar que la i
 \label{fig:botonusb}
 \end{figure}
 
-\begin{figure}[p]
-\centering
-\includegraphics[width=\textwidth]{./figuras/NEEK/Delantera.png}
-\caption{Vista Delantera NEEK}
-\label{fig:delanteraneek}
-\end{figure}
+\paragraph{}
+En la figura~\ref{fig:delanteraneek}, se puede ver el LCD donde se mostrara la imagen y la entrada de vídeo compuesto situada en la parte superior al lado de los conectores de audio. En la figura~\ref{fig:VIN} se puede apreciar mejor la entrada de vídeo.  
 
 \begin{figure}[p]
 \centering
@@ -845,8 +877,21 @@ Echando un vistazo a la figura~\ref{fig:traseraneek}, se puede observar que la i
 \section{Resultados}
 \subsection*{}
 \subsubsection*{}
+
 \paragraph{}
-En tabla~\ref{tab:resutadosc} se puede observar las mejoras obtenidas con el uso de aceleración por hardware con respecto a las versiones software. Como se puede observar la version hardware del Sobel es unas 360 veces mas rápido que la version software manteniendo un framerate que permite ver con bastante fluidez un vídeo. Para la realización de la tabla se tomaron varias medidas y se realizo la media aritmética mediante el uso de la función congelar frame la unidad utilizada es el numero de ciclos necesarios, sabiendo que la frecuencia del sistema es de unos 150Mhz se puede determinar el numero de frames por segundo que se generan, este valor puede ser comprobado en la tabla~\ref{tab:resutadosf}
+En esta sección se mostrarán los resultados de los experimentos realizados. Para preparar los experimentos se tomaron varias muestras no consecutivas mediante el uso de la función congelar frame. La unidad utilizada en las medidas es el numero de ciclos de CPU necesarios para dibujar un frame.
+
+
+\paragraph{}
+Se realizaron los siguientes experimentos:
+\begin{itemize}
+\item Comprobar los ciclos necesarios por frame de las funciones \textit{FrameWriter} y \textit{FrameReader} que generan un flujo de vídeo en color.
+\item Comprobar los ciclos necesarios por frame para calcular el Sobel por Harware.
+\item Comprobar los ciclos necesarios por frame para calcular el Sobel por Software.
+\end{itemize}
+
+\paragraph{}
+En la Tabla~\ref{tab:Muestras} se pueden observar las muestras obtenidas para cada prueba.
 
 \begin{table}[hd]
 \centering
@@ -868,29 +913,40 @@ Video   & Sobel Hardware & Sobel Sofware \\
 \label{tab:Muestras}
 \end{table}
 
+\paragraph{}
+En tabla~\ref{tab:resutadosc} se puede observar la media aritmética de cada experimento. Como se puede observar la version hardware del Sobel es unas 360 veces mas rápida que la version software.
+
 \begin{table}[hd]
 \centering
-\begin{tabular}{l c c}
-Función               & Hardware & Sofware \\
+\begin{tabular}{l r}
+Experimento            & Media Aritmética \\
 \hline
-Reproducción de Vídeo & 3539082.1  &       \\
-Calculo del Sobel     & 9455276.5  & 3424944416.6       \\
+Reproducción de Vídeo  &    3539082.1     \\
+Sobel por Hardware     &    9455276.5     \\
+Sobel por Software     &   3424944416.6   \\
 \end{tabular}
 \caption{Media de Ciclos por Frame}
 \label{tab:resutadosc}
 \end{table}
 
+\paragraph{}
+Sabiendo que la frecuencia del sistema es de unos 150Mhz, se puede determinar el numero de frames por segundo que se generan. En la tabla~\ref{tab:resutadosf} se puede comprobar estos valores.
+
 \begin{table}[hd]
 \centering
-\begin{tabular}{l c c}
-Función               & Hardware & Sofware \\
+\begin{tabular}{l r}
+Experimento            & FPS \\
 \hline
-Reproducción de Vídeo & 42.38  &       \\
-Calculo del Sobel     & 16.26  & 0.044       \\
+Reproducción de Vídeo  & 42.38 \\
+Sobel por Hardware     & 16.26 \\
+Sobel por Software     & 0.044 \\
 \end{tabular}
 \caption{Media de Frames por Segundo}
 \label{tab:resutadosf}
 \end{table}
+
+\paragraph{}
+Como se puede comprobar la reproducción de video es capaz de soportar el formato PAL sin perder ningún frame. Por otra parte el Sobel calculado por hardware mantiene un Framerate de aproximadamente 16 FPS frente a los 25 totales del formato PAL, lo que permite ver con bastante fluidez un vídeo. Finalmente la version software necesita casi 23 segundos para generar un solo frame, lo que la hace altamente ineficiente.
 
 \appendix
 % \clearpage \cleardoublepage
