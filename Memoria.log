@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.6.12)  19 JUN 2013 00:48
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.6.12)  19 JUN 2013 02:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -735,78 +735,104 @@ LaTeX Info: Redefining \% on input line 795.
 
 ]
 Cap\'{\i }tulo 8.
+<./figuras/NEEK/Trasera.png, id=172, 875.27pt x 697.60625pt>
+File: ./figuras/NEEK/Trasera.png Graphic file (type png)
 
-LaTeX Warning: Reference `fig:intefaz' on page 41 undefined on input line 807.
+<use ./figuras/NEEK/Trasera.png>
+Package pdftex.def Info: ./figuras/NEEK/Trasera.png used on input line 811.
+(pdftex.def)             Requested size: 390.0pt x 310.83298pt.
 
+<./figuras/NEEK/BotonesSetup.png, id=173, 1837.86626pt x 506.89375pt>
+File: ./figuras/NEEK/BotonesSetup.png Graphic file (type png)
 
-LaTeX Warning: Reference `tab:resutadosc' on page 41 undefined on input line 81
-3.
+<use ./figuras/NEEK/BotonesSetup.png>
+Package pdftex.def Info: ./figuras/NEEK/BotonesSetup.png used on input line 818
+.
+(pdftex.def)             Requested size: 370.49881pt x 102.18135pt.
 
+<./figuras/NEEK/BotonPowerUSB.png, id=174, 454.69875pt x 1330.9725pt>
+File: ./figuras/NEEK/BotonPowerUSB.png Graphic file (type png)
 
-LaTeX Warning: Reference `tab:resutadosf' on page 41 undefined on input line 81
-3.
+<use ./figuras/NEEK/BotonPowerUSB.png>
+Package pdftex.def Info: ./figuras/NEEK/BotonPowerUSB.png used on input line 82
+5.
+(pdftex.def)             Requested size: 77.99881pt x 228.31354pt.
 
-[41] [42] [43
+<./figuras/NEEK/Delantera.png, id=175, 818.05624pt x 640.3925pt>
+File: ./figuras/NEEK/Delantera.png Graphic file (type png)
 
-] [44]
+<use ./figuras/NEEK/Delantera.png>
+Package pdftex.def Info: ./figuras/NEEK/Delantera.png used on input line 832.
+(pdftex.def)             Requested size: 390.0pt x 305.30356pt.
+
+<./figuras/NEEK/VIN.png, id=176, 301.125pt x 525.965pt>
+File: ./figuras/NEEK/VIN.png Graphic file (type png)
+
+<use ./figuras/NEEK/VIN.png>
+Package pdftex.def Info: ./figuras/NEEK/VIN.png used on input line 839.
+(pdftex.def)             Requested size: 77.99881pt x 136.23402pt.
+ [41]
+LaTeX Info: Redefining \. on input line 844.
+LaTeX Info: Redefining \% on input line 844.
+ [42 <./figuras/NEEK/Trasera.png> <./figuras/NEEK/BotonesSetup.png>]
+LaTeX Info: Redefining \. on input line 844.
+LaTeX Info: Redefining \% on input line 844.
+ [43 <./figuras/NEEK/BotonPowerUSB.png>]
+LaTeX Info: Redefining \. on input line 844.
+LaTeX Info: Redefining \% on input line 844.
+ [44 <./figuras/NEEK/Delantera.png> <./figuras/NEEK/VIN.png>] [45
+
+] [46
+
+] [47] [48]
 Ap\'{e}ndice A.
-(./SISSources/SIS.v [45
+(./SISSources/SIS.v [49
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [46]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [47]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [48]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [49])
-(./SISSources/ram_w.v [50]
+ [50]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [51]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [52])
-(./SISSources/ram_r.v [53]
+ [52]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [54]
+ [53])
+(./SISSources/ram_w.v [54]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [55]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [56])
-(./SISSources/FrameWriter.v [57]
+(./SISSources/ram_r.v [57]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [58])
-(./SISSources/AGrises.v [59]
+ [58]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [59]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [60])
-(./SISSources/Sobel.v [61]
+(./SISSources/FrameWriter.v [61]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [62]
+ [62])
+(./SISSources/AGrises.v [63]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [63]
+ [64])
+(./SISSources/Sobel.v [65]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [64]
+ [66]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [65]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [66])
-(./SISSources/Sobel_cache.v [67]
+ [67]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [68]
@@ -816,7 +842,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [70])
-[71] [72
+(./SISSources/Sobel_cache.v [71]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [72]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [73]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [74])
+[75] [76
 
 ]
 Ap\'{e}ndice B.
@@ -830,7 +866,7 @@ Overfull \hbox (86.00467pt too wide) in paragraph at lines 6--8
 [][][][][][] 
  []
 
-[73]
+[77]
 Overfull \hbox (22.00381pt too wide) in paragraph at lines 41--42
 [][][][] 
  []
@@ -843,45 +879,41 @@ Overfull \hbox (22.00381pt too wide) in paragraph at lines 43--45
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [74]
+ [78]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [75])
-[76] (./Memoria.bbl) [77
+ [79])
+[80] (./Memoria.bbl) [81
 
 
 ] (./Memoria.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
-)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+) ) 
 Here is how much of TeX's memory you used:
- 6264 strings out of 495059
- 84728 string characters out of 3182030
- 304569 words of memory out of 3000000
- 9283 multiletter control sequences out of 15000+200000
+ 6294 strings out of 495059
+ 85525 string characters out of 3182030
+ 304646 words of memory out of 3000000
+ 9307 multiletter control sequences out of 15000+200000
  11766 words of font info for 42 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  38i,14n,52p,909b,1836s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-msl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Memoria.pdf (83 pages, 556636 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on Memoria.pdf (87 pages, 6924497 bytes).
 PDF statistics:
- 336 PDF objects out of 1000 (max. 8388607)
- 225 compressed objects within 3 object streams
+ 355 PDF objects out of 1000 (max. 8388607)
+ 234 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -798,14 +798,50 @@ El programa principal se encarga de llamar a las diferentes funciones que compon
 \subsubsection*{}
 
 \paragraph{}
-Como se estableció en el capitulo , parte de este proyecto consiste en la realización de varias pruebas para comparar las implementaciones hardware y software del Sobel, por ello en este capítulo de describirán las diferentes funcionalidades del sistema implementado y se terminara haciendo una comparación entre los diferentes modos.
+Como se estableció en el Capítulo~\ref{chap:defreq}, parte de este proyecto consiste en la realización de varias pruebas para comparar las implementaciones hardware y software del Sobel, por ello en este capítulo de describirán las diferentes funcionalidades del sistema implementado y se terminara haciendo una comparación entre los diferentes modos.
 
 \section{Funcionamiento}
 \subsection*{}
 \subsubsection*{}
 \paragraph{}
-Echando un vistazo a la figura~\ref{fig:intefaz}, se puede observar que la interfaz para controlar el sistema consiste en 4 botones que activan y desactivan las funciones del sistema así como un LCD y un led que mostrara el estado del mismo. Adicionalmente se disponene de 3 botones extra que permiten reiniciar el sistema, reiniciar la configuración de la FPGA y apagar el sistema, así como una conexión USB necesaria para descargar la configuración. Por el tipo de licencia con el que se ha desarrollado el sistema el único camino posible para cargar la configuración es mediante USB teniendo esta que permanecer conectada, no siendo posible su carga desde la SD o cualquier tipo de memoria permanente.
+Echando un vistazo a la figura~\ref{fig:traseraneek}, se puede observar que la interfaz para controlar el sistema consiste en 4 botones que activan y desactivan las funciones del sistema así como un LCD y un led que mostrara el estado del mismo. Adicionalmente se disponene de 3 botones extra que permiten reiniciar el sistema, reiniciar la configuración de la FPGA y apagar el sistema, así como una conexión USB necesaria para descargar la configuración. Por el tipo de licencia con el que se ha desarrollado el sistema el único camino posible para cargar la configuración es mediante USB teniendo esta que permanecer conectada, no siendo posible su carga desde la SD o cualquier tipo de memoria permanente.
 
+\begin{figure}[p]
+\centering
+\includegraphics[width=\textwidth]{./figuras/NEEK/Trasera.png}
+\caption{Vista Trasera NEEK}
+\label{fig:traseraneek}
+\end{figure}
+
+\begin{figure}[p]
+\centering
+\includegraphics[width=0.95\textwidth]{./figuras/NEEK/BotonesSetup.png}
+\caption{Botones de Control}
+\label{fig:botonescontrol}
+\end{figure}
+
+\begin{figure}[p]
+\centering
+\includegraphics[width=0.2\textwidth]{./figuras/NEEK/BotonPowerUSB.png}
+\caption{Botón Encendido y Conector USB}
+\label{fig:botonusb}
+\end{figure}
+
+\begin{figure}[p]
+\centering
+\includegraphics[width=\textwidth]{./figuras/NEEK/Delantera.png}
+\caption{Vista Delantera NEEK}
+\label{fig:delanteraneek}
+\end{figure}
+
+\begin{figure}[p]
+\centering
+\includegraphics[width=0.20\textwidth]{./figuras/NEEK/VIN.png}
+\caption{Entrada de Vídeo}
+\label{fig:VIN}
+\end{figure}
+
+\clearpage
 \section{Resultados}
 \subsection*{}
 \subsubsection*{}
@@ -828,23 +864,33 @@ Video   & Sobel Hardware & Sobel Sofware \\
 3695883 &    9334261     &  3423139478   \\
 3680720 &    9247614     &  3422926353   \\
 \end{tabular}
-\caption{Muestra}
-\label{tab:Muestra}
+\caption{Muestras}
+\label{tab:Muestras}
 \end{table}
 
+\begin{table}[hd]
+\centering
 \begin{tabular}{l c c}
 Función               & Hardware & Sofware \\
 \hline
 Reproducción de Vídeo & 3539082.1  &       \\
 Calculo del Sobel     & 9455276.5  & 3424944416.6       \\
 \end{tabular}
+\caption{Media de Ciclos por Frame}
+\label{tab:resutadosc}
+\end{table}
 
+\begin{table}[hd]
+\centering
 \begin{tabular}{l c c}
 Función               & Hardware & Sofware \\
 \hline
 Reproducción de Vídeo & 42.38  &       \\
 Calculo del Sobel     & 16.26  & 0.044       \\
 \end{tabular}
+\caption{Media de Frames por Segundo}
+\label{tab:resutadosf}
+\end{table}
 
 \appendix
 % \clearpage \cleardoublepage
