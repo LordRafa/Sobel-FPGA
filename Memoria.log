@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.6.3)  19 JUN 2013 15:50
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.6.3)  19 JUN 2013 16:15
 entering extended mode
  %&-line parsing enabled.
 **Memoria.tex
@@ -457,13 +457,13 @@ Underfull \vbox (badness 1286) has occurred while \output is active []
 
  [3]
 [4]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 146.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 151.
 
  (/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 146.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 151.
  [5] [6] [7] [8
 
 ]
@@ -521,7 +521,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [30]
 [31] (./SISSources/Sobel.v) (./SISSources/Sobel.v [32]) (./SISSources/Sobel.v)
-(./SISSources/Sobel.v) [33] (./SISSources/Sobel.v) (./SISSources/Sobel.v)
+(./SISSources/Sobel.v [33]) (./SISSources/Sobel.v) (./SISSources/Sobel.v)
 (./SISSources/Sobel.v) (./SISSources/Sobel.v) [34]
 Cap\'{\i }tulo 7.
 
@@ -684,7 +684,7 @@ Here is how much of TeX's memory you used:
  8757 multiletter control sequences out of 15000+50000
  11766 words of font info for 42 fonts, out of 3000000 for 9000
  54 hyphenation exceptions out of 8191
- 30i,14n,52p,909b,1808s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 31i,14n,52p,909b,1808s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmb
 x12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></
 usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/t
@@ -697,7 +697,7 @@ r/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf
 -texlive/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texmf-texlive/fo
 nts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/p
 ublic/amsfonts/cm/cmti12.pfb>
-Output written on Memoria.pdf (89 pages, 6184379 bytes).
+Output written on Memoria.pdf (89 pages, 6184485 bytes).
 PDF statistics:
  357 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

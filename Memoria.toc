@@ -1,4 +1,5 @@
 \select@language {spanish}
+\contentsline {paragraph}{}{\es@scroman {ii}}
 \contentsline {chapter}{\numberline {1}''Descripci\IeC {\'o}n del documento.''}{1}
 \contentsline {paragraph}{}{1}
 \contentsline {chapter}{\numberline {2}''Introducci\IeC {\'o}n.''}{3}
@@ -128,6 +129,7 @@
 \contentsline {paragraph}{}{31}
 \contentsline {paragraph}{}{32}
 \contentsline {paragraph}{}{32}
+\contentsline {paragraph}{}{32}
 \contentsline {paragraph}{}{33}
 \contentsline {paragraph}{}{33}
 \contentsline {paragraph}{}{33}
@@ -138,6 +140,7 @@
 \contentsline {chapter}{\numberline {7}''El Firmware''}{35}
 \contentsline {paragraph}{}{35}
 \contentsline {section}{\numberline {7.1}Hardware Abstraction Layer}{35}
+\contentsline {paragraph}{}{35}
 \contentsline {section}{\numberline {7.2}Librer\IeC {\'\i }as Proporcionadas por Altera}{36}
 \contentsline {paragraph}{}{36}
 \contentsline {subsection}{\numberline {7.2.1}Alt\_TPO\_LCD}{36}
@@ -170,6 +173,7 @@
 \contentsline {section}{\numberline {8.1}Funcionamiento}{42}
 \contentsline {paragraph}{}{42}
 \contentsline {paragraph}{}{42}
+\contentsline {paragraph}{}{45}
 \contentsline {paragraph}{}{45}
 \contentsline {paragraph}{}{45}
 \contentsline {paragraph}{}{45}

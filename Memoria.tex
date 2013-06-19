@@ -82,8 +82,12 @@ Jonay Tomás Toledo Carrillo \\
 % Definimos una primera pagina para los agradecimientos
 \newpage
 \thispagestyle{empty}
-\section*{Agradecimientos}
-Aqui ponemos los agradecimientos
+\section*{}
+\paragraph{}
+A mis abuelos, padres y hermano. \newline
+Sin ellos yo no hubiera llegado donde\newline
+estoy hoy, ni llegaría a donde estaré\newline
+mañana.
 
 \tableofcontents
 
@@ -137,6 +141,7 @@ La visión por computador es un campo que incluye métodos para adquirir, proces
 
 \paragraph{}
 Los componentes de un sistema de visión por computador dependen mucho del tipo de aplicación. Algunos sistemas pueden ser independientes y orientados a resolver algunos problemas de detección o de medición, mientras que otros pueden constituir un subsistema de un sistema mayor que a su vez puede tener otros subsistemas como por ejemplo actuadores mecánicos, bases de datos, interfaces hombre máquina, etc. Como podemos ver muchas de las funciones del sistema serán únicos según que aplicación. Sin embargo, existen algunas funciones típicas que pueden ser encontradas en la mayoría de los sistemas de visión por computador. Estas funciones son:
+
 \begin{itemize}
   
   \item  \textbf{Adquisición de Imágenes:} Una imagen digital puede estar producida por uno o más sensores de imagen, los cuales pueden ser de varios tipos tales como: cámaras sensibles a diferentes tipos de luz, radars, rangefinders, aparatos de tomografía, cámaras de ultrasonidos, etc. Dependiendo del tipo de sensor, la imagen resultante podrá ser en 2D, 3D o una secuencia de imágenes. La imagen estará formada por pixels que podrán representar la intensidad de luz en ese punto o otras medidas tales como la profundidad la absorción de sonido o ondas electromagnéticas.
@@ -146,8 +151,7 @@ Los componentes de un sistema de visión por computador dependen mucho del tipo 
     \item Escalado de la imagen.
     \item Reducción de ruido.
     \item Aumento del contraste.
-  \end{itemize}
-  
+  \end{itemize}  
   
   \item \textbf{Extracción de características:} Se extraen características de la imagen a varios niveles de complejidad. Algunos ejemplos son:
   \begin{itemize}
@@ -187,6 +191,7 @@ Si bien en la adquisición de información visual se ha conseguido superar con c
 
 \paragraph{}
 Varios son los problemas que influyen en que las capacidades de los sistemas de visión por computador:
+
 \begin{itemize}
   \item Necesidad de computo elevada: Los algoritmos de visión por ordenador requieren de sistemas potentes para ser ejecutados.
   \item No abundancia de hardware específico: En la actualidad la mayoría de los ordenadores no disponen de un hardware específico para realizar funciones de visión por ordenador.
@@ -317,7 +322,6 @@ Es la version mas rápida de la CPU \textit{NIOS II} entre cuyas característica
 \item Predicción de saltos.
 
 \item Permite añadir hasta 256 instrucciones personalizadas al juego de instrucciones original.
-
 \end{itemize}
 
 \paragraph{}
@@ -652,6 +656,7 @@ G=\sqrt{G_x^2 + G_y^2}\label{eq:sobelg}
 \paragraph{}
 Como se puede observar la ecuación~\ref{eq:sobelgx} calcula la \textit{componente x} del gradiente, para ello calcula la diferencia de brillo entre los píxeles que están a la derecha, con los que están a la izquierda, ponderando el valor de los que son adyacentes el doble de los que están en las diagonales. La ecuación~\ref{eq:sobelgy} hace lo propio pero para la \textit{componente y} del gradiente que es la vertical.
 
+\paragraph{}
 La ecuación~\ref{eq:sobelg} calcula la magnitud gradiente resultante de las \textit{componentes x} e \textit{y}. Sin embargo esta presenta un problema a la hora de implementarlo en una FPGA. La raíz cuadrada consume demasiados elementos lógicos y tiempo, sin embargo según podemos leer en [p. 218] \citet{Myler} en este caso la magnitud del gradiente puede ser aproximada de forma aceptable mediante la ecuación~\ref{eq:sobelgaprox}.
 
 \begin{equation}\label{eq:sobelgaprox}
@@ -717,6 +722,7 @@ Las etapas 5 y 6 hacen que el color de los bordes sea negro y el de las llanuras
 Hasta ahora se ha hablado de la implementación del sistema Sobel desde el punto de vista del hardware, sin embargo todo sistema que involucre una CPU necesita de un pequeño software que se encargue de controlar el funcionamiento del mismo. Este pequeño software es llamado Firmware y como ya se dijo en capítulos anteriores en el caso del procesador NIOS II de Altera proporciona un IDE para desarrollar aplicaciones en C. En las subsiguientes secciones de este capítulo se irá mostrando los diferentes elementos que componen el firmware.
 
 \section{Hardware Abstraction Layer}
+\paragraph{}
 El \textit{Hardware Abstraction Layer} es la pieza de software mas importante del firmware. Se encarga de facilitar la tarea de desarrollar aplicaciones proporcionando una serie de drivers para controlar las diferentes \textit{IPs} mapeadas en memoria del sistema. También proporciona la librería estándar de C, funciones para el control del temporizador y funciones para la lectura y escritura a memoria.
 
 \section{Librerías Proporcionadas por Altera}
@@ -822,7 +828,7 @@ En esta sección se explicara como utilizar el sistema. En las figuras~\ref{fig:
 \end{figure}
 
 \paragraph{}
-Si nos fijamos en la esquina inferior derecha de la parte trasera (figura~\ref{fig:traseraneek}), se puede ver un conjunto de botones y LEDs que se pueden ver con mas detalle en la figura~\ref{fig:botonescontrol}. Los botones etiquetados como \textit{Button n} controlaran las siguientes funciones del sistema:
+Si nos fijamos en la esquina inferior derecha de la parte trasera (figura~\ref{fig:traseraneek}), se puede ver un conjunto de botones y LEDs que se pueden ver con mas detalle en la figura~\ref{fig:botonescontrol}.
 
 \begin{figure}[p]
 \centering
@@ -833,6 +839,8 @@ Si nos fijamos en la esquina inferior derecha de la parte trasera (figura~\ref{f
 
 \clearpage
 
+\paragraph{}
+Los botones etiquetados como \textit{Button n} controlaran las siguientes funciones del sistema:
 \begin{itemize}
 \item \textbf{Button 1:} Activar/desactivar contador de ciclos por frame.
 \item \textbf{Button 2:} Selecciona entre los modos de \textit{Solo Vídeo} y \textit{Calculo del Sobel}.
@@ -886,7 +894,7 @@ En esta sección se mostrarán los resultados de los experimentos realizados. Pa
 Se realizaron los siguientes experimentos:
 \begin{itemize}
 \item Comprobar los ciclos necesarios por frame de las funciones \textit{FrameWriter} y \textit{FrameReader} que generan un flujo de vídeo en color.
-\item Comprobar los ciclos necesarios por frame para calcular el Sobel por Harware.
+\item Comprobar los ciclos necesarios por frame para calcular el Sobel por Hardware.
 \item Comprobar los ciclos necesarios por frame para calcular el Sobel por Software.
 \end{itemize}
 
@@ -946,7 +954,7 @@ Sobel por Software     & 0.044 \\
 \end{table}
 
 \paragraph{}
-Como se puede comprobar la reproducción de video es capaz de soportar el formato PAL sin perder ningún frame. Por otra parte el Sobel calculado por hardware mantiene un Framerate de aproximadamente 16 FPS frente a los 25 totales del formato PAL, lo que permite ver con bastante fluidez un vídeo. Finalmente la version software necesita casi 23 segundos para generar un solo frame, lo que la hace altamente ineficiente.
+Como se puede comprobar la reproducción de vídeo es capaz de soportar el formato PAL sin perder ningún frame. Por otra parte el Sobel calculado por hardware mantiene un Framerate de aproximadamente 16 FPS frente a los 25 totales del formato PAL, lo que permite ver con bastante fluidez un vídeo. Finalmente la version software necesita casi 23 segundos para generar un solo frame, lo que la hace altamente ineficiente.
 
 \appendix
 % \clearpage \cleardoublepage
