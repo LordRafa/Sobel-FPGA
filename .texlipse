@@ -1,0 +1,14 @@
+#TeXlipse project settings
+#Wed May 29 13:39:43 WEST 2013
+markTmpDer=true
+builderNum=2
+outputDir=
+makeIndSty=
+bibrefDir=
+outputFormat=pdf
+tempDir=tmp
+mainTexFile=Memoria.tex
+outputFile=Memoria.pdf
+langSpell=es
+markDer=true
+srcDir=

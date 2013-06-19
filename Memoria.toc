@@ -137,63 +137,71 @@
 \contentsline {paragraph}{}{34}
 \contentsline {paragraph}{}{34}
 \contentsline {paragraph}{}{34}
-\contentsline {chapter}{\numberline {7}''El Firmware''}{35}
-\contentsline {paragraph}{}{35}
-\contentsline {section}{\numberline {7.1}Hardware Abstraction Layer}{35}
-\contentsline {paragraph}{}{35}
-\contentsline {section}{\numberline {7.2}Librer\IeC {\'\i }as Proporcionadas por Altera}{36}
-\contentsline {paragraph}{}{36}
-\contentsline {subsection}{\numberline {7.2.1}Alt\_TPO\_LCD}{36}
-\contentsline {paragraph}{}{36}
-\contentsline {paragraph}{}{36}
-\contentsline {paragraph}{}{36}
-\contentsline {subsection}{\numberline {7.2.2}Audio\_TVDecoder}{36}
-\contentsline {paragraph}{}{36}
-\contentsline {subsection}{\numberline {7.2.3}Framereader}{37}
+\contentsline {chapter}{\numberline {7}''El Firmware''}{37}
 \contentsline {paragraph}{}{37}
-\contentsline {subsection}{\numberline {7.2.4}Alt\_Video\_Display, Fonts, Graphics\_Lib}{38}
+\contentsline {section}{\numberline {7.1}Hardware Abstraction Layer}{37}
+\contentsline {paragraph}{}{37}
+\contentsline {section}{\numberline {7.2}Librer\IeC {\'\i }as Proporcionadas por Altera}{38}
 \contentsline {paragraph}{}{38}
-\contentsline {subsubsection}{Alt\_Video\_Display}{38}
+\contentsline {subsection}{\numberline {7.2.1}Alt\_TPO\_LCD}{38}
 \contentsline {paragraph}{}{38}
-\contentsline {subsubsection}{Fonts}{38}
 \contentsline {paragraph}{}{38}
-\contentsline {subsubsection}{Graphics\_Lib}{38}
 \contentsline {paragraph}{}{38}
-\contentsline {section}{\numberline {7.3}Librer\IeC {\'\i }as Desarrolladas por Mi}{38}
+\contentsline {subsection}{\numberline {7.2.2}Audio\_TVDecoder}{38}
 \contentsline {paragraph}{}{38}
-\contentsline {subsection}{\numberline {7.3.1}Keyhandler}{38}
-\contentsline {paragraph}{}{38}
-\contentsline {subsection}{\numberline {7.3.2}Sobel Function Set}{39}
+\contentsline {subsection}{\numberline {7.2.3}Framereader}{39}
 \contentsline {paragraph}{}{39}
-\contentsline {paragraph}{}{39}
-\contentsline {section}{\numberline {7.4}Programa Principal}{39}
-\contentsline {paragraph}{}{39}
-\contentsline {chapter}{\numberline {8}''El Sistema en Acci\IeC {\'o}n''}{41}
+\contentsline {subsection}{\numberline {7.2.4}Alt\_Video\_Display, Fonts, Graphics\_Lib}{40}
+\contentsline {paragraph}{}{40}
+\contentsline {subsubsection}{Alt\_Video\_Display}{40}
+\contentsline {paragraph}{}{40}
+\contentsline {subsubsection}{Fonts}{40}
+\contentsline {paragraph}{}{40}
+\contentsline {subsubsection}{Graphics\_Lib}{40}
+\contentsline {paragraph}{}{40}
+\contentsline {section}{\numberline {7.3}Librer\IeC {\'\i }as Desarrolladas por Mi}{40}
+\contentsline {paragraph}{}{40}
+\contentsline {subsection}{\numberline {7.3.1}Keyhandler}{41}
 \contentsline {paragraph}{}{41}
-\contentsline {section}{\numberline {8.1}Funcionamiento}{42}
-\contentsline {paragraph}{}{42}
-\contentsline {paragraph}{}{42}
-\contentsline {paragraph}{}{45}
-\contentsline {paragraph}{}{45}
-\contentsline {paragraph}{}{45}
-\contentsline {paragraph}{}{45}
-\contentsline {paragraph}{}{45}
-\contentsline {paragraph}{}{45}
-\contentsline {section}{\numberline {8.2}Resultados}{47}
+\contentsline {subsection}{\numberline {7.3.2}Sobel Function Set}{41}
+\contentsline {paragraph}{}{41}
+\contentsline {paragraph}{}{41}
+\contentsline {section}{\numberline {7.4}Programa Principal}{41}
+\contentsline {paragraph}{}{41}
+\contentsline {chapter}{\numberline {8}''El Sistema en Acci\IeC {\'o}n''}{43}
+\contentsline {paragraph}{}{43}
+\contentsline {section}{\numberline {8.1}Funcionamiento}{44}
+\contentsline {paragraph}{}{44}
+\contentsline {paragraph}{}{44}
 \contentsline {paragraph}{}{47}
 \contentsline {paragraph}{}{47}
 \contentsline {paragraph}{}{47}
 \contentsline {paragraph}{}{47}
-\contentsline {paragraph}{}{48}
-\contentsline {paragraph}{}{48}
+\contentsline {paragraph}{}{47}
+\contentsline {paragraph}{}{47}
+\contentsline {section}{\numberline {8.2}Resultados}{49}
+\contentsline {paragraph}{}{49}
+\contentsline {paragraph}{}{49}
+\contentsline {paragraph}{}{49}
+\contentsline {paragraph}{}{49}
+\contentsline {paragraph}{}{50}
+\contentsline {paragraph}{}{50}
 \contentsline {chapter}{Ap\IeC {\'e}ndices}{}
-\contentsline {chapter}{\numberline {A}''C\IeC {\'o}digo Fuente Verilog''}{51}
-\contentsline {subsubsection}{Sobel Instruction Set}{51}
-\contentsline {subsubsection}{RAM W}{56}
-\contentsline {subsubsection}{RAM R}{59}
-\contentsline {subsubsection}{FrameWriter}{63}
-\contentsline {subsubsection}{AGrises}{65}
-\contentsline {subsubsection}{Sobel}{67}
-\contentsline {subsubsection}{Sobel Cache}{73}
-\contentsline {chapter}{\numberline {B}''C\IeC {\'o}digo Fuente C''}{79}
-\contentsline {subsubsection}{Programa Principal}{79}
+\contentsline {chapter}{\numberline {A}''C\IeC {\'o}digo Fuente Verilog''}{53}
+\contentsline {subsubsection}{Rawapro}{53}
+\contentsline {subsubsection}{Sobel Instruction Set}{62}
+\contentsline {subsubsection}{RAM Write}{68}
+\contentsline {subsubsection}{RAM Read}{72}
+\contentsline {subsubsection}{FrameWriter}{76}
+\contentsline {subsubsection}{AGrises}{78}
+\contentsline {subsubsection}{Sobel}{81}
+\contentsline {subsubsection}{Sobel Cache}{87}
+\contentsline {chapter}{\numberline {B}''C\IeC {\'o}digo Fuente C''}{93}
+\contentsline {subsubsection}{Programa Principal}{93}
+\contentsline {subsubsection}{Keyhandler}{97}
+\contentsline {subsubsection}{Sobel Function Set}{99}
+\contentsline {subsubsection}{System Alias}{102}
+\contentsline {subsubsection}{ALT TPO LCD}{103}
+\contentsline {subsubsection}{TV Decoder}{106}
+\contentsline {subsubsection}{Simple Graphics}{109}
+\contentsline {subsubsection}{FrameReader}{130}
