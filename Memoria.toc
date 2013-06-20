@@ -19,109 +19,112 @@
 \contentsline {paragraph}{}{7}
 \contentsline {paragraph}{}{7}
 \contentsline {chapter}{\numberline {3}''Definici\IeC {\'o}n de requisitos.''}{9}
-\contentsline {subsubsection}{Desarrollo de los subsistemas que conformar\IeC {\'a}n el sistema base}{9}
 \contentsline {paragraph}{}{9}
 \contentsline {paragraph}{}{9}
-\contentsline {subsubsection}{Modificaci\IeC {\'o}n del juego de instrucciones del procesador NIOS II.}{9}
+\contentsline {section}{\numberline {3.1}Requisitos del Hardware}{9}
 \contentsline {paragraph}{}{9}
-\contentsline {subsubsection}{Implementar las funciones por software.}{9}
+\contentsline {subsection}{\numberline {3.1.1}Subsistema Principal}{9}
 \contentsline {paragraph}{}{9}
-\contentsline {subsubsection}{Implementar el firmware del sistema.}{9}
-\contentsline {paragraph}{}{9}
-\contentsline {subsubsection}{Anotar resultados.}{10}
+\contentsline {subsection}{\numberline {3.1.2}Subsistema de V\IeC {\'\i }deo}{10}
 \contentsline {paragraph}{}{10}
-\contentsline {chapter}{\numberline {4}''Herramientas y metodolog\IeC {\'\i }a.''}{11}
-\contentsline {section}{\numberline {4.1}Herramientas.}{11}
-\contentsline {subsection}{\numberline {4.1.1}Elementos Hardware}{11}
+\contentsline {subsection}{\numberline {3.1.3}Ampliaci\IeC {\'o}n del Juego de Instrucciones}{10}
+\contentsline {paragraph}{}{10}
+\contentsline {section}{\numberline {3.2}Requisitos del Software}{10}
+\contentsline {paragraph}{}{10}
+\contentsline {subsubsection}{Implementar el Sobel por software}{10}
+\contentsline {paragraph}{}{10}
+\contentsline {subsubsection}{Implementar el Firmware del Sistema.}{10}
+\contentsline {paragraph}{}{10}
+\contentsline {section}{\numberline {3.3}Requisitos de la Documentaci\IeC {\'o}n}{11}
 \contentsline {paragraph}{}{11}
+\contentsline {subsubsection}{Experimentos}{11}
 \contentsline {paragraph}{}{11}
+\contentsline {subsubsection}{Memoria y Presentaci\IeC {\'o}n del Proyecto}{11}
 \contentsline {paragraph}{}{11}
-\contentsline {paragraph}{}{12}
-\contentsline {paragraph}{}{12}
-\contentsline {subsection}{\numberline {4.1.2}Elementos Software}{12}
-\contentsline {paragraph}{}{12}
-\contentsline {subsection}{\numberline {4.1.3}Otras herramientas Altera }{12}
-\contentsline {paragraph}{}{12}
-\contentsline {subsubsection}{IPs de Altera Utilizadas}{13}
-\contentsline {paragraph}{CPU NIOS II/f:}{13}
+\contentsline {chapter}{\numberline {4}''Herramientas y Metodolog\IeC {\'\i }a.''}{13}
+\contentsline {section}{\numberline {4.1}Herramientas.}{13}
+\contentsline {subsection}{\numberline {4.1.1}Elementos Hardware}{13}
 \contentsline {paragraph}{}{13}
-\contentsline {paragraph}{NIOS II Floating-Point Custom Instructions:}{13}
-\contentsline {paragraph}{DDR SDRAM Controller:}{13}
-\contentsline {paragraph}{Altera Video IP:}{13}
-\contentsline {subsubsection}{Buses de conexi\IeC {\'o}n}{13}
 \contentsline {paragraph}{}{13}
-\contentsline {paragraph}{Avalon-MM:}{13}
+\contentsline {paragraph}{}{13}
 \contentsline {paragraph}{}{14}
-\contentsline {paragraph}{Avalon-ST:}{14}
 \contentsline {paragraph}{}{14}
-\contentsline {paragraph}{Custom Instruction:}{14}
-\contentsline {paragraph}{Avalon Interrupt:}{14}
-\contentsline {paragraph}{Avalon Conduit:}{14}
-\contentsline {section}{\numberline {4.2}Metodolog\IeC {\'\i }a.}{15}
-\contentsline {subsection}{\numberline {4.2.1}Consideraciones}{15}
+\contentsline {subsection}{\numberline {4.1.2}Elementos Software}{14}
+\contentsline {paragraph}{}{14}
+\contentsline {subsection}{\numberline {4.1.3}Otras herramientas Altera }{14}
+\contentsline {paragraph}{}{14}
+\contentsline {subsubsection}{IPs de Altera Utilizadas}{15}
+\contentsline {paragraph}{CPU NIOS II/f:}{15}
 \contentsline {paragraph}{}{15}
+\contentsline {paragraph}{NIOS II Floating-Point Custom Instructions:}{15}
+\contentsline {paragraph}{DDR SDRAM Controller:}{15}
+\contentsline {paragraph}{Altera Video IP:}{15}
+\contentsline {subsubsection}{Buses de conexi\IeC {\'o}n}{15}
 \contentsline {paragraph}{}{15}
-\contentsline {paragraph}{}{15}
-\contentsline {paragraph}{}{15}
-\contentsline {subsection}{\numberline {4.2.2}Pasos para el desarrollo}{15}
-\contentsline {paragraph}{}{15}
+\contentsline {paragraph}{Avalon-MM:}{15}
 \contentsline {paragraph}{}{16}
+\contentsline {paragraph}{Avalon-ST:}{16}
 \contentsline {paragraph}{}{16}
-\contentsline {paragraph}{}{16}
-\contentsline {paragraph}{}{16}
-\contentsline {paragraph}{}{16}
-\contentsline {paragraph}{}{16}
-\contentsline {paragraph}{}{16}
-\contentsline {paragraph}{}{16}
+\contentsline {paragraph}{Custom Instruction:}{16}
+\contentsline {paragraph}{Avalon Interrupt:}{16}
+\contentsline {paragraph}{Avalon Conduit:}{16}
+\contentsline {section}{\numberline {4.2}Metodolog\IeC {\'\i }a.}{17}
+\contentsline {subsection}{\numberline {4.2.1}Consideraciones}{17}
 \contentsline {paragraph}{}{17}
-\contentsline {chapter}{\numberline {5}''Los Subsistemas.''}{19}
+\contentsline {paragraph}{}{17}
+\contentsline {paragraph}{}{17}
+\contentsline {paragraph}{}{17}
+\contentsline {subsection}{\numberline {4.2.2}Pasos para el desarrollo}{17}
+\contentsline {paragraph}{}{17}
+\contentsline {paragraph}{}{18}
+\contentsline {paragraph}{}{18}
+\contentsline {paragraph}{}{18}
+\contentsline {paragraph}{}{18}
+\contentsline {paragraph}{}{18}
+\contentsline {paragraph}{}{18}
+\contentsline {paragraph}{}{18}
+\contentsline {paragraph}{}{18}
 \contentsline {paragraph}{}{19}
-\contentsline {section}{\numberline {5.1}Subsistema Principal}{19}
-\contentsline {paragraph}{}{19}
-\contentsline {paragraph}{}{19}
-\contentsline {paragraph}{}{19}
-\contentsline {paragraph}{}{23}
-\contentsline {paragraph}{}{23}
-\contentsline {paragraph}{}{23}
-\contentsline {section}{\numberline {5.2}Subsistema de V\IeC {\'\i }deo}{23}
-\contentsline {paragraph}{}{23}
-\contentsline {paragraph}{}{23}
-\contentsline {subsection}{\numberline {5.2.1}Obtenci\IeC {\'o}n del flujo de v\IeC {\'\i }deo}{23}
-\contentsline {paragraph}{}{23}
-\contentsline {paragraph}{}{23}
-\contentsline {paragraph}{}{23}
+\contentsline {chapter}{\numberline {5}''Los Subsistemas.''}{21}
+\contentsline {paragraph}{}{21}
+\contentsline {section}{\numberline {5.1}Subsistema Principal}{21}
+\contentsline {paragraph}{}{21}
+\contentsline {paragraph}{}{21}
+\contentsline {paragraph}{}{21}
 \contentsline {paragraph}{}{25}
 \contentsline {paragraph}{}{25}
 \contentsline {paragraph}{}{25}
+\contentsline {section}{\numberline {5.2}Subsistema de V\IeC {\'\i }deo}{25}
+\contentsline {paragraph}{}{25}
+\contentsline {paragraph}{}{25}
+\contentsline {subsection}{\numberline {5.2.1}Obtenci\IeC {\'o}n del flujo de v\IeC {\'\i }deo}{25}
 \contentsline {paragraph}{}{25}
 \contentsline {paragraph}{}{25}
 \contentsline {paragraph}{}{25}
-\contentsline {subsection}{\numberline {5.2.2}Mostrar el frame}{25}
-\contentsline {paragraph}{}{25}
-\contentsline {paragraph}{}{25}
-\contentsline {subsection}{\numberline {5.2.3}Procesado de la informaci\IeC {\'o}n}{26}
-\contentsline {paragraph}{}{26}
-\contentsline {paragraph}{}{26}
-\contentsline {paragraph}{}{26}
-\contentsline {chapter}{\numberline {6}''El Sobel Instruction Set.''}{27}
 \contentsline {paragraph}{}{27}
-\contentsline {section}{\numberline {6.1}FrameWriter}{27}
 \contentsline {paragraph}{}{27}
+\contentsline {paragraph}{}{27}
+\contentsline {paragraph}{}{27}
+\contentsline {paragraph}{}{27}
+\contentsline {paragraph}{}{27}
+\contentsline {subsection}{\numberline {5.2.2}Mostrar el frame}{27}
+\contentsline {paragraph}{}{27}
+\contentsline {paragraph}{}{27}
+\contentsline {subsection}{\numberline {5.2.3}Procesado de la informaci\IeC {\'o}n}{28}
 \contentsline {paragraph}{}{28}
 \contentsline {paragraph}{}{28}
 \contentsline {paragraph}{}{28}
-\contentsline {paragraph}{}{28}
-\contentsline {section}{\numberline {6.2}AGrises}{28}
-\contentsline {paragraph}{}{28}
+\contentsline {chapter}{\numberline {6}''El Sobel Instruction Set.''}{29}
 \contentsline {paragraph}{}{29}
-\contentsline {paragraph}{}{29}
-\contentsline {paragraph}{}{29}
-\contentsline {paragraph}{}{29}
-\contentsline {paragraph}{}{29}
+\contentsline {section}{\numberline {6.1}FrameWriter}{29}
 \contentsline {paragraph}{}{29}
 \contentsline {paragraph}{}{30}
 \contentsline {paragraph}{}{30}
-\contentsline {section}{\numberline {6.3}Sobel}{31}
+\contentsline {paragraph}{}{30}
+\contentsline {paragraph}{}{30}
+\contentsline {section}{\numberline {6.2}AGrises}{30}
+\contentsline {paragraph}{}{30}
+\contentsline {paragraph}{}{31}
 \contentsline {paragraph}{}{31}
 \contentsline {paragraph}{}{31}
 \contentsline {paragraph}{}{31}
@@ -129,7 +132,8 @@
 \contentsline {paragraph}{}{31}
 \contentsline {paragraph}{}{32}
 \contentsline {paragraph}{}{32}
-\contentsline {paragraph}{}{32}
+\contentsline {section}{\numberline {6.3}Sobel}{33}
+\contentsline {paragraph}{}{33}
 \contentsline {paragraph}{}{33}
 \contentsline {paragraph}{}{33}
 \contentsline {paragraph}{}{33}
@@ -137,71 +141,78 @@
 \contentsline {paragraph}{}{34}
 \contentsline {paragraph}{}{34}
 \contentsline {paragraph}{}{34}
-\contentsline {chapter}{\numberline {7}''El Firmware''}{37}
-\contentsline {paragraph}{}{37}
-\contentsline {section}{\numberline {7.1}Hardware Abstraction Layer}{37}
-\contentsline {paragraph}{}{37}
-\contentsline {section}{\numberline {7.2}Librer\IeC {\'\i }as Proporcionadas por Altera}{38}
-\contentsline {paragraph}{}{38}
-\contentsline {subsection}{\numberline {7.2.1}Alt\_TPO\_LCD}{38}
-\contentsline {paragraph}{}{38}
-\contentsline {paragraph}{}{38}
-\contentsline {paragraph}{}{38}
-\contentsline {subsection}{\numberline {7.2.2}Audio\_TVDecoder}{38}
-\contentsline {paragraph}{}{38}
-\contentsline {subsection}{\numberline {7.2.3}Framereader}{39}
+\contentsline {paragraph}{}{35}
+\contentsline {paragraph}{}{35}
+\contentsline {paragraph}{}{35}
+\contentsline {paragraph}{}{35}
+\contentsline {paragraph}{}{36}
+\contentsline {paragraph}{}{36}
+\contentsline {paragraph}{}{36}
+\contentsline {chapter}{\numberline {7}''El Firmware''}{39}
 \contentsline {paragraph}{}{39}
-\contentsline {subsection}{\numberline {7.2.4}Alt\_Video\_Display, Fonts, Graphics\_Lib}{40}
+\contentsline {section}{\numberline {7.1}Hardware Abstraction Layer}{39}
+\contentsline {paragraph}{}{39}
+\contentsline {section}{\numberline {7.2}Librer\IeC {\'\i }as Proporcionadas por Altera}{40}
 \contentsline {paragraph}{}{40}
-\contentsline {subsubsection}{Alt\_Video\_Display}{40}
+\contentsline {subsection}{\numberline {7.2.1}Alt\_TPO\_LCD}{40}
 \contentsline {paragraph}{}{40}
-\contentsline {subsubsection}{Fonts}{40}
 \contentsline {paragraph}{}{40}
-\contentsline {subsubsection}{Graphics\_Lib}{40}
 \contentsline {paragraph}{}{40}
-\contentsline {section}{\numberline {7.3}Librer\IeC {\'\i }as Desarrolladas por Mi}{40}
+\contentsline {subsection}{\numberline {7.2.2}Audio\_TVDecoder}{40}
 \contentsline {paragraph}{}{40}
-\contentsline {subsection}{\numberline {7.3.1}Keyhandler}{41}
+\contentsline {subsection}{\numberline {7.2.3}Framereader}{41}
 \contentsline {paragraph}{}{41}
-\contentsline {subsection}{\numberline {7.3.2}Sobel Function Set}{41}
-\contentsline {paragraph}{}{41}
-\contentsline {paragraph}{}{41}
-\contentsline {section}{\numberline {7.4}Programa Principal}{41}
-\contentsline {paragraph}{}{41}
-\contentsline {chapter}{\numberline {8}''El Sistema en Acci\IeC {\'o}n''}{43}
+\contentsline {subsection}{\numberline {7.2.4}Alt\_Video\_Display, Fonts, Graphics\_Lib}{42}
+\contentsline {paragraph}{}{42}
+\contentsline {subsubsection}{Alt\_Video\_Display}{42}
+\contentsline {paragraph}{}{42}
+\contentsline {subsubsection}{Fonts}{42}
+\contentsline {paragraph}{}{42}
+\contentsline {subsubsection}{Graphics\_Lib}{42}
+\contentsline {paragraph}{}{42}
+\contentsline {section}{\numberline {7.3}Librer\IeC {\'\i }as Desarrolladas por Mi}{42}
+\contentsline {paragraph}{}{42}
+\contentsline {subsection}{\numberline {7.3.1}Keyhandler}{43}
 \contentsline {paragraph}{}{43}
-\contentsline {section}{\numberline {8.1}Funcionamiento}{44}
-\contentsline {paragraph}{}{44}
-\contentsline {paragraph}{}{44}
-\contentsline {paragraph}{}{47}
-\contentsline {paragraph}{}{47}
-\contentsline {paragraph}{}{47}
-\contentsline {paragraph}{}{47}
-\contentsline {paragraph}{}{47}
-\contentsline {paragraph}{}{47}
-\contentsline {section}{\numberline {8.2}Resultados}{49}
+\contentsline {subsection}{\numberline {7.3.2}Sobel Function Set}{43}
+\contentsline {paragraph}{}{43}
+\contentsline {paragraph}{}{43}
+\contentsline {section}{\numberline {7.4}Programa Principal}{43}
+\contentsline {paragraph}{}{43}
+\contentsline {chapter}{\numberline {8}''El Sistema en Acci\IeC {\'o}n''}{45}
+\contentsline {paragraph}{}{45}
+\contentsline {section}{\numberline {8.1}Funcionamiento}{46}
+\contentsline {paragraph}{}{46}
+\contentsline {paragraph}{}{46}
 \contentsline {paragraph}{}{49}
 \contentsline {paragraph}{}{49}
 \contentsline {paragraph}{}{49}
 \contentsline {paragraph}{}{49}
-\contentsline {paragraph}{}{50}
-\contentsline {paragraph}{}{50}
+\contentsline {paragraph}{}{49}
+\contentsline {paragraph}{}{49}
+\contentsline {section}{\numberline {8.2}Resultados}{51}
+\contentsline {paragraph}{}{51}
+\contentsline {paragraph}{}{51}
+\contentsline {paragraph}{}{51}
+\contentsline {paragraph}{}{51}
+\contentsline {paragraph}{}{52}
+\contentsline {paragraph}{}{52}
 \contentsline {chapter}{Ap\IeC {\'e}ndices}{}
-\contentsline {chapter}{\numberline {A}''C\IeC {\'o}digo Fuente Verilog''}{53}
-\contentsline {subsubsection}{Rawapro}{53}
-\contentsline {subsubsection}{Sobel Instruction Set}{62}
-\contentsline {subsubsection}{RAM Write}{68}
-\contentsline {subsubsection}{RAM Read}{72}
-\contentsline {subsubsection}{FrameWriter}{76}
-\contentsline {subsubsection}{AGrises}{78}
-\contentsline {subsubsection}{Sobel}{81}
-\contentsline {subsubsection}{Sobel Cache}{87}
-\contentsline {chapter}{\numberline {B}''C\IeC {\'o}digo Fuente C''}{93}
-\contentsline {subsubsection}{Programa Principal}{93}
-\contentsline {subsubsection}{Keyhandler}{97}
-\contentsline {subsubsection}{Sobel Function Set}{99}
-\contentsline {subsubsection}{System Alias}{102}
-\contentsline {subsubsection}{ALT TPO LCD}{103}
-\contentsline {subsubsection}{TV Decoder}{106}
-\contentsline {subsubsection}{Simple Graphics}{109}
-\contentsline {subsubsection}{FrameReader}{130}
+\contentsline {chapter}{\numberline {A}''C\IeC {\'o}digo Fuente Verilog''}{55}
+\contentsline {subsubsection}{Rawapro}{55}
+\contentsline {subsubsection}{Sobel Instruction Set}{64}
+\contentsline {subsubsection}{RAM Write}{70}
+\contentsline {subsubsection}{RAM Read}{74}
+\contentsline {subsubsection}{FrameWriter}{78}
+\contentsline {subsubsection}{AGrises}{80}
+\contentsline {subsubsection}{Sobel}{83}
+\contentsline {subsubsection}{Sobel Cache}{89}
+\contentsline {chapter}{\numberline {B}''C\IeC {\'o}digo Fuente C''}{95}
+\contentsline {subsubsection}{Programa Principal}{95}
+\contentsline {subsubsection}{Keyhandler}{99}
+\contentsline {subsubsection}{Sobel Function Set}{101}
+\contentsline {subsubsection}{System Alias}{104}
+\contentsline {subsubsection}{ALT TPO LCD}{105}
+\contentsline {subsubsection}{TV Decoder}{108}
+\contentsline {subsubsection}{Simple Graphics}{111}
+\contentsline {subsubsection}{FrameReader}{132}

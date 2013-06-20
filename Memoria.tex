@@ -222,48 +222,73 @@ Como se puede ver en los resultados de las pruebas realizadas, anotados en este 
 \chapter{''Definición de requisitos.''} 
 \label{chap:defreq}
 
-\section*{}
-\subsection*{}
-
-\subsubsection{Desarrollo de los subsistemas que conformarán el sistema base}
+\paragraph{}
+En el Capítulo~\ref{chap:intro} se ha visto los problemas que presentan los sistema de visión por ordenador y una lista de posibles soluciones para . En este capítulo se definen una serie de requisitos a alcanzar en este proyecto. Sin embargo no se especifica la forma concreta de implementarlos, esto sera tarea de los siguientes capítulos de este documento.
 
 \paragraph{}
-El primer subsistema desarrollado implementa el procesador, la memoria los relojes, así como las comunicaciones con los periféricos.
+Como se vio en la Sección~\ref{sec:soluciones}, este proyecto implementará un sistema de visión por ordenador basado en Sobel para comparar la eficiencia de una implementación en FPGA contra una implementación en software. En las secciones siguientes se verán los requisitos necesarios para alcanzar ese objetivo.
 
+\section{Requisitos del Hardware}
 \paragraph{}
-El segundos subsistema implementa el procesado desde la entrada de vídeo hasta obtener un frame en formato RGB con una resolución de 800x600.
-
-\subsubsection{Modificación del juego de instrucciones del procesador NIOS II.}
+Estos requisitos hacen referencia a los requisitos que tiene que satisfacer la implementación del sistema de visión desde el punto de vista del hardware. 
+ 
+\subsection{Subsistema Principal}
 \paragraph{}
-Se ha de añadir un conjunto de instrucciones que faciliten el calculo del algoritmo Sobel.
+El primer requisito hardware es desarrollar un subsistema que incluya un procesador \textit{NIOS II}, un controlador de la memoria, un temporizador para realizar mediciones en tiempo de ejecución y los buses para comunicarse con una interfaz de usuario, un LCD, una entrada de vídeo y el subsistema de vídeo.
 
-\subsubsection{Implementar las funciones por software.}
+\subsection{Subsistema de Vídeo}
 \paragraph{}
-Desarrollar dos métodos en C que implementen las instrucciones desarrolladas en el anterior requisito.
+Otro de los requisito hardware es desarrollar un subsistema de vídeo que se encargue de adaptar la de vídeo proveniente de la entrada de vídeo a un formato que pueda ser manipulado fácilmente y mostrado por el LCD.
 
-\subsubsection{Implementar el firmware del sistema.}
+\subsection{Ampliación del Juego de Instrucciones}
 \paragraph{}
-El firmware es el software responsable de controlar las funciones del sistema. Se encargara de activar o desactivar el procesamiento por hardware de los algoritmos, así como el control de las interrupciones generadas por la pulsación de los botones y se encargará de mostrar la información pertinente por la pantalla. Por otra parte se encarga de configurar los diferentes circuitos integrados usados en el sistema.
+El último de los requisitos hardware es ampliar el juego de instrucciones del procesador \textit{NIOS II}, con instrucciones que permitan calcular el Sobel sobre un frame que provenga del subsistema de vídeo.
 
-\subsubsection{Anotar resultados.}
+\section{Requisitos del Software}
 \paragraph{}
-Realizar varias pruebas ejecutando las versiones hardware y software; y anotar sus resultados para comparar su eficiencia.
+Estos requisitos hacen referencia a los requisitos que tiene que satisfacer el sistema de vídeo desde el punto de vista del software que lo controla.
 
+\subsubsection{Implementar el Sobel por software}
+\paragraph{}
+Para satisfacer este requisito se ha de implementar, por software, los mismos algoritmos utilizados para ampliar el juego de instrucciones del procesador \textit{NIOS II}.
 
-\chapter{''Herramientas y metodología.''}
+\subsubsection{Implementar el Firmware del Sistema.}
+\paragraph{}
+El firmware es el software responsable de controlar las funciones del sistema. Para satisfacer este requisito el firmware tendrá que:
+\begin{itemize}
+\item Inicializar los diferentes circuitos integrados usados en el sistema de vídeo.
+\item Controlar e indicar que opciones han sido activadas mediante la interfaz de usuario. Esta interfaz de usuario tiene que permitir hacer lo siguiente: 
+\begin{itemize}
+\item Mostrar el tiempo que necesita un frame para ser procesado.
+\item Activar o desactivar el procesamiento del Sobel sobre una imagen.
+\item Congelar la imagen.
+\item Seleccionar entre procesamiento por hardware o por software del Sobel.
+\end{itemize}
+\end{itemize}
+
+\section{Requisitos de la Documentación}
+\paragraph{}
+Estos requisitos hacen referencia a la parte escrita del proyecto.
+
+\subsubsection{Experimentos}
+\paragraph{}
+Mediante el uso de las funciones congelar y mostrar el tiempo, se tendrá que realizar una comparativa entre el tiempo requerido para procesar un frame por software y el tiempo requerido para procesar un frame por hardware. Esta comparativa se ha de incluir en la memoria.
+
+\subsubsection{Memoria y Presentación del Proyecto}
+\paragraph{}
+Para dejar constancia de las acciones realizadas se ha desarrollado una memoria del proyecto, este documento, que contiene toda la información del mismo. También se ha desarrollado una presentación del proyecto para ser expuesto ante el tribunal de evaluación.
+
+\chapter{''Herramientas y Metodología.''}
 
 \section{Herramientas.}
 \subsection{Elementos Hardware}
 \subsubsection*{}
 
 \paragraph{}
-Como ya se comentó en el Capítulo~\ref{chap:defreq} este proyecto se construirá a partir de diferentes soluciones proporcionadas por Altera.
+Como ya se comentó en el Capítulo~\ref{chap:defreq} este proyecto se construirá a partir del procesador \textit{NIOS II} proporcionado por Altera. Por ello se ha elegido como piedra angular el \textit{NIOS II Embedded Evaluation Kit, Cyclone III Edition} también abreviado \textit{NEEK}. 
 
 \paragraph{}
-La piedra angular será el \textit{NIOS II Embedded Evaluation Kit, Cyclone III Edition} también abreviado \textit{NEEK}.
-Este kit se compone de una placa principal que contiene la FPGA y otros
-elementos básicos y una \textit{daughter board} que contiene diversos circuitos integrados
-de apoyo junto con un LCD.
+El \textit{NEEK} se compone de una placa principal que contiene la FPGA y otros elementos básicos y una \textit{daughter board} que contiene diversos circuitos integrados de apoyo junto con un LCD. Como se puede ver este kit es idóneo para satisfacer los requisitos hardware. 
 
 \paragraph{}
 Entre los elementos que alberga la placa principal los destacables para este
