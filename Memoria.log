@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.6.3)  20 JUN 2013 13:47
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.6.3)  20 JUN 2013 14:38
 entering extended mode
  %&-line parsing enabled.
 **Memoria.tex
@@ -457,24 +457,17 @@ Underfull \vbox (badness 1286) has occurred while \output is active []
 
  [3]
 [4]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 151.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 152.
 
  (/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 151.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 152.
  [5] [6] [7] [8
 
 ]
 Cap\'{\i }tulo 3.
-
-LaTeX Warning: Reference `chap:intro' on page 9 undefined on input line 226.
-
-
-LaTeX Warning: Reference `sec:soluciones' on page 9 undefined on input line 229
-.
-
 [9] [10] [11] [12
 
 ]
@@ -797,32 +790,28 @@ Overfull \hbox (92.00473pt too wide) in paragraph at lines 29--30
 
 
 ]
-(./Memoria.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+(./Memoria.aux) ) 
 Here is how much of TeX's memory you used:
  8012 strings out of 494999
  110449 string characters out of 1180817
- 380795 words of memory out of 3000000
+ 380777 words of memory out of 3000000
  11033 multiletter control sequences out of 15000+50000
  11766 words of font info for 42 fonts, out of 3000000 for 9000
  54 hyphenation exceptions out of 8191
  31i,14n,52p,909b,1798s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sha
-re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-t
-exlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-texlive/font
-s/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/pub
-lic/amsfonts/cm/cmmi12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfont
-s/cm/cmmi8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.p
-fb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/sha
-re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-tex
-live/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/ty
-pe1/public/amsfonts/cm/cmsl12.pfb></usr/share/texmf-texlive/fonts/type1/public/
-amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm
-/cmti12.pfb>
-Output written on Memoria.pdf (139 pages, 6411507 bytes).
+</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx1
+2.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></us
+r/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/tex
+mf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/
+fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-texlive/fonts/type1
+/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsf
+onts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr1
+2.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/
+share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-t
+exlive/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texmf-texlive/font
+s/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/pub
+lic/amsfonts/cm/cmti12.pfb>
+Output written on Memoria.pdf (139 pages, 6411294 bytes).
 PDF statistics:
  517 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
