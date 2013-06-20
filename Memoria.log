@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.6.3)  20 JUN 2013 14:38
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.6.3)  20 JUN 2013 18:12
 entering extended mode
  %&-line parsing enabled.
 **Memoria.tex
@@ -578,242 +578,91 @@ File: ./figuras/NEEK/VIN.png Graphic file (type png)
 Ap\'{e}ndice A.
 (./SISSources/V/RawaPro.v [55
 
-]
-Overfull \hbox (8.00388pt too wide) in paragraph at lines 48--49
-[][][][][] 
- []
+] [56] [57] [58] [59] [60] [61]) [62]
+(./SISSources/V/SIS.v [63
 
-[56] [57] [58] [59]
-Overfull \hbox (100.00461pt too wide) in paragraph at lines 248--250
-[][][][] 
- []
+] [64] [65] [66] [67]) [68] (./SISSources/V/ram_w.v
+[69
 
+] [70] [71]) [72] (./SISSources/V/ram_r.v [73
 
-Overfull \hbox (100.00461pt too wide) in paragraph at lines 254--256
-[][][][] 
- []
+] [74] [75]) [76]
+(./SISSources/V/FrameWriter.v [77
 
-[60]
-Overfull \hbox (100.00461pt too wide) in paragraph at lines 265--267
-[][][][] 
- []
-
-
-Overfull \hbox (100.00461pt too wide) in paragraph at lines 277--279
-[][][][] 
- []
-
-[61]
-Overfull \hbox (100.00461pt too wide) in paragraph at lines 294--296
-[][][][] 
- []
-
-
-Overfull \hbox (100.00461pt too wide) in paragraph at lines 299--301
-[][][][] 
- []
-
-[62]) [63] (./SISSources/V/SIS.v [64
-
-] [65] [66] [67] [68]) [69]
-(./SISSources/V/ram_w.v [70
-
-] [71] [72]) [73] (./SISSources/V/ram_r.v [74
+]) [78] (./SISSources/V/AGrises.v [79
 
 ]
-[75] [76]) [77] (./SISSources/V/FrameWriter.v [78
+[80]) [81] (./SISSources/V/Sobel.v [82
 
-]) [79]
-(./SISSources/V/AGrises.v [80
+] [83] [84] [85] [86]) [87]
+(./SISSources/V/Sobel_cache.v [88
 
-] [81]) [82] (./SISSources/V/Sobel.v [83
-
-] [84]
-[85] [86] [87]) [88] (./SISSources/V/Sobel_cache.v [89
-
-] [90] [91] [92])
-[93] [94
-
-
-]
+] [89] [90] [91]) [92]
 Ap\'{e}ndice B.
-(./SISSources/C/main.c [95]
-Overfull \hbox (22.00381pt too wide) in paragraph at lines 41--42
-[][][][] 
- []
+(./SISSources/C/main.c [93
 
 
-Overfull \hbox (22.00381pt too wide) in paragraph at lines 43--45
-[][][][] 
- []
+] [94] [95]) [96] (./SISSources/C/keyhandler.h)
+[97
 
-[96] [97]) [98] (./SISSources/C/keyhandler.h) [99
+] (./SISSources/C/keyhandler.c) [98
 
-] (./SISSources/C/keyhandler.c) [100
-
-] (./SISSources/C/sfs.h) [101
-
-] (./SISSources/C/sfs.c [102
-
-]) [103]
-(./SISSources/C/system_alias.h) [104
-
-] (./SISSources/C/alt_tpo_lcd.h
-Overfull \hbox (112.00473pt too wide) in paragraph at lines 1--2
-[][][][] 
- []
-
-
-Overfull \hbox (106.00467pt too wide) in paragraph at lines 2--3
-[][][] 
- []
-
-
-Overfull \hbox (106.00467pt too wide) in paragraph at lines 4--5
-[][][] 
- []
-
-
-Overfull \hbox (106.00467pt too wide) in paragraph at lines 7--8
-[][][] 
- []
-
-
-Overfull \hbox (106.00467pt too wide) in paragraph at lines 14--15
-[][][] 
- []
-
-
-Overfull \hbox (106.00467pt too wide) in paragraph at lines 17--18
-[][][] 
- []
-
-[105
+] (./SISSources/C/sfs.h) [99
 
 ]
-Overfull \hbox (106.00467pt too wide) in paragraph at lines 25--26
-[][][] 
- []
+(./SISSources/C/sfs.c [100
 
-
-Overfull \hbox (106.00467pt too wide) in paragraph at lines 28--29
-[][][] 
- []
-
-
-Overfull \hbox (92.00473pt too wide) in paragraph at lines 29--30
-[][][][][] 
- []
-
-[106]) [107] (./SISSources/C/tvdecoder_ctrl.h
-Overfull \hbox (106.00467pt too wide) in paragraph at lines 1--2
-[][][][] 
- []
-
-
-Overfull \hbox (86.00467pt too wide) in paragraph at lines 8--10
-[][][][][][] 
- []
-
-) [108
-
-] (./SISSources/C/i2c.h
-Overfull \hbox (106.00467pt too wide) in paragraph at lines 1--2
-[][][][] 
- []
-
-
-Overfull \hbox (86.00467pt too wide) in paragraph at lines 9--11
-[][][][][][] 
- []
-
-[109
-
-]) [110] (./SISSources/C/simple_graphics.h [111
-
-] [112] [113] [114] [115]
-[116] [117] [118] [119] [120] [121] [122] [123] [124] [125] [126]) [127]
-(./SISSources/C/alt_video_display.h
-Overfull \hbox (112.00473pt too wide) in paragraph at lines 1--2
-[][][][] 
- []
-
-
-Overfull \hbox (106.00467pt too wide) in paragraph at lines 2--3
-[][][] 
- []
-
-
-Overfull \hbox (106.00467pt too wide) in paragraph at lines 4--5
-[][][] 
- []
-
-
-Overfull \hbox (106.00467pt too wide) in paragraph at lines 7--8
-[][][] 
- []
-
-
-Overfull \hbox (106.00467pt too wide) in paragraph at lines 14--15
-[][][] 
- []
-
-
-Overfull \hbox (106.00467pt too wide) in paragraph at lines 17--18
-[][][] 
- []
-
-[128
+]) [101] (./SISSources/C/system_alias.h) [102
 
 ]
-Overfull \hbox (106.00467pt too wide) in paragraph at lines 25--26
-[][][] 
- []
+(./SISSources/C/alt_tpo_lcd.h) [103
 
-
-Overfull \hbox (106.00467pt too wide) in paragraph at lines 28--29
-[][][] 
- []
-
-
-Overfull \hbox (92.00473pt too wide) in paragraph at lines 29--30
-[][][][][] 
- []
-
-[129]) [130] (./SISSources/C/fonts.h) [131
+] (./SISSources/C/tvdecoder_ctrl.h) [104
 
 ]
-(./SISSources/C/vip_wrapper_for_c_func.h) [132
+(./SISSources/C/i2c.h) [105
 
-] (./Memoria.bbl) [133
-
-
+] [106] (./SISSources/C/simple_graphics.h [107
 
 ]
-(./Memoria.aux) ) 
+[108] [109] [110] [111] [112] [113] [114] [115] [116] [117] [118] [119]
+[120] [121] [122]) [123] (./SISSources/C/alt_video_display.h [124
+
+]) [125]
+(./SISSources/C/fonts.h) [126
+
+] (./SISSources/C/vip_wrapper_for_c_func.h)
+[127
+
+] [128
+
+
+] (./Memoria.bbl) [129
+
+] (./Memoria.aux) ) 
 Here is how much of TeX's memory you used:
  8012 strings out of 494999
  110449 string characters out of 1180817
- 380777 words of memory out of 3000000
+ 380775 words of memory out of 3000000
  11033 multiletter control sequences out of 15000+50000
  11766 words of font info for 42 fonts, out of 3000000 for 9000
  54 hyphenation exceptions out of 8191
  31i,14n,52p,909b,1798s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx1
-2.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></us
-r/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/tex
-mf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/
-fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-texlive/fonts/type1
-/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsf
-onts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr1
-2.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/
-share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-t
-exlive/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texmf-texlive/font
-s/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/pub
-lic/amsfonts/cm/cmti12.pfb>
-Output written on Memoria.pdf (139 pages, 6411294 bytes).
+</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmb
+x12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></
+usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/t
+exmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texliv
+e/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-texlive/fonts/typ
+e1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-texlive/fonts/type1/public/am
+sfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cm
+r12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr17.pfb></us
+r/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf
+-texlive/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texmf-texlive/fo
+nts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/p
+ublic/amsfonts/cm/cmti12.pfb>
+Output written on Memoria.pdf (135 pages, 6391143 bytes).
 PDF statistics:
- 517 PDF objects out of 1000 (max. 8388607)
+ 504 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

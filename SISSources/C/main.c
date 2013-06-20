@@ -38,9 +38,9 @@ int main() {
 	VIDEO_DECODER_RESET_ON; // reset TV Decoder chip
 
 	printf("\n\n\n\n");
-	printf("**********************************************************\n");
-	printf("* INICIO RAWAPRO!                                        *\n");
-	printf("**********************************************************\n\n");
+	printf("*******************************************\n");
+	printf("* INICIO RAWAPRO!                         *\n");
+	printf("*******************************************\n\n");
 
 	printf("Configuracion LCD: ");
 	alt_tpo_lcd lcd_serial;

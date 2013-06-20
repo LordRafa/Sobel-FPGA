@@ -200,19 +200,19 @@
 \contentsline {chapter}{Ap\IeC {\'e}ndices}{}
 \contentsline {chapter}{\numberline {A}''C\IeC {\'o}digo Fuente Verilog''}{55}
 \contentsline {subsubsection}{Rawapro}{55}
-\contentsline {subsubsection}{Sobel Instruction Set}{64}
-\contentsline {subsubsection}{RAM Write}{70}
-\contentsline {subsubsection}{RAM Read}{74}
-\contentsline {subsubsection}{FrameWriter}{78}
-\contentsline {subsubsection}{AGrises}{80}
-\contentsline {subsubsection}{Sobel}{83}
-\contentsline {subsubsection}{Sobel Cache}{89}
-\contentsline {chapter}{\numberline {B}''C\IeC {\'o}digo Fuente C''}{95}
-\contentsline {subsubsection}{Programa Principal}{95}
-\contentsline {subsubsection}{Keyhandler}{99}
-\contentsline {subsubsection}{Sobel Function Set}{101}
-\contentsline {subsubsection}{System Alias}{104}
-\contentsline {subsubsection}{ALT TPO LCD}{105}
-\contentsline {subsubsection}{TV Decoder}{108}
-\contentsline {subsubsection}{Simple Graphics}{111}
-\contentsline {subsubsection}{FrameReader}{132}
+\contentsline {subsubsection}{Sobel Instruction Set}{63}
+\contentsline {subsubsection}{RAM Write}{69}
+\contentsline {subsubsection}{RAM Read}{73}
+\contentsline {subsubsection}{FrameWriter}{77}
+\contentsline {subsubsection}{AGrises}{79}
+\contentsline {subsubsection}{Sobel}{82}
+\contentsline {subsubsection}{Sobel Cache}{88}
+\contentsline {chapter}{\numberline {B}''C\IeC {\'o}digo Fuente C''}{93}
+\contentsline {subsubsection}{Programa Principal}{93}
+\contentsline {subsubsection}{Keyhandler}{97}
+\contentsline {subsubsection}{Sobel Function Set}{99}
+\contentsline {subsubsection}{System Alias}{102}
+\contentsline {subsubsection}{ALT TPO LCD}{103}
+\contentsline {subsubsection}{TV Decoder}{104}
+\contentsline {subsubsection}{Simple Graphics}{107}
+\contentsline {subsubsection}{FrameReader}{127}

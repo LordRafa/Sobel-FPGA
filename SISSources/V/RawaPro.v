@@ -8,79 +8,78 @@
 `timescale 1ns / 1ps
 
 module RawaPro (
-                                      // inputs:
-                                       top_HC_ADC_DOUT,
-                                       top_HC_ADC_PENIRQ_N,
-                                       top_HC_RX_CLK,
-                                       top_HC_RX_COL,
-                                       top_HC_RX_CRS,
-                                       top_HC_RX_D,
-                                       top_HC_RX_DV,
-                                       top_HC_RX_ERR,
-                                       top_HC_SD_DAT,
-                                       top_HC_TX_CLK,
-                                       top_HC_UART_RXD,
-                                       top_button,
-                                       top_clkin_50,
-                                       top_reset_n,
+  // inputs:
+  top_HC_ADC_DOUT,
+  top_HC_ADC_PENIRQ_N,
+  top_HC_RX_CLK,
+  top_HC_RX_COL,
+  top_HC_RX_CRS,
+  top_HC_RX_D,
+  top_HC_RX_DV,
+  top_HC_RX_ERR,
+  top_HC_SD_DAT,
+  top_HC_TX_CLK,
+  top_HC_UART_RXD,
+  top_button,
+  top_clkin_50,
+  top_reset_n,
 
-                                      // outputs:
-                                       top_HC_ADC_CS_N,
-                                       top_HC_ADC_DCLK,
-                                       top_HC_ADC_DIN,
-                                       top_HC_DEN,
-                                       top_HC_ETH_RESET_N,
-                                       top_HC_HD,
-                                       top_HC_ID_I2CDAT,
-                                       top_HC_ID_I2CSCL,
-                                       top_HC_LCD_DATA,
-                                       top_HC_MDC,
-                                       top_HC_MDIO,
-                                       top_HC_SCEN,
-                                       top_HC_SDA,
-                                       top_HC_SD_CLK,
-                                       top_HC_SD_CMD,
-                                       top_HC_SD_DAT3,
-                                       top_HC_TX_D,
-                                       top_HC_TX_EN,
-                                       top_HC_UART_TXD,
-                                       top_HC_VD,
-                                       top_clk_to_offchip_video,
-                                       top_flash_cs_n,
-                                       top_flash_oe_n,
-                                       top_flash_reset_n,
-                                       top_flash_ssram_a,
-                                       top_flash_ssram_d,
-                                       top_flash_wr_n,
-                                       top_led,
-                                       top_mem_addr,
-                                       top_mem_ba,
-                                       top_mem_cas_n,
-                                       top_mem_cke,
-                                       top_mem_clk,
-                                       top_mem_clk_n,
-                                       top_mem_cs_n,
-                                       top_mem_dm,
-                                       top_mem_dq,
-                                       top_mem_dqs,
-                                       top_mem_ras_n,
-                                       top_mem_we_n,
-                                       top_ssram_adsc_n,
-                                       top_ssram_bw_n,
-                                       top_ssram_bwe_n,
-                                       top_ssram_ce_n,
-                                       top_ssram_clk,
-                                       top_ssram_oe_n
-,top_HC_TD_D
-,top_HC_TD_HS
-,top_HC_TD_VS
-,top_HC_TD_27MHZ
-,top_HC_TD_RESET
-,top_HC_I2C_SCLK
-,top_HC_I2C_SDAT
-, top_HC_GREST
-                                    )
-;
+  // outputs:
+  top_HC_ADC_CS_N,
+  top_HC_ADC_DCLK,
+  top_HC_ADC_DIN,
+  top_HC_DEN,
+  top_HC_ETH_RESET_N,
+  top_HC_HD,
+  top_HC_ID_I2CDAT,
+  top_HC_ID_I2CSCL,
+  top_HC_LCD_DATA,
+  top_HC_MDC,
+  top_HC_MDIO,
+  top_HC_SCEN,
+  top_HC_SDA,
+  top_HC_SD_CLK,
+  top_HC_SD_CMD,
+  top_HC_SD_DAT3,
+  top_HC_TX_D,
+  top_HC_TX_EN,
+  top_HC_UART_TXD,
+  top_HC_VD,
+  top_clk_to_offchip_video,
+  top_flash_cs_n,
+  top_flash_oe_n,
+  top_flash_reset_n,
+  top_flash_ssram_a,
+  top_flash_ssram_d,
+  top_flash_wr_n,
+  top_led,
+  top_mem_addr,
+  top_mem_ba,
+  top_mem_cas_n,
+  top_mem_cke,
+  top_mem_clk,
+  top_mem_clk_n,
+  top_mem_cs_n,
+  top_mem_dm,
+  top_mem_dq,
+  top_mem_dqs,
+  top_mem_ras_n,
+  top_mem_we_n,
+  top_ssram_adsc_n,
+  top_ssram_bw_n,
+  top_ssram_bwe_n,
+  top_ssram_ce_n,
+  top_ssram_clk,
+  top_ssram_oe_n,
+  top_HC_TD_D,
+  top_HC_TD_HS,
+  top_HC_TD_VS,
+  top_HC_TD_27MHZ,
+  top_HC_TD_RESET,
+  top_HC_I2C_SCLK,
+  top_HC_I2C_SDAT,
+  top_HC_GREST
+);
 
   output           top_HC_ADC_CS_N;
   output           top_HC_ADC_DCLK;
@@ -144,17 +143,17 @@ module RawaPro (
   input            top_reset_n;
 
 //TV Decoder
-  input	[7:0]	top_HC_TD_D;
-  input			top_HC_TD_HS;
-  input			top_HC_TD_VS;
-  input			top_HC_TD_27MHZ;
-  output		top_HC_TD_RESET;
+  input [7:0]      top_HC_TD_D;
+  input            top_HC_TD_HS;
+  input            top_HC_TD_VS;
+  input            top_HC_TD_27MHZ;
+  output           top_HC_TD_RESET;
 
 // Audio and TV decoder I2C
-  output top_HC_I2C_SCLK;
-  inout  top_HC_I2C_SDAT;
+  output           top_HC_I2C_SCLK;
+  inout            top_HC_I2C_SDAT;
 
-  output top_HC_GREST;
+  output           top_HC_GREST;
 
   wire             top_CDn_to_the_el_camino_sd_card_controller;
   wire             top_HC_ADC_CS_N;
@@ -233,73 +232,73 @@ module RawaPro (
   wire LCD_HS;
   wire LCD_VS;
 
-wire clk_100;
-wire clk_33;
-wire clk_120;
-wire clk_40;
+  wire clk_100;
+  wire clk_33;
+  wire clk_120;
+  wire clk_40;
 
-wire [3:0] led_pio_wire;
-wire dmy;
+  wire [3:0] led_pio_wire;
+  wire dmy;
 
   SistemaPrincipal SistemaPrincipal_instance (
-		//***************************Reloj Principal***************************
-		.sys_clk_clk                                (top_clkin_50),
-		.reset_reset_n                              (top_reset_n),
-		//---------------------------------------------------------------------
+    //*******************Reloj Principal*******************
+    .sys_clk_clk (top_clkin_50),
+    .reset_reset_n (top_reset_n),
+    //-----------------------------------------------------
 
-		//**************************Relojes de Salida**************************
-		.clk_100_clk(clk_100),
-      .clk_33_clk(clk_33),
-		.altpll_0_areset_conduit_export(0),
-		//--------------------------------------------------------------------- 
+    //******************Relojes de Salida******************
+    .clk_100_clk (clk_100),
+    .clk_33_clk (clk_33),
+    .altpll_0_areset_conduit_export (0),
+    //-----------------------------------------------------
 
-		//**************************Entrada de Video***************************
-      .bidir_port_to_and_from_the_av_i2c_data_pio (top_HC_I2C_SDAT),
-      .out_port_from_the_av_i2c_clk_pio           (top_HC_I2C_SCLK),
-		.out_port_from_the_td_reset_pio             (top_HC_TD_RESET),
-		
-      .video_in_vid_clk                           (top_HC_TD_27MHZ),
-      .video_in_vid_data                          (video_in_data),
-      .video_in_vid_datavalid                     (video_in_valid),
-      .video_in_vid_locked                        (video_in_locked),
-		//---------------------------------------------------------------------
-		
-		//***************************Salida de Video***************************
-      .out_port_from_the_lcd_i2c_en               (top_out_port_from_the_lcd_i2c_en),
-      .out_port_from_the_lcd_i2c_scl              (top_out_port_from_the_lcd_i2c_scl),
-		.bidir_port_to_and_from_the_lcd_i2c_sdat    (top_HC_SDA),
-		
-      .video_out_vid_clk                          (lcd_base_clock),
-      .video_out_vid_data                         (LCD_DATA),
-      .video_out_vid_datavalid                    (LCD_BLANK),
-      .video_out_vid_h_sync                       (LCD_HS),
-      .video_out_vid_v_sync                       (LCD_VS),
-		//---------------------------------------------------------------------
-		
-		//*****************************Memoria RAM*****************************
-      .ddr_sdram_memory_mem_addr                  (top_mem_addr),
-      .ddr_sdram_memory_mem_ba                    (top_mem_ba),
-      .ddr_sdram_memory_mem_cas_n                 (top_mem_cas_n),
-      .ddr_sdram_memory_mem_cke                   (top_mem_cke),
-      .ddr_sdram_memory_mem_clk_n                 (top_mem_clk_n),
-      .ddr_sdram_memory_mem_clk                   (top_mem_clk),
-      .ddr_sdram_memory_mem_cs_n                  (top_mem_cs_n),
-      .ddr_sdram_memory_mem_dm                    (top_mem_dm),
-      .ddr_sdram_memory_mem_dq                    (top_mem_dq),
-      .ddr_sdram_memory_mem_dqs                   (top_mem_dqs),
-      .ddr_sdram_memory_mem_ras_n                 (top_mem_ras_n),
-      .ddr_sdram_memory_mem_we_n                  (top_mem_we_n),
+    //******************Entrada de Video*******************
+    .bidir_port_to_and_from_the_av_i2c_data_pio (top_HC_I2C_SDAT),
+    .out_port_from_the_av_i2c_clk_pio (top_HC_I2C_SCLK),
+    .out_port_from_the_td_reset_pio (top_HC_TD_RESET),
 
-      .ddr_sdram_external_connection_reset_phy_clk_n (top_reset_phy_clk_n_from_the_ddr_sdram),
-		//---------------------------------------------------------------------
-				
-		//********************************Otros********************************
-		.key_pio_export(top_in_port_to_the_button_pio),
-		.led_pio_export(led_pio_wire)
-		//---------------------------------------------------------------------
+    .video_in_vid_clk (top_HC_TD_27MHZ),
+    .video_in_vid_data (video_in_data),
+    .video_in_vid_datavalid (video_in_valid),
+    .video_in_vid_locked (video_in_locked),
+    //-----------------------------------------------------
+
+    //*******************Salida de Video*******************
+    .out_port_from_the_lcd_i2c_en (top_out_port_from_the_lcd_i2c_en),
+    .out_port_from_the_lcd_i2c_scl (top_out_port_from_the_lcd_i2c_scl),
+    .bidir_port_to_and_from_the_lcd_i2c_sdat (top_HC_SDA),
+
+    .video_out_vid_clk (lcd_base_clock),
+    .video_out_vid_data (LCD_DATA),
+    .video_out_vid_datavalid (LCD_BLANK),
+    .video_out_vid_h_sync (LCD_HS),
+    .video_out_vid_v_sync (LCD_VS),
+    //-----------------------------------------------------
+
+    //*********************Memoria RAM*********************
+    .ddr_sdram_memory_mem_addr (top_mem_addr),
+    .ddr_sdram_memory_mem_ba (top_mem_ba),
+    .ddr_sdram_memory_mem_cas_n (top_mem_cas_n),
+    .ddr_sdram_memory_mem_cke (top_mem_cke),
+    .ddr_sdram_memory_mem_clk_n (top_mem_clk_n),
+    .ddr_sdram_memory_mem_clk (top_mem_clk),
+    .ddr_sdram_memory_mem_cs_n (top_mem_cs_n),
+    .ddr_sdram_memory_mem_dm (top_mem_dm),
+    .ddr_sdram_memory_mem_dq (top_mem_dq),
+    .ddr_sdram_memory_mem_dqs (top_mem_dqs),
+    .ddr_sdram_memory_mem_ras_n (top_mem_ras_n),
+    .ddr_sdram_memory_mem_we_n (top_mem_we_n),
+
+    .ddr_sdram_external_connection_reset_phy_clk_n (top_reset_phy_clk_n_from_the_ddr_sdram),
+    //-----------------------------------------------------
+  
+    //************************Otros************************
+    .key_pio_export (top_in_port_to_the_button_pio),
+    .led_pio_export (led_pio_wire)
+    //-----------------------------------------------------
       
-    );
-	 
+  );
+
   assign video_in_data = top_HC_TD_D;
 
   assign video_in_valid = 1'b1;
