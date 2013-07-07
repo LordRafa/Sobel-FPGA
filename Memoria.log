@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.6.3)  20 JUN 2013 18:12
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.6.3)  5 JUL 2013 17:19
 entering extended mode
  %&-line parsing enabled.
 **Memoria.tex
@@ -569,100 +569,115 @@ File: ./figuras/NEEK/VIN.png Graphic file (type png)
 
 <use ./figuras/NEEK/VIN.png> [49
 
-] [50 <./figuras/NEEK/BotonPowerUSB.png> <./figuras/NEEK/VIN.png>] [51
+] [50 <./figuras/NEEK/BotonPowerUSB.png> <./figuras/NEEK/VIN.png>]
+<./figuras/NEEK/Original.png, id=209, 818.05624pt x 657.45625pt>
+File: ./figuras/NEEK/Original.png Graphic file (type png)
 
-] [52] [53
+<use ./figuras/NEEK/Original.png>
+<./figuras/NEEK/Sobel.png, id=210, 818.05624pt x 657.45625pt>
+File: ./figuras/NEEK/Sobel.png Graphic file (type png)
+
+<use ./figuras/NEEK/Sobel.png> [51
+
+] [52 <./figuras/NEEK/Original.png (PNG copy)> <./figuras/NEEK/Sobel.png (PNG c
+opy)>] [53
+
+] [54] [55
 
 
-] [54]
+] [56]
 Ap\'{e}ndice A.
-(./SISSources/V/RawaPro.v [55
+(./SISSources/V/RawaPro.v [57
 
-] [56] [57] [58] [59] [60] [61]) [62]
-(./SISSources/V/SIS.v [63
+] [58] [59] [60] [61] [62] [63]) [64]
+(./SISSources/V/SIS.v [65
 
-] [64] [65] [66] [67]) [68] (./SISSources/V/ram_w.v
-[69
+] [66] [67] [68] [69]) [70] (./SISSources/V/ram_w.v
+[71
 
-] [70] [71]) [72] (./SISSources/V/ram_r.v [73
+] [72] [73]) [74] (./SISSources/V/ram_r.v [75
 
-] [74] [75]) [76]
-(./SISSources/V/FrameWriter.v [77
+] [76] [77]) [78]
+(./SISSources/V/FrameWriter.v [79
 
-]) [78] (./SISSources/V/AGrises.v [79
+]) [80] (./SISSources/V/AGrises.v [81
 
 ]
-[80]) [81] (./SISSources/V/Sobel.v [82
+[82]) [83] (./SISSources/V/Sobel.v [84
 
-] [83] [84] [85] [86]) [87]
-(./SISSources/V/Sobel_cache.v [88
+] [85] [86] [87] [88]) [89]
+(./SISSources/V/Sobel_cache.v [90
 
-] [89] [90] [91]) [92]
+] [91] [92] [93]) [94]
 Ap\'{e}ndice B.
-(./SISSources/C/main.c [93
+(./SISSources/C/main.c [95
 
 
-] [94] [95]) [96] (./SISSources/C/keyhandler.h)
-[97
+] [96] [97]) [98] (./SISSources/C/keyhandler.h)
+[99
 
-] (./SISSources/C/keyhandler.c) [98
+] (./SISSources/C/keyhandler.c) [100
 
-] (./SISSources/C/sfs.h) [99
-
-]
-(./SISSources/C/sfs.c [100
-
-]) [101] (./SISSources/C/system_alias.h) [102
+] (./SISSources/C/sfs.h) [101
 
 ]
-(./SISSources/C/alt_tpo_lcd.h) [103
+(./SISSources/C/sfs.c [102
 
-] (./SISSources/C/tvdecoder_ctrl.h) [104
-
-]
-(./SISSources/C/i2c.h) [105
-
-] [106] (./SISSources/C/simple_graphics.h [107
+]) [103] (./SISSources/C/system_alias.h) [104
 
 ]
-[108] [109] [110] [111] [112] [113] [114] [115] [116] [117] [118] [119]
-[120] [121] [122]) [123] (./SISSources/C/alt_video_display.h [124
+(./SISSources/C/alt_tpo_lcd.h) [105
 
-]) [125]
-(./SISSources/C/fonts.h) [126
+] (./SISSources/C/tvdecoder_ctrl.h) [106
+
+]
+(./SISSources/C/i2c.h) [107
+
+] [108] (./SISSources/C/simple_graphics.h [109
+
+]
+[110] [111] [112] [113] [114] [115] [116] [117] [118] [119] [120] [121]
+[122] [123] [124]) [125] (./SISSources/C/alt_video_display.h [126
+
+]) [127]
+(./SISSources/C/fonts.h) [128
 
 ] (./SISSources/C/vip_wrapper_for_c_func.h)
-[127
+[129
 
-] [128
+] [130
 
 
-] (./Memoria.bbl) [129
+] (./Memoria.bbl) [131
 
-] (./Memoria.aux) ) 
+] (./Memoria.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 8012 strings out of 494999
- 110449 string characters out of 1180817
- 380775 words of memory out of 3000000
- 11033 multiletter control sequences out of 15000+50000
+ 8023 strings out of 494999
+ 110744 string characters out of 1180817
+ 380800 words of memory out of 3000000
+ 11043 multiletter control sequences out of 15000+50000
  11766 words of font info for 42 fonts, out of 3000000 for 9000
  54 hyphenation exceptions out of 8191
  31i,14n,52p,909b,1798s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmb
-x12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></
-usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/t
-exmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texliv
-e/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-texlive/fonts/typ
-e1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-texlive/fonts/type1/public/am
-sfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cm
-r12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr17.pfb></us
-r/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf
--texlive/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texmf-texlive/fo
-nts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/p
-ublic/amsfonts/cm/cmti12.pfb>
-Output written on Memoria.pdf (135 pages, 6391143 bytes).
+</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sha
+re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-t
+exlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-texlive/font
+s/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/pub
+lic/amsfonts/cm/cmmi12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfont
+s/cm/cmmi8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.p
+fb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/sha
+re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-tex
+live/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/ty
+pe1/public/amsfonts/cm/cmsl12.pfb></usr/share/texmf-texlive/fonts/type1/public/
+amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm
+/cmti12.pfb>
+Output written on Memoria.pdf (137 pages, 7946018 bytes).
 PDF statistics:
- 504 PDF objects out of 1000 (max. 8388607)
+ 512 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
