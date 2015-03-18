@@ -1,0 +1,2 @@
+set_global_assignment -name SDC_FILE $env(QUARTUS_ROOTDIR)/../ip/altera/clocked_video_input/alt_vipcti120_cvi.sdc
+set_global_assignment -name SDC_FILE $env(QUARTUS_ROOTDIR)/../ip/altera/clocked_video_output/alt_vipitc120_cvo.sdc

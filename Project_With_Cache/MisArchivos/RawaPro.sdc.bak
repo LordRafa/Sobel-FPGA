@@ -1,0 +1,165 @@
+derive_pll_clocks -create_base_clocks
+
+
+# JTAG Signal Constraints constrain the TCK port
+#create_clock -name tck -period 100 [get_ports altera_reserved_tck]
+# Cut all paths to and from tck
+set_clock_groups -asynchronous -group [get_clocks altera_reserved_tck]
+# Constrain the TDI port
+set_input_delay -clock altera_reserved_tck -clock_fall 1 [get_ports altera_reserved_tdi]
+# Constrain the TMS port
+set_input_delay -clock altera_reserved_tck -clock_fall 1 [get_ports altera_reserved_tms]
+# Constrain the TDO port
+set_output_delay -clock altera_reserved_tck -clock_fall 1 [get_ports altera_reserved_tdo]
+
+
+## Cutting the input reset path because Qsys synchronizes the reset input
+set_false_path -from [get_ports top_reset_n]
+
+
+# For v9.0 design
+# Create generated clocks based on PLLs.
+
+#create_clock -period 100.000 -name {jtag_clk} { altera_internal_jtag|tckutap }
+
+#create_clock -period 10MHz {altera_reserved_tck}
+#set_clock_groups -asynchronous -group {altera_reserved_tck}
+#set_clock_groups -asynchronous -group {altera_internal_jtag|tckutap}
+
+# Usually the next two steps are required but in this case, we're sourcing the ddr sdram constraint file before sourcing this file, so it's been done for us.
+
+## Defining the external clock frequency from the oscillator
+
+## Deriving pll clocks
+derive_clock_uncertainty
+
+## Creating and setting variables for clock paths to make code look cleaner
+#set System_Clock_int *|the_pll|the_pll|altpll_component|auto_generated|pll1|clk[0]
+#set SSRAM_Clock_ext *|the_pll|the_pll|altpll_component|auto_generated|pll1|clk[0]
+#set SSRAM_Clock_ext *|altpll_0|*|*|clk[0]
+#set CVO_Clock *|the_pll|the_pll|altpll_component|auto_generated|pll1|clk[2]
+#set VGA_Base_Clock *|the_pll|the_pll|altpll_component|auto_generated|pll1|clk[1]
+#set VGA_Base_Clock *|altpll_0|*|*|clk[1]
+set VGA_Base_Clock cycloneIII_3c25_niosII_video_qsys_instance|altpll_0|sd1|pll7|clk[1]
+#set VGA_Clock *|the_pll|the_pll|altpll_component|auto_generated|pll1|clk[2]
+#set VGA_Clock *|altpll_0|*|*|clk[2]
+set VGA_Clock cycloneIII_3c25_niosII_video_qsys_instance|altpll_0|sd1|pll7|clk[0]
+#set LCD_Base_Clock *|the_pll|the_pll|altpll_component|auto_generated|pll1|clk[4]
+
+set DDR_Controller_Clock *|ddr_sdram|*|*|*|clk|pll|altpll_component|auto_generated|pll1|clk[1]
+set DDR_Local_Clock *|ddr_sdram|*|*|*|clk|pll|altpll_component|auto_generated|pll1|clk[2]
+
+
+
+## Cutting the paths between the system clock and ddr controller clock since there is a clock crossing bridge between them (FIFOs)
+#set_false_path -from [get_clocks {top_clkin_50}] -to [get_clocks $Slow_Clock_int]
+#set_false_path -from [get_clocks $Slow_Clock_int] -to [get_clocks {top_clkin_50}]
+
+## Cutting the paths between the system clock and ddr controller clock since there is a clock crossing bridge between them (FIFOs)
+#set_false_path -from [get_clocks $VGA_Base_Clock] -to [get_clocks $System_Clock_int]
+#set_false_path -from [get_clocks $System_Clock_int] -to [get_clocks $VGA_Base_Clock]
+set_false_path -from [get_clocks $VGA_Base_Clock] -to [get_clocks $DDR_Controller_Clock]
+set_false_path -from [get_clocks $DDR_Controller_Clock] -to [get_clocks $VGA_Base_Clock]
+#set_false_path -from [get_clocks $VGA_Clock] -to [get_clocks $DDR_Controller_Clock]
+#set_false_path -from [get_clocks $DDR_Controller_Clock] -to [get_clocks $VGA_Clock] 
+
+## Cutting the paths between the system clock and ddr controller clock since there is a clock crossing bridge between them (FIFOs)
+#set_false_path -from [get_clocks $CVO_Clock] -to [get_clocks $DDR_Controller_Clock]
+#set_false_path -from [get_clocks $DDR_Controller_Clock] -to [get_clocks $CVO_Clock]
+
+## Cutting the paths between the system clock and ddr controller clock since there is a clock crossing bridge between them (FIFOs)
+set_false_path -from [get_clocks {top_clkin_50}] -to [get_clocks $DDR_Controller_Clock]
+set_false_path -from [get_clocks $DDR_Controller_Clock] -to [get_clocks {top_clkin_50}]
+
+## Cutting the paths between the system clock and ddr controller clock since there is a clock crossing bridge between them (FIFOs)
+#set_false_path -from [get_clocks $System_Clock_int] -to [get_clocks $DDR_Controller_Clock]
+#set_false_path -from [get_clocks $DDR_Controller_Clock] -to [get_clocks $System_Clock_int]
+
+## Cutting the paths between the system clock and ddr local clock since there is a clock crossing bridge between them (FIFOs)
+#set_false_path -from [get_clocks $System_Clock_int] -to [get_clocks $DDR_Local_Clock]
+#set_false_path -from [get_clocks $DDR_Local_Clock] -to [get_clocks $System_Clock_int]
+
+## Cutting the paths between the external oscillator clock and the system clock since there is an asyncronous clock crosser between them
+#set_false_path -from [get_clocks {top_clkin_50}] -to [get_clocks $System_Clock_int]
+#set_false_path -from [get_clocks $System_Clock_int] -to [get_clocks {top_clkin_50}]
+
+## Cutting the paths between the external oscillator clock and the system clock since there is an asyncronous clock crosser between them
+set_false_path -from [get_clocks {top_clkin_50}] -to [get_clocks $DDR_Local_Clock]
+set_false_path -from [get_clocks $DDR_Local_Clock] -to [get_clocks {top_clkin_50}]
+
+## Cutting the paths between the external oscillator clock and the remote update clock since there is an asyncronous clock crosser between them
+#set_false_path -from [get_clocks {top_clkin_50}] -to [get_clocks $Remote_Update_Clock]
+#set_false_path -from [get_clocks $Remote_Update_Clock] -to [get_clocks {top_clkin_50}]
+
+#set_false_path -from [get_clocks {jtag_clk}] -to [get_clocks $System_Clock_int]
+#set_false_path -from [get_clocks $System_Clock_int] -to [get_clocks {jtag_clk}]
+
+##SSRAM Constraints
+
+#set_output_delay -clock [get_clocks $SSRAM_Clock_ext] -reference_pin [get_ports {top_ssram_clk}] 2.4 [get_ports {top_ssram_adsc_n top_ssram_bw_n* top_ssram_bwe_n top_ssram_ce_n top_ssram_oe_n top_flash_ssram_a* top_flash_ssram_d*}]
+#set_input_delay -clock [get_clocks $SSRAM_Clock_ext]  -reference_pin [get_ports {top_ssram_clk}] 4.1 [get_ports {top_flash_ssram_d*}]
+#set_multicycle_path -from [get_ports {top_flash_ssram_d*} ] -setup -end 2
+
+#create_generated_clock -name top_ssram_clk \
+#		-source [get_pins $SSRAM_Clock_ext] \
+#		-divide_by 1 \
+#		[get_ports top_ssram_clk]
+#
+#set_output_delay -clock [get_clocks top_ssram_clk] 2.4 \
+# [get_ports {top_ssram_adsc_n top_ssram_bw_n* top_ssram_bwe_n top_ssram_ce_n top_ssram_oe_n top_flash_ssram_a* top_flash_ssram_d*}]
+#set_input_delay -clock [get_clocks top_ssram_clk] 4.1 \
+# [get_ports {top_flash_ssram_d*}]
+#set_multicycle_path -from [get_ports {top_flash_ssram_d*} ] -setup -end 2
+
+### Video input
+
+create_clock -period 37.000 -name top_HC_TD_27MHZ [get_ports {top_HC_TD_27MHZ}]
+set_false_path -from [get_clocks $DDR_Controller_Clock] -to top_HC_TD_27MHZ
+set_false_path -from top_HC_TD_27MHZ -to [get_clocks $DDR_Controller_Clock]
+set_input_delay -clock top_HC_TD_27MHZ -clock_fall  -min -3.4 [get_ports {top_HC_TD_D*}]
+set_input_delay -clock top_HC_TD_27MHZ -clock_fall -max 4.6 [get_ports {top_HC_TD_D*}]
+#
+#### LCD output
+
+create_generated_clock -name top_clk_to_offchip_video \
+		-source [get_pins $VGA_Clock] \
+		-divide_by 1 \
+		[get_ports top_clk_to_offchip_video]
+
+set_output_delay -clock [get_clocks top_clk_to_offchip_video] \
+		-max 1.500 \
+		[get_ports {top_HC_LCD_DATA* top_HC_DEN top_HC_HD top_HC_VD} ]
+
+set_output_delay -clock [get_clocks top_clk_to_offchip_video] \
+		-min 0.7 \
+		[get_ports {top_HC_LCD_DATA* top_HC_DEN top_HC_HD top_HC_VD} ]
+
+### VGA output
+#create_generated_clock -name top_HC_VGA_CLOCK \
+#		-source [get_pins $VGA_Clock] \
+#		-divide_by 1 \
+#		[get_ports top_HC_VGA_CLOCK]
+#
+#set_output_delay -clock [get_clocks top_HC_VGA_CLOCK] \
+#		-max 1.500 \
+#		[get_ports {top_HC_VGA_DATA* top_HC_VGA_BLANK top_HC_VGA_HS top_HC_VGA_VS} ]
+#
+#set_output_delay -clock [get_clocks top_HC_VGA_CLOCK] \
+#		-min 0.7 \
+#		[get_ports {top_HC_VGA_DATA* top_HC_VGA_BLANK top_HC_VGA_HS top_HC_VGA_VS} ]
+
+
+##create_generated_clock -name NCLK \
+##		-source [get_pins $System_Clock_int] \
+##		-divide_by 1 \
+##		[get_ports top_clk_to_offchip_video]
+
+#set_output_delay -clock [get_clocks $System_Clock_int] \
+#		-reference_pin [get_ports {top_clk_to_offchip_video} ] \
+#		-max 1.500 \
+#		[get_ports {top_HC_LCD_DATA* top_HC_DEN top_HC_HD top_HC_VD} ]
+
+#set_output_delay -clock [get_clocks $System_Clock_int] \
+#		-reference_pin [get_ports {top_clk_to_offchip_video} ] \
+#		-min 0.7 \
+#		[get_ports {top_HC_LCD_DATA* top_HC_DEN top_HC_HD top_HC_VD} ]
